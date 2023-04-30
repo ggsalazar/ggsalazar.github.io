@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 7: Weather</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 6: Adventuring</a>
+            <a href="./Chapter1.html">Chapter 1: Actions</a>
+            <a href="./Chapter2.html">Chapter 2: Damage Types</a>
+            <a href="./Chapter3.html">Chapter 3: Conditions</a>
+            <a href="./Chapter4.html">Chapter 4: Enduring</a>
+            <a href="./Chapter5.html">Chapter 5: Combat</a>
+            <a href="./Chapter6.html">Chapter 6: Brightness</a>
+            <a href="./Chapter7.html" class="active">Chapter 7: Weather</a>
+            <a href="./Chapter8.html">Chapter 8: Traveling</a>
+            <a href="./Chapter9.html">Chapter 9: Languages</a>
+            <a href="./Chapter10.html">Chapter 10: Downtime</a>
+            <a href="./Chapter11.html">Chapter 11: Crafting</a>
+            <a href="./Chapter12.html">Chapter 12: Chases</a>
+            <a href="./Chapter13.html">Chapter 13: Traps</a>
+            <a href="./Chapter14.html">Chapter 14: Puzzles</a>
+            <a href="./Chapter15.html">Chapter 15: Random Encounters</a>
+            <a href="./Chapter16.html">Chapter 16: Lingering Injuries</a>
+            <a href="./Chapter17.html">Chapter 17: Madness</a>
+            <a href="./Chapter18.html">Chapter 18: Adventure Hooks</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Chapter6.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Chapter8.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 6: Adventuring &ensp; &#9776;</span>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 7: Weather</h1></center>
+            <h2>Weather Effects</h2>
+            <p>Weather has an especially interesting influence on the life of those affected by 
+             it, especially for travelers, which adventurers frequently are. Given here is a list of
+             various weathers, followed by a brief description that includes how it affects the 
+             immediate environment. Aether Storms are covered <a href="../Part7/Chapter1.html">here</a>.</p>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Clear</button>
+                    <div class="gridtent">
+                    <br>
+                        In clear weather terrain is normal and everything is relatively easy to see.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Extreme Cold</button>
+                    <div class="gridtent">
+                    <br>
+                        Extreme cold bites through straight to the bone, freezing a creature’s
+                         blood in their veins and granting them a cruel and macabre death. While
+                         in extreme cold, a creature takes final freeze damage every hour 
+                         depending on their state of dress: if they are wearing no or light 
+                         clothes, they take an amount of freeze damage equal to 40% of their 
+                         maximum Health; if they are wearing Light armor, they take 30% of their;
+                         max as freeze damage; with Medium armor, they take 20%; and in Heavy
+                         armor and heavy clothing, they take 10%. If wet flesh makes contact
+                         with extremely cold metal, the flesh becomes stuck to the metal until
+                         either a. the metal is warmed up enough for the flesh to become unstuck
+                         or b. the flesh is ripped off, dealing anywhere between 1 and 1d6 true
+                         damage depending on how much flesh was stuck.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Extreme Heat</button>
+                    <div class="gridtent">
+                    <br>
+                        Should a creature be traveling through an area of intense and extreme
+                         heat, they will take final burn damage every hour depending on what 
+                         they are wearing: if they are wearing nothing or light clothes, they 
+                         take an amount of burn damage equal to 10% of their maximum Health; if
+                         they are wearing Light armor, they take 20% of their max as burn damage;
+                         for Medium armor and heavy clothing, they take 30%; and for Heavy armor,
+                         they take 40%. If a creature is taking steps to help cool themselves 
+                         off, such as wearing reflective clothing or constantly drinking water,
+                         they take the next lowest tier of.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Lightning</button>
+                    <div class="gridtent">
+                    <br>
+                        During lightning storms, any hearing-based Perception checks are made with 
+                         disadvantage, and visibility is reduced to just a couple miles. Should a creature be
+                         struck by lightning, they take 4d6 final electric damage.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Rain</button>
+                    <div class="gridtent">
+                    <br>
+                        Rain causes everything in the immediate environment to be slick, creating 
+                         difficult terrain – whether it be slippery cobblestones, sloppy and thick mud, or
+                         slick and slushy snow and ice. It also lowers visibility to just a mile and douses
+                         all unprotected and non-arcane Small or smaller flames. Depending on the severity of
+                         the rain, Perception checks may be made normally, with disadvantage, or may 
+                         automatically fail as appropriate.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Snow</button>
+                    <div class="gridtent">
+                    <br>
+                        Similar to rain, snow creates difficult terrain in the affected area as everything
+                         becomes covered in snow and ice. Depending on the severity of the snow, visibility 
+                         may be reduced to a few kilometers/couple miles or just a few meters/feet, and Perception
+                         checks are made normally, with disadvantage, or automatically fail as 
+                         appropriate. All unprotected and non-arcane Small or smaller flames are
+                         doused.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Storm</button>
+                    <div class="gridtent">
+                    <br>
+                        Storms of all kinds severely impede movement, causing all movement to
+                         take twice as long as it otherwise would, and reducing visibility to a
+                         kilometer/half a mile at best and just a few meters/feet at worst.
+                         Medium or smaller unprotected and non-arcane flames are doused, and all
+                         ranged attacks and Perception checks on targets <u>&#60;</u> 9m/30ft
+                         away are made with disadvantage; ranged attacks and Perception checks
+                         on targets > 9m/30ft away automatically fail.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Wind</button>
+                    <div class="gridtent">
+                    <br>
+                        Wind causes all Tiny unprotected and non-arcane flames to be doused immediately 
+                         and causes all ranged attacks to be made with disadvantage. Visibility and terrain
+                         are unaffected, but hearing-based Perception checks are made with disadvantage.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var gridtent = this.nextElementSibling;
+                    if (gridtent.style.maxHeight) {
+                        gridtent.style.maxHeight = null;
+                    } else {
+                        gridtent.style.maxHeight = gridtent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+   
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 8: Size</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 1: The Basics</a>
+            <a href="./Chapter0.html">Chapter 0: Creating a Character</a>
+            <a href="./Chapter1.html">Chapter 1: Ability Scores</a>
+            <a href="./Chapter2.html">Chapter 2: Skills</a>
+            <a href="./Chapter3.html">Chapter 3: Proficiency</a>
+            <a href="./Chapter4.html">Chapter 4: Health</a>
+            <a href="./Chapter5.html">Chapter 5: Defenses</a>
+            <a href="./Chapter6.html">Chapter 6: Saves</a>
+            <a href="./Chapter7.html">Chapter 7: Resting</a>
+            <a href="./Chapter8.html" class="active">Chapter 8: Size</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Chapter7.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 1: The Basics &ensp; &#9776;</span>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 8: Size</h1></center>
+            <h2>The Space of Creatures</h2>
+            <p>In I&A, as in the real world, creatures are physical beings 
+             that take up space, and to represent that space, every creature has a Size, 
+             represented via different categories. These categories, each explained in greater 
+             detail below, will indicate the size of a creature relative to other creatures, 
+             the amount of space it takes up, how its carrying capacity is affected, its Base 
+             Speed, the amount of fall damage that it takes, its Dodge 
+             Penalty, and its RaDEF.</p>
+            <!--<p>It is important to note that the “space” of a creature is not 
+             necessarily its actual physical size, but rather more indicative of the area it 
+             controls during combat. For example, Medium creatures are said to occupy roughly 1
+             square meter, when a more accurate verbiage would be to say that they aware 
+             of and able to strike at or otherwise meaningfully hinder anything that comes close to them. 
+             This area is also needed to perform most maneuvers comfortably and 
+             successfully without hindrance. </p>
+            <p>So, rather than say all that, it is easier to simply say a creature 
+             occupies a given amount of space.</p>-->
+             
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Tiny</button>
+                    <div class="gridtent">
+                    <br>
+                        A Tiny creature takes up practically no area whatsoever, and can almost
+                         certainly be ignored, unless it is an active threat. Examples include 
+                         cats, Imps, and insects.<br>
+                        <b>Space:</b> .5 x .5 meters<br>
+                        <b>Base Speed:</b> .5m/sec<br>
+                        <b>Dodge Penalty:</b> -0<br>
+                        <b>RaDEF:</b> DEF +6<br>
+                        <b>Fall Damage:</b> 1d2 per 3m fallen<br>
+                        <b>Carry Capacity (Minimum):</b> STR times 10 (3 lbs)
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Small/Medium/Big</button>
+                    <div class="gridtent">
+                    <br>
+                        Small, Medium, and Big encompasses all Sentients and most all Beasts and
+                         natural creatures in I&A. Examples include Human children (Small), Wolves
+                         (Medium), and Orks (Big).<br>
+                        Small Sentients gain .5 to their DEX score, but lose .5 to their STR
+                         score; Big Sentients, on the other hand, gain .5 to their STR but lose
+                         .5 in their DEX - as always, these changes cannot go above 5 or below 0.
+                         The following is formatted as [Small]/[Medium]/[Big].<br>
+                        <b>Space:</b> 1 x 1 meter<br>
+                        <b>Base Speed:</b> 1.5/2/2.5m/sec<br>
+                        <b>Dodge Penalty:</b> -2/-3/-4<br>
+                        <b>RaDEF:</b> DEF +4/+3/+2<br>
+                        <b>Fall Damage:</b> 1d4 per 3m fallen<br>
+                        <b>Carry Capacity (Minimum):</b> STR times 50 (15 lbs)
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Large</button>
+                    <div class="gridtent">
+                    <br>
+                        Large creatures are about the twice the size of Medium ones, and many Monstrosities 
+                         and larger Beasts fit within this category. Examples include Ogres, Cockatri, and Phoenixes.<br>
+                        <b>Space:</b> 2-3 x 2-3 meters<br>
+                        <b>Base Speed:</b> 3m/sec<br>
+                        <b>Dodge Penalty:</b> -5<br>
+                        <b>RaDEF:</b> DEF +1<br>
+                        <b>Fall Damage:</b> 1d6 per 3m fallen<br>
+                        <b>Carry Capacity (Minimum):</b> STR times 100 (25 lbs)
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Huge</button>
+                    <div class="gridtent">
+                    <br>
+                        Huge creatures are giant monsters that hulk over almost everything in their path and 
+                         can kill most things in a single hit – or more frequently, a single bite. Examples include 
+                         Cyclops, Basilisks, and Dire Wolves.<br>
+                        <b>Space:</b> 4-5 x 4-5 meters<br>
+                        <b>Base Speed:</b> 3.5m/sec<br>
+                        <b>Dodge Penalty:</b> -6<br>
+                        <b>RaDEF:</b> DEF +1<br>
+                        <b>Fall Damage:</b> 1d8 per 3m fallen<br>
+                        <b>Carry Capacity (Minimum):</b> STR times 150 (40 lbs)
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Massive</button>
+                    <div class="gridtent">
+                    <br>
+                        The penultimate Massive is gargantuan, representing creatures so huge even experienced 
+                         adventurers would rather flee than face such a terror. Examples include Hydras, T-Rexes, 
+                         and Quetzalcoatls.<br>
+                        <b>Space:</b> 6-7 x 6-7 meters<br>
+                        <b>Base Speed:</b> 4m/sec<br>
+                        <b>Dodge Penalty:</b> -7<br>
+                        <b>RaDEF:</b> DEF +1<br>
+                        <b>Fall Damage:</b> 1d10 per 3m fallen<br>
+                        <b>Carry Capacity (Minimum):</b> STR times 200 (50 lbs)
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Colossal</button>
+                    <div class="gridtent">
+                    <br>
+                        Lastly, we get to the biggest possible size categorization: Colossal. Colossal creatures 
+                         are massive, titanic behemoths that, although terrifying based on their size alone, are usually 
+                         extremely easy to hit, though their Armor scores may still negate any damage dealt to them. 
+                         Examples include Krakens, Elder Dragons, and Behemoths.<br>
+                        <b>Space:</b> 8+ x 8+ meters<br>
+                        <b>Base Speed:</b> 5m/sec<br>
+                        <b>Dodge Penalty:</b> -8<br>
+                        <b>RaDEF:</b> DEF +1<br>
+                        <b>Fall Damage:</b> 1d12 per 3m fallen<br>
+                        <b>Carry Capacity (Minimum):</b> STR times 250 (75 lbs)
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var aligntent = this.nextElementSibling;
+                    if (aligntent.style.maxHeight) {
+                        aligntent.style.maxHeight = null;
+                    } else {
+                        aligntent.style.maxHeight = aligntent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+   
+</html>

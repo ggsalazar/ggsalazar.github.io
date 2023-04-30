@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 3: Armor</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 5: Equipment</a>
+            <a href="./Chapter1.html">Chapter 1: Currency</a>
+            <a href="./Chapter2.html">Chapter 2: Arms</a>
+            <a href="./Chapter3.html" class="active">Chapter 3: Armor</a>
+            <a href="./Chapter4.html">Chapter 4: Gear</a>
+            <a href="./Chapter5.html">Chapter 5: Mounts and Vehicles</a>
+            <a href="./Chapter6.html">Chapter 6: Siege Weapons</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Chapter2.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Chapter4.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 5: Equipment &ensp; &#9776;</span>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 3: Armor</h1></center>
+            
+            <h2>Protection You Wear</h2>
+            <p>Armor is an adventurer’s best friend. It grants them added protection against the
+             dangers they face on their travels, from the foes and monsters they fight to the various
+             traps that they encounter. Without it, no group of novices could slay a roving band of 
+             Goblins, no soldier could survive an onslaught of Scorched, no outpost would have any
+             hope of surviving an ork assault. Simply put, anyone who goes into combat without 
+             something to keep the swords, claws, and arrows away has little-to-no chance of survival.</p>
+            
+            <h2>Armor</h2>
+            <p>There are various types of armor in I&A, and each comes with their own
+             benefits and drawbacks, as shown in the table below. Certain class features will not be
+             usable in certain armor types, e.g. Aetherians cannot cast spells while wearing Medium or
+             Heavy armor/shields. The weight of the armor assumes the wearer is a Medium creature. 
+             Light/Medium/Heavy armor takes 2/5/10 minutes to put on and take off.</p>
+            <p>The type of armor you’re wearing also affects your Dodge score: none, Light,
+             or Medium armor makes your Dodge score your Dodge Penalty + your AGI score + your
+             DEX score, while Heavy armor makes your Dodge score your Dodge Penalty + your AGI
+             score.</p>
+            
+            <button type="button" class="collapsible">Armors</button>
+            <div class="content">
+                <br>
+                <table>
+                    <tr>
+                        <th>Armor</th>
+                        <th>Armor Bonus</th>
+                        <th>Cost</th>
+                        <th>DEX Checks</th>
+                        <th>Stealth Checks</th>
+                        <th>Weight</th>
+                    </tr>
+                    <tr>
+                        <td><b><i>Light Armor</i></b></td>
+                    </tr>
+                    <tr>
+                        <td>Thick cloth/thin leather (hide)</td>
+                        <td>+2</td>
+                        <td>1A</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Gambeson (hide)</td>
+                        <td>+4</td>
+                        <td>5A</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>6 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Leather (hide)</td>
+                        <td>+4</td>
+                        <td>5A</td>
+                        <td>-</td>
+                        <td>Disadvantage</td>
+                        <td>6 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Reinforced leather (hide and metal/scale)</td>
+                        <td>+5</td>
+                        <td>10A</td>
+                        <td>-</td>
+                        <td>Disadvantage</td>
+                        <td>10 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Chain shirt (metal)</td>
+                        <td>+5</td>
+                        <td>10A</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>10 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td><b><i>Medium Armor</i></b></td>
+                    </tr>
+                    <tr>
+                        <td>Breastplate (metal/scale)</td>
+                        <td>+6</td>
+                        <td>20A</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>20 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Scale mail (metal/scale)</td>
+                        <td>+6</td>
+                        <td>30A</td>
+                        <td>-</td>
+                        <td>Disadvantage</td>
+                        <td>35 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Half plate (hide and metal/scale)</td>
+                        <td>+7</td>
+                        <td>60A</td>
+                        <td>-</td>
+                        <td>Disadvantage</td>
+                        <td>40 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td><b><i>Heavy Armor</i></b></td>
+                    </tr>
+                    <tr>
+                        <td>Chain mail (hide and metal)</td>
+                        <td>+6</td>
+                        <td>15A</td>
+                        <td>-</td>
+                        <td>Disadvantage</td>
+                        <td>20 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Ring armor (hide and metal/scale)</td>
+                        <td>+7</td>
+                        <td>20A</td>
+                        <td>-</td>
+                        <td>Disadvantage</td>
+                        <td>25 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Splint (hide and metal/scale)</td>
+                        <td>+8</td>
+                        <td>40A</td>
+                        <td>Disadvantage</td>
+                        <td>Disadvantage</td>
+                        <td>50 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Plate (hide and metal/scale)</td>
+                        <td>+10</td>
+                        <td>100A</td>
+                        <td>Disadvantage</td>
+                        <td>Disadvantage</td>
+                        <td>80 lbs.</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+            
+            <h2>Armor Materials</h2>
+            <p>In regards to what armor can be made of, there are 3 types of material: hide, metal and
+             scale. There are 2 types of hide (beast and monster), 2 types of metal (steel and mithril), 
+             and 2 types of scale (dragon and monster), for a grand total of 6 different possible armor 
+             materials. In parentheses next to each type of armor are the types of materials that can be 
+             used to make it, and each of the armor’s statistics, such as its Armor Bonus and Cost, give 
+             only the statistics for the cheapest, simplest, most basic form of each armor (usually beast
+             hide and/or steel). Materials can be bought or harvested, and a creature’s statistics in the 
+             <a href="../../Bestiary/BestiaryHome.html">Bestiary</a> will say what kind of material, if any, can be harvested from it. The differences and
+             details of each type of material are given below, in the Armor Materials table.</p>
+            <p>For the <b>Additional Cost</b>, the cost applies to the extra weight of the 
+             armor if it weighs more than the base and is added to the regular cost of the
+             base armor; for example, a mithril chain shirt would weigh 15 lbs. and cost 10 +
+             15 (3 times 5) Aeons. If the material used weighs less than the base, calculate
+             the cost as though it weighed more than the base and use that for the price. The
+             cost to buy the materials for <a href="../Part6/Chapter11.html">crafting</a> can
+             be found <a href="./Chapter4.html">here</a>.</p>
+            
+            <button type="button" class="collapsible">Armor Materials</button>
+            <div class="content">
+                <br>
+                <table>
+                    <tr>
+                        <th>Material</th>
+                        <th>Additional Armor Bonus</th>
+                        <th>Additional Weight</th>
+                        <th>Additional Cost</th>
+                    </tr>
+                    <tr>
+                        <td><b><i>Hide</i></b></td>
+                    </tr>
+                    <tr>
+                        <td>Beast</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Monster</td>
+                        <td>+1</td>
+                        <td>25% heavier than beast</td>
+                        <td>+1 Aeon/pound</td>
+                    </tr>
+                    <tr>
+                        <td><b><i>Metal</i></b></td>
+                    </tr>
+                    <tr>
+                        <td>Steel</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Mithril</td>
+                        <td>+4</td>
+                        <td>25% heavier than steel</td>
+                        <td>+4 Aeons/pound</td>
+                    </tr>
+                    <tr>
+                        <td><b><i>Scale</i></b></td>
+                    </tr>
+                    <tr>
+                        <td>Monster</td>
+                        <td>+2</td>
+                        <td>25% lighter than steel</td>
+                        <td>+3 Aeons/pound</td>
+                    </tr>
+                    <tr>
+                        <td>Dragon</td>
+                        <td>+3</td>
+                        <td>50% lighter than steel</td>
+                        <td>+5 Aeons/pound</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+            
+            <h2>Traveling in Armor</h2>
+            <p><a href="../Part6/Chapter8.html">Traveling</a>, especially on foot, is an 
+             exhaustive activity. For this reason, traveling in heavier armor will exhaust
+             characters far faster than traveling in lighter armor. While traveling on foot in
+             Medium/Heavy armor, a character takes fatigue damage equal to 5%/10% of their 
+             maximum Health (rounded appropriately, up if half) for every hour that they travel
+             while wearing it.</p>
+             
+            <h2>Shields</h2>
+            <p>Shields are always good whenever one feels they need some added protection.
+             Shields come in a very wide variety of shapes, forms, sizes, and the like; however,
+             for the sake of simplicity, all shields have been narrowed down to three categories
+             based on their size, and each size confers a different bonus and has a different 
+             cost, as shown in the table below. As with the Armors table, each shield given 
+             assumes its most simple, basic form, and can be crafted or bought with different 
+             materials. However, unlike armor, shields can be made of wood, which is usually
+             weaker than any of the given materials. For that reason, assume each of the
+             materials given above gives an additional +1 to its Armor Bonus when applied to a 
+             shield.</p>
+            <p>If you are wearing a Medium or larger shield, you cannot wield anything other
+             than the shield in the arm wearing it and you have disadvantage on all STR and
+             DEX checks involving that arm.</p>
+             
+            <h2>Shield Bashing</h2>
+            <p>They say the best offense is a good defense, and there are those who would take
+             such an axiom literally. If you wish to use your shield as a weapon, that is
+             entirely doable, and the base damage for each shield is as follows: 1d4 for Small,
+             1d6 for Medium, and 1d8 for Large. You must have <u>></u>3 STR to wield a Large
+             shield as a weapon, and the damage for each shield scales with the Weapon Skill
+             of the same name, e.g. a character with 3 proficiency in Small weapons would deal
+             3d4 + their STR damage with a Small shield.</p>
+            
+            <button type="button" class="collapsible">Shields</button>
+            <div class="content">
+                <br>
+                <table>
+                    <tr>
+                        <th>Shield Type</th>
+                        <th>Armor Bonus</th>
+                        <th>Cost</th>
+                        <th>STR/DEX Checks</th>
+                        <th>Weight</th>
+                    </tr>
+                    <tr>
+                        <td>Small (metal/scale)</td>
+                        <td>+2</td>
+                        <td>2A</td>
+                        <td>-</td>
+                        <td>2 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Medium (metal/scale)</td>
+                        <td>+3</td>
+                        <td>4A</td>
+                        <td>Disadvantage</td>
+                        <td>4 lbs.</td>
+                    </tr>
+                    <tr>
+                        <td>Large (metal/scale)</td>
+                        <td>+4</td>
+                        <td>8A</td>
+                        <td>Disadvantage</td>
+                        <td>8 lbs.</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+            
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+   
+</html>

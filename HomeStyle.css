@@ -1,0 +1,78 @@
+a {
+    color: inherit;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+/*Button stuff*/
+.DiscordButton {
+    float: right;
+    position: absolute;
+    font-size: 24px;
+    top: 5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: #1985ee;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 14px 16px;
+    overflow: hidden;
+}
+
+.DiscordButton:hover, .DiscordButton:active {
+    background-color: #199fff;
+}
+
+/*mobile screens*/
+@media screen and (max-height: 500px) {
+    .DiscordButton {
+        font-size: 12px;
+        border-radius: 4px;
+        padding: 10px 12px;
+    }
+}
+
+.NavButton {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    height: 35px;
+    padding: 12px;
+    text-align: center;
+    display: inline-block;
+    width: max-content;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.NavButton:hover, .NavButton:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+/*mobile screens*/
+@media screen and (max-height: 500px) {
+    .NavButton {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+.row {
+    margin: 25px 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

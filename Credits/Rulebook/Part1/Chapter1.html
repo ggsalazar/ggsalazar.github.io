@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 1: Ability Scores</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 1: The Basics</a>
+            <a href="./Chapter0.html">Chapter 0: Creating a Character</a>
+            <a href="./Chapter1.html" class="active">Chapter 1: Ability Scores</a>
+            <a href="./Chapter2.html">Chapter 2: Skills</a>
+            <a href="./Chapter3.html">Chapter 3: Proficiency</a>
+            <a href="./Chapter4.html">Chapter 4: Health</a>
+            <a href="./Chapter5.html">Chapter 5: Defenses</a>
+            <a href="./Chapter6.html">Chapter 6: Saves</a>
+            <a href="./Chapter7.html">Chapter 7: Resting</a>
+            <a href="./Chapter8.html">Chapter 8: Size</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Chapter0.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Chapter2.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 1: The Basics &ensp; &#9776;</span>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 1: Ability Scores</h1></center>
+            <p>The seven ability scores – Strength, Constitution, Agility, Dexterity, 
+             Intelligence, Wisdom, and Charisma – are numerical representations of a 
+             creature’s physical and mental attributes, and they determine its aptitude in 
+             certain fields and its ability to perform a given activity. They are measured 
+             from 0 to 10, with the average score for a normal adult Sentient being 2. The 
+             highest a Sentient’s score can go up to by natural means is 5, but certain 
+             class features, enchanted items, special abilities, or other exceptional means 
+             can bring a score up to 6. Each is described in detail below.</p>
+            
+            <h2>Determining Your Scores</h2>
+            <p>Given here are two ways to determine your scores, though your group may decide to 
+             modify one of these ways or come up with one of their own:</p>
+            <p><b>Roll 1d8/2 7 Times.</b> The first method is to roll 1d8 and divide the roll by 2.
+             Record the result, then do that 6 more times, once for each score. 
+             Once you have all 7, place each digit into each Ability Score as you desire.</p>
+            <p><b>Point Buy.</b> The second method allows you to "purchase" your Ability Scores using
+             a pool of 16 points via a 1:1 conversion rate (e.g. you can spend 2.5 points to get a
+             score of 2.5). You cannot buy a score higher than 4.</p>
+            <p>When deciding stats, it is heavily recommended that your group democratically decide
+             which method they wish to use. Ability Scores can be halfway between two whole
+             numbers (1.5, 2.5, etc.) but cannot be any other non-whole value.</p>
+            
+            <h2>Skill Bonuses</h2>
+            <p>Each Ability Score also doubles as a bonus to each associated skill, which simply
+             means that when making a check on one of those skills, you add your Ability Score 
+             to the result of that check.</p>
+            
+            <h2>Ability Checks</h2>
+            <p>In I&A, when a character wishes to perform any sort of difficult 
+             or complex action, they must make what is called a <b>skill check</b>. If the action 
+             they wish to perform directly relates/corresponds to an <a href="./Chapter2.html">Action Skill</a> 
+             they are proficient in, they must roll a number of d10s proportionate to their
+             <a href="./Chapter3.html">proficiency</a> in that skill. However, if they are attempting
+             something that does not fit the criteria for any of the Action Skills, then 
+             they make what is called an <b>ability check</b>. To do this, simply roll a number of 
+             d10s equal to the appropriate Ability Score (plus a d6 if the score is halfway between two
+             whole numbers) and add up the rolls, plus the score itself; if
+             the result is <u>></u> the DR, you succeed. If the given Ability Score is 0 or 0.5, just
+             roll 1d6.</p>
+            <p>For both skill checks and ability checks, consider reducing the DR based on how
+             your players describe how they wish to perform the action; if they explicitly point
+             out that they are going out of their way to make what they are attempting easier or
+             if they roleplay the check well, the DR should be reduced accordingly.</p>
+            <p><b>Partial Successes.</b> Instead of having success or failure be a binary,
+             consider implementing the following: if a character fails a check by a relatively
+             small amount, they achieve a Partial Success, which allows the character to make
+             progress towards their goal without explicitly succeeding, usually granting them 
+             the opportunity to make an additional check to try to further their progress
+             towards/meet their goal (if you are uncertain as to how to implement a Partial
+             Success for a given task, consider simply having them eventually succeed after
+             attempting the task for a long time).<br>
+            <p><b>Check Difficulty.</b> Presented here are two tables that should give an idea
+             of the relative difficulty of various tasks. GMs can use either table at their 
+             discretion: the left gives a list of static difficulties that can be referenced
+             quickly and easily, while the right outlines how to calculate dynamic DRs given a
+             task's difficulty.</p>
+            
+            <div class = "row">
+                <table class = "tablecolumnleft">
+                    <tr>
+                        <th>Difficulty</th>
+                        <th>DR</th>
+                        <th>Partial Success</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td>Very Easy</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>Track a bleeding creature through fresh snow</td>
+                    </tr>
+                    <tr>
+                        <td>Easy</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>Break a rusty piece of metal</td>
+                    </tr>
+                    <tr>
+                        <td>Moderate</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>Pick a normal lock</td>
+                    </tr>
+                    <tr>
+                        <td>Difficult</td>
+                        <td>22</td>
+                        <td>16</td>
+                        <td>Find a hidden object</td>
+                    </tr>
+                    <tr>
+                        <td>Very Difficult</td>
+                        <td>30</td>
+                        <td>22</td>
+                        <td>Climb a rope during a hurricane</td>
+                    </tr>
+                    <tr>
+                        <td>Practically Impossible</td>
+                        <td>40</td>
+                        <td>30</td>
+                        <td>Know about an extremely obscure piece of information</td>
+                    </tr>
+                </table>
+            
+                <table class = "tablecolumnright">
+                    <tr>
+                        <th>Difficulty</th>
+                        <th>DR</th>
+                        <th>Partial Success</th>
+                    </tr>
+                    <tr>
+                        <td>Very Easy</td>
+                        <td>3 + 1d4</td>
+                        <td>DR - 3</td>
+                    </tr>
+                    <tr>
+                        <td>Easy</td>
+                        <td>7 + 1d6</td>
+                        <td>DR - 5</td>
+                    </tr>
+                    <tr>
+                        <td>Moderate</td>
+                        <td>12 + 1d8</td>
+                        <td>DR - 6</td>
+                    </tr>
+                    <tr>
+                        <td>Difficult</td>
+                        <td>17 + 1d10</td>
+                        <td>DR - 6</td>
+                    </tr>
+                    <tr>
+                        <td>Very Difficult</td>
+                        <td>24 + 1d12</td>
+                        <td>DR - 8</td>
+                    </tr>
+                    <tr>
+                        <td>Practically Impossible</td>
+                        <td>30 + 2d10</td>
+                        <td>DR - 10</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h2>Deciding When a Roll Is(n't) Needed</h2>
+            <p>As Ability Scores (and skill proficiencies) become higher and higher, the need to roll for
+             certain activities - Very Easy and Easy ones in particular - becomes lesser and lesser. If a
+             character with a high enough Ability Score or skill proficiency is attempting a relatively easy
+             task, then there is no need to call for a roll, and it can just be assumed that the character is
+             able to perform the task. For example, if a
+             character with 5 STR tries to break a rusty piece of metal (DR 10), then it can be safely assumed
+             that they are able to do this fairly easily, and there is no need to ask the
+             player to roll on behalf of their character. This has the dual benefit of both keeping the game
+             moving, and rewarding the character for specializing in a given ability/skill to such a degree.</p>
+            <p>Contrarily, if there is no possible way for a character to succeed at a task given their 
+             current Ability Score/proficiency, then there is no reason to make them roll, and you can simply
+             say that if the character tries, there is no way for them to succeed. As an example, if a
+             character with 1 proficiency in Lore wanted to see if they knew an extremely obscure piece of
+             information (DR 40), there is simply no way for them to succeed on that check, so it would be
+             pointless to ask for a roll. Whether or not the <i>character</i> would realize they aren't skilled
+             enough to attempt something would largely depend on their INT/WIS score.</p>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Strength (STR)</button>
+                    <div class="gridtent">
+                    <br>
+                        Strength is the measure of your character’s ability to push, pull, or exert any 
+                        raw physical force on the world around them. It is used to muscle your way through 
+                        certain situations and deal damage with most melee weapons. STR is also used to determine 
+                        a creature’s <a href="./Chapter8.html">carrying capacity</a> before 
+                        becoming encumbered. A creature that is encumbered (meaning they have surpassed their 
+                        carrying capacity) is <a href="../Part6/Chapter3.html">slowed</a> and cannot climb,
+                        swim, or jump. If they have surpassed their carrying capacity by <u>></u> 150% (e.g. your 
+                        carrying capacity is 100 and you’re carrying 150+ pounds) then they are 
+                        <a href="../Part6/Chapter3.html">incapacitated</a>. Your STR also partially 
+                        determines your <a href="./Chapter6.html">Fortitude</a>.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Constitution (CON)</button>
+                    <div class="gridtent">
+                    <br>
+                        Constitution measures your body’s overall fortitude and toughness, as well as your 
+                         stamina and your ability to resist the effects of poison and disease. CON is used 
+                         when determining your <a href="./Chapter4.html">Health</a> and
+                         <a href="./Chapter6.html">Fortitude</a>. Any time your CON increases/decreases,
+                         you gain/lose an amount of Maximum Health equal to the change times your level;
+                         for example, if your CON increases from 3 to 3.5 and you are level 5, your Maximum
+                         Health immediately increases by .5 times 5, which is 2.5.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Agility (AGI)</button>
+                    <div class="gridtent">
+                    <br><br>
+                        Agility measures a character's ability to move quickly and perform body-wide feats
+                         of finesse, whereas DEX is more closely tied to hand-eye coordination and precise, 
+                         nimble movements using one's hands and feet. Your AGI or DEX score determines your 
+                         initiative bonus, and AGI and DEX together measure one's <a href="./Chapter5.html">Dodge</a>
+                         and <a href="./Chapter6.html">Reflex</a> scores.<br>
+                        <br>
+                        <b>Movement.</b> AGI also modifies your movement: for every .5 above/below 2 that
+                         a creature's AGI increases/decreases, they gain/lose another 2 meters of movement.
+                         For example, a Medium creature (Base Movement 20m) with an AGI of 3.5 would gain 6
+                         extra meters of movement, making their total movement 26m; conversely, a Medium
+                         creature with an AGI of 1 would only have 16m of movement.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Dexterity (DEX)</button>
+                    <div class="gridtent">
+                    <br>
+                        Dexterity measures your balance, reflexes, and hand-eye coordination. It
+                         is used when precision is called for and helps in determining a 
+                         character’s <a href="./Chapter5.html">Dodge</a> and 
+                         <a href="./Chapter6.html">Reflex</a> scores.<br>
+                        <br>
+                        <b>Actions.</b> DEX also determines the number of actions that you can perform on
+                         your turn, as determined by the following table:
+                        <table>
+                            <tr>
+                                <th>DEX</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>0-1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>1.5-4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>4.5-7</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7.5-10</td>
+                                <td>8</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Intelligence (INT)</button>
+                    <div class="gridtent">
+                    <br>
+                        Intelligence determines your ability to learn & retain information, analyze 
+                         situations & determine the best possible outcome, and your ability to perform 
+                         calculations & reason things out logically; it may also partially determine your 
+                         <a href="./Chapter6.html">Willpower</a>. A creature with an INT of 0 cannot read or
+                         write.<br><br>
+                        Every character gains an additional number of SP equal to their INT score, which 
+                         they can place into any <a href="./Chapter2.html">Action or Tool Skill</a> of their 
+                         choice or they can use to learn a new <a href="../Part6/Chapter9.html">Sentient 
+                         language</a>; ergo, if a character with an INT of 3 so desires, they could know 3 
+                         extra languages, gain 3 proficiency in any <a href="./Chapter2.html">Action or Tool
+                         Skill(s)</a> of their choice, or some combination of the above. Conversely, a 
+                         character must lose/forget 1 proficiency/language if their INT ever decreases by 1.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Wisdom (WIS)</button>
+                    <div class="gridtent">
+                    <br>
+                        Wisdom measures your attunement to the world around you, and your ability to determine 
+                         how things should be or what you should do in a given situation. Your WIS may help 
+                         determine your <a href="./Chapter6.html">Willpower</a> if you so desire.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Charisma (CHA)</button>
+                    <div class="gridtent">
+                    <br>
+                        Charisma determines your ability to command the attention of those 
+                         around you. It measures how well you can interact with others in a 
+                         social context, from commanding and inspiring them to intimidating and
+                         deceiving them. A high CHA score does not necessarily mean that the 
+                         character is well-loved by all around them (though this is frequently
+                         the case), just that they have a very demanding and noticeable presence.
+                         Your CHA score also partially determines your <a href="./Chapter6.html">Willpower</a>
+                         score.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var aligntent = this.nextElementSibling;
+                    if (aligntent.style.maxHeight) {
+                        aligntent.style.maxHeight = null;
+                    } else {
+                        aligntent.style.maxHeight = aligntent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+   
+</html>

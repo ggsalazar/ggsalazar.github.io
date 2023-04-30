@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Artificer</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+         <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 4: Classes</a>
+            <a href="./Introduction.html">Introduction</a>
+            <a href="./Artificer.html" class="active">Artificer</a>
+            <a href="./Mutant.html">Mutant</a>
+            <a href="./Psychokinetic.html">Psychokinetic</a>
+            <a href="./Rogue.html">Rogue</a>
+            <a href="./Warrior.html">Warrior</a>
+            <a href="./Spellcasting.html">Spellcasting</a>
+            <a href="./Aetherian.html">Aetherian</a>
+            <a href="./ClasslessFeats.html">Classless Feats</a>
+            <a href="./LevelingUp.html">Leveling Up</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Introduction.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Mutant.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 4: Classes &ensp; &#9776;</span>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Artificer</h1></center>
+            <h2>Creative Inventor</h2>
+            <p>Artificers are savants when it comes to machines and mechanics, using their genius
+             to build amazing creations out of wires, gears, and whatever else they can get their 
+             hands on. Their creations are incredible boons both in and out of combat, but their true
+             strength is in their ingenuity and creativity.</p>
+            
+            <h2 style="text-decoration:none;"><b>The Artificer</b></h2>
+            <table style="margin:0;">
+                <tr>
+                    <th>Level</th>
+                    <th>Weapons<br>Proficiency</th>
+                    <th>Features</th>
+                    <th>Artifice<br>Charges</th>
+                </tr>
+                <tr>
+                    <td>1st</td>
+                    <td>2</td>
+                    <td>Artifice, Artifice Charges</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2nd</td>
+                    <td>2</td>
+                    <td>Class Feat (Novice)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3rd</td>
+                    <td>2</td>
+                    <td>Tool Expertise</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>4th</td>
+                    <td>2</td>
+                    <td>Feat and Ability Score Improvement</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>3</td>
+                    <td>Artifice Upgrade (1)</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>6th</td>
+                    <td>3</td>
+                    <td>Class Feat (Journeyman)</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>7th</td>
+                    <td>3</td>
+                    <td>--</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>8th</td>
+                    <td>3</td>
+                    <td>Feat and Ability Score Improvement</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>4</td>
+                    <td>--</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>4</td>
+                    <td>Artifice Upgrade (2)</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>11th</td>
+                    <td>4</td>
+                    <td>Class Feat (Expert)</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>4</td>
+                    <td>Feat and Ability Score Improvement</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>5</td>
+                    <td>--</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>14th</td>
+                    <td>5</td>
+                    <td>--</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>15th</td>
+                    <td>5</td>
+                    <td>Artifice Upgrade (3)</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>16th</td>
+                    <td>5</td>
+                    <td>Feat and Ability Score Improvement</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>6</td>
+                    <td>Class Feat (Master)</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>18th</td>
+                    <td>6</td>
+                    <td>--</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>19th</td>
+                    <td>6</td>
+                    <td>Feat and Ability Score Improvement</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>20th</td>
+                    <td>6</td>
+                    <td>Magnum Opus</td>
+                    <td>6</td>
+                </tr>
+            </table>
+            
+            <h2>Class Features</h2>
+            <p>As an Artificer you gain the following class features.</p>
+            <h3>Health</h3>
+            <p><b>Health at 1st Level:</b> 8 + your CON score</p>
+            <p><b>Health Beyond 1st Level:</b> 1d8 (or 4.5) + your CON score per
+             Artificer level after 1st</p>
+            <h3>Proficiencies</h3>
+            <p><b>Skills at 1st Level:</b></p>
+                <ul>
+                    <li>You gain 1 proficiency in Tinkering Tools, up to 5;</li>
+                    <li>Select one Weapon Skill to gain proficiency in as you level up.</li>
+                </ul>
+            <p><b>Skills Beyond 1st Level:</b> You gain 1 SP every time you level up.</p>
+             
+            <br>
+            
+            <h2>Artifice</h2>
+            <p>At 1st level, you have what makes you an Artificer: your Artifice, which is a 
+             special invention of yours that takes one of the following forms:</p>
+             
+            <div class="row" style="margin-bottom: 15px;">
+                <div class="column">
+                    <button type="button" class="grid">Creature</button>
+                    <div class="gridtent">
+                    <br>
+                        You have created a single small mechanical Creature that is exclusively loyal
+                         to you and has the following features:
+                        <ul>
+                            <li>It is Tiny;</li>
+                            <li>its ability scores are thus: STR 0, CON 2, AGI 2, DEX 2.5, 
+                             INT 1, WIS 2, CHA 0;</li>
+                            <li>it has 1 proficiency in all Action Skills, and you have 6 SP
+                             with which to increase its skill proficiencies;</li>
+                            <li>its Dodge penalty is -0 and its base Armor score is 2;</li>
+                            <li>its Health is equal to 5 times your Artificer level + its CON
+                             score times your Artificer level;</li>
+                            <li>it acts on its own turn in combat (it has 4 actions);</li>
+                            <li>it can crawl up walls and upside-down without issue;</li>
+                            <li>once a day it must be refueled with a ¼ gallon of fuel or it will 
+                             shut down (you have a gallon of fuel in your possession at the time you
+                             create it);</li>
+                            <li>you and it can communicate with each other and you can communicate
+                             with/through it so long as it is within 2 kilometers of you;</li>
+                            <li>you can take 1 second (independent of your DEX) to verbally give your Creature a command, which it will
+                             carry out to the best of its ability, though it will not knowingly
+                             destroy itself unless you explicitly tell it to; if it is physically unable to do
+                             what you ask it, it informs you of this as soon as it is able.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Exoskeleton</button>
+                    <div class="gridtent">
+                    <br>
+                        You’ve invented a mechanical suit specifically and specially designed for you
+                         and with the following features:
+                        <ul>
+                            <li>You can use 10.5 seconds to enter or exit it, however you cannot enter
+                             it if you are wearing armor or a shield;</li>
+                            <li>it grants an Armor bonus equal to 1 + ½ your Artificer level (rounded
+                             up) and counts as Light armor;</li>
+                            <li>you can have up to 6 weapons equipped at once (one on each limb and 
+                             two on the torso);</li>
+                            <li>it increases your STR score by .5 + ¼ your Artificer level, rounded 
+                            down to the nearest half, up to 8;</li>
+                            <li>it functions as a backpack;</li>
+                            <li>it weighs 20 + your Artificer level pounds.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Turret</button>
+                    <div class="gridtent">
+                    <br>
+                        You’ve created a special firearm that can be placed in a single spot and has 
+                         the following features:
+                        <ul>
+                            <li>It takes 3.5 seconds to place and another 3.5 to set up;</li>
+                            <li>the user can take 1.5 seconds to fire it once, dealing 1d10 + the user’s
+                             DEX score physical base damage (scaling with the user’s Firearm
+                             proficiency);</li>
+                            <li>its range is 50/75 meters;</li>
+                            <li>it uses a special type of ammunition that you create, and that you 
+                             have 10 of at the time of creation;</li>
+                            <li>it takes 10.5 seconds to be reloaded and has a capacity equal to your
+                             INT score + your Artificer level;</li>
+                            <li>over the course of a day’s rest, you can use tinkering tools or 
+                             gunsmithing tools to create an amount of ammunition for the Turret equal
+                             to your INT score, or ¼ as much (rounded appropriately, up if half)
+                             over the course of a night’s rest;</li>
+                            <li>it weighs 30 pounds.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p>The Exoskeleton and the Turret’s Armor scores and Health are equal to double your INT 
+             score. You can use Tinkering Tools to repair any damage done to your Artifice, in much 
+             the same way you could use those tools to replenish the Health of an <a href="../Part3/Automata.html">Automaton</a>.
+             If your Artifice is lost or destroyed, you can spend 50 Aeons in materials and use your
+             Tinkering Tools to build a new one over a day’s rest.</p>
+            <p>Your Artifice will be upgraded at 5th, 10th, 15th, and 20th level, unless you decide
+             to create another at one of those levels.</p>
+            
+            <h2>Artifice Charges</h2>
+            <p>At creation, your Artifice has a single charge that you can expend to perform a special ability unique to it, detailed here:</p>
+             
+            <div class="row" style="margin-bottom: 15px;">
+                <div class="column">
+                    <button type="button" class="grid">Creature</button>
+                    <div class="gridtent">
+                    <br>
+                        The creature can expend a charge and take 1.5 seconds to make a special attack against a single 
+                         target; this attack deals 1d8 + its CON score electric damage. If this attack
+                         deals any final damage, the target loses its reactions until the start of its 
+                         next turn. The number of d8s rolled increases as you gain more Artifice charges,
+                         as shown in the Artificer class table.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Exoskeleton</button>
+                    <div class="gridtent">
+                    <br>
+                        You can expend a charge to either <b>a.</b> perform a jump that is double
+                         your normal jump height/distance or <b>b.</b> double your speed 
+                         for the next 6 seconds.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Turret</button>
+                    <div class="gridtent">
+                    <br>
+                        The Turret can expend a charge to perform a special flamethrower attack that takes 
+                         the form of either <b>a.</b> a 10m line or <b>b.</b> a 5m cone (pick which at the
+                         time you make the attack); in either case, the inferno deals 1d8 + your INT score
+                         burn damage to every creature caught in its area of effect and takes 3.5 seconds. The
+                         number of d8s rolled increases as you gain more Artifice charges, as shown in the 
+                         Artificer class table.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            <p>You replenish your Artifice’s charges during a night’s or day's rest. Your Artifice gains
+             more charges as you level up, as shown in the Artificer class table.</p>
+            
+            <h2>Class Feats</h2>
+            <p>At 2nd level, you studied and tinkered enough to learn how to enhance yourself and
+             your Artifice with special feats. At the end of the class description, under “Class 
+             Feats”, you may select one Novice class feat.</p>
+            <p>At 6th level, you may select either one Journeyman or two Novice class feats.</p>
+            <p>When you reach 11th level, you may choose either one Expert, one Journeyman and one
+             Novice, or three Novice class feats.</p>
+            <p>Lastly, at 17th level your genius is the stuff of legend, and you may now select one
+             Master, one Expert and one Journeyman, two Journeyman, one Journeyman and two Novice, or
+             four Novice class feats.</p>
+            
+            <h2>Tool Expertise</h2>
+            <p>When you reach 3rd level, your skills with your tools are unmatched. Pick any two
+             Tool Skills with which you have <u>></u> 1 proficiency; your proficiency in both of those 
+             skills increases by 1, and both of those skills can now be increased to 6, even if 
+             another skill or feature says it can only be increased to 5. If you only have proficiency
+             in one Tool Skill, then pick any other Tool Skill of your choice for this feature to apply to.</p>
+            
+            <h2>Feat and Ability Score Improvement</h2>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you
+             can increase one of your ability scores by 1 or two of them by .5, as well as take a
+             <a href="./ClasslessFeats.html">classless feat</a>. You cannot increase an ability
+             score beyond 5 via this feature.</p>
+            
+            <h2>Artifice Upgrade</h2>
+            <p>At 5th, 10th, and 15th level, you have spent enough time researching, learning, 
+             and experimenting with and on your Artifice to upgrade it, culminating in your Magnum 
+             Opus at 20th level. An Artifice must be upgraded in order, and cannot obtain an upgrade
+             of a given level if it has not obtained the next-lowest upgrade, e.g. you cannot give
+             your Artifice its 3rd-level upgrade if it has not acquired its 2nd-level upgrade. If 
+             your Artifice is lost or destroyed after obtaining its level 1/2/3 upgrade, it can be
+             rebuilt using your Tinkering Tools, 100/250/500 Aeons’ worth of materials, and a day’s
+             rest.</p>
+             
+            <div class="row" style="margin-bottom: 15px;">
+                <div class="column">
+                    <button type="button" class="grid">Creature</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Level 1.</b> With this upgrade, your Creature gains the following benefits:
+                        <ul>
+                            <li>It can take 3 seconds (independent of its DEX) to increase in size to a Small creature, or use
+                             another 3 (independent of its DEX) to change its size back to Tiny;</li>
+                            <li>while it is Small, Small or smaller creatures can ride it;</li>
+                            <li>the distance with which you can communicate with/through it increases to 10 kilometers;</li>
+                            <li>you gain 1 point (or 2 half (.5) points) with which to upgrade your Creature’s ability 
+                             scores as you see fit (up to 5), as well as 3 SP for it;</li>
+                            <li>the amount of daily fuel it requires increases to ¾ gallon.</li>
+                        </ul>
+                        <b>Level 2.</b> Your Creature’s Level 2 upgrade bestows the following benefits:
+                        <ul>
+                            <li>It can now take 6 seconds (independent of its DEX) to become either Tiny, Small, or Medium;</li>
+                            <li>while it is Medium, Medium or smaller creatures can ride it;</li>
+                            <li>the distance at which you can communicate with/through it increases to 50 kilometers;</li>
+                            <li>you gain 1 more point (or 2 half (.5) points) with which to increase its ability scores (up
+                             to 10) and 3 more SP;</li>
+                            <li>its special attack now uses d10s for damage;</li>
+                            <li>the amount of daily fuel your Creature requires increases to 1 gallon.</li>
+                        </ul>
+                        <b>Level 3.</b> With its 3rd upgrade, your Creature gains the following the benefits:
+                        <ul>
+                            <li>It can now become either Tiny, Small, Medium, or Big over the course of 6 seconds (independent of its DEX);</li>
+                            <li>while it is Big, Big or smaller creatures can ride it;</li>
+                            <li>the distance with which you can communicate with/through it 
+                             increases to 300 kilometers;</li>
+                            <li>you gain 1 more point (or 2 half (.5) points) with which to increase your Creature’s ability 
+                             scores (up to 6), as well as 3 more SP;</li>
+                            <li>the amount of daily fuel your Creature requires increases to 2 gallons.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Exoskeleton</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Level 1.</b> This upgrade bestows the following features:
+                        <ul>
+                            <li>Its Armor bonus increases by 1;</li>
+                            <li>pick one of the following, or something similar: flashlight, 
+                             grappling hook and 20m of rope, night vision goggles, or 
+                             crowbar and small hammer: that tool is now affixed to the 
+                             Exoskeleton and can be used at the cost of 3.5 seconds;</li>
+                            <li>charges can now either perform a jump that is triple your normal jump
+                             height/distance or triple your speed for the next 15 seconds.</li>
+                        </ul>
+                        <b>Level 2.</b> This upgrade further increases the capabilities of your 
+                         Exoskeleton, granting the following:
+                        <ul>
+                            <li>Its Armor bonus increases by an additional 1;</li>
+                            <li>pick another tool from the above list (or similar) to attach to the suit, 
+                             allowing it to be used at the cost of 3.5 seconds;</li>
+                            <li>charges can now either perform a jump that is quadruple your normal
+                             jump height/distance or quadruple your speed for the next 30 seconds.</li>
+                        </ul>
+                        <b>Level 3.</b> The penultimate upgrade to the Exoskeleton grants the following
+                         boons:
+                        <ul>
+                            <li>Its Armor bonus increases by another 1;</li>
+                            <li>a third tool is affixed to it and can be used at the cost of 3.5 seconds;</li>
+                            <li>using a charge will now either perform a jump that is quintuple your
+                             normal jump height/distance or quintuple your speed for the next
+                             next 45 seconds.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Turret</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Level 1.</b> With this upgrade, the Turret gains the following:
+                        <ul>
+                            <li>Its range/long range is increases to 75/100 meters;</li>
+                            <li>the ranges of the line & cone of the flamethrower attack
+                             increase to 10 & 5 meters, respectively.</li>
+                        </ul>
+                        <b>Level 2.</b> The 2nd upgrade to the Turret grants the following benefits:
+                        <ul>
+                            <li>Its range is increased to 100/150 meters;</li>
+                            <li>the damage of the flamethrower attack now uses d10s, and the
+                             line’s range is now 15m.</li>
+                        </ul>
+                        <b>Level 3.</b> The 3rd upgrade to the Turret gives the following features:
+                        <ul>
+                            <li>Its range is now 150/200 meters;</li>
+                            <li>the ranges of the line and cone of the flamethrower attack increase
+                             to 20 and 10 meters, respectively.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p>Alternatively, at 5th, 10th, and 15th level, instead of upgrading your existing 
+             Artifice, you can choose to build a new Artifice in its base form; this Artifice can be
+             any one of the 3 options given in the Artifice feature description, requires 50 Aeons in
+             materials and a day’s rest to build, and has its own supply of charges with which to use
+             its special ability. At the next point when your Artifice would be upgraded, such as 
+             10th or 15th level, you can choose to upgrade one of your existing Artifices or build 
+             another in its base form.</p>
+            
+            <h2>Magnum Opus</h2>
+            <p>Your Artifice and its capabilities are, in a word, unparalleled. This feature
+             grants your Artifice its final, greatest upgrade, and makes it a marvel of modern 
+             technology. Like with the Artifice Upgrade feature, you can instead choose to build 
+             another Artifice in its base form instead of upgrading an existing one. If you have 
+             already done so, and are upgrading one of your existing Artifices, refer to the 
+             appropriate upgrade level in the Artifice Upgrade feature. Otherwise, if you are 
+             upgrading an Artifice that has already obtained its 3rd upgrade, then that Artifice now
+             gains its Magnum Opus upgrade, described below:</p>
+             
+            <div class="row" style="margin-bottom: 15px;">
+                <div class="column">
+                    <button type="button" class="grid">Creature</button>
+                    <div class="gridtent">
+                    <br>
+                        The final upgrade to the Creature grants it the following: 
+                        <ul>
+                            <li>It can now take 10 seconds (independent of its DEX) to become Tiny, Small, Medium, Big, or Large;</li>
+                            <li>while it is Large, Large or smaller creatures can ride it;</li>
+                            <li>the distance which you can communicate with/through it increases to 
+                             1000 kilometers;</li>
+                            <li>You gain 1.5 points with which to increase your Creature’s ability 
+                             scores (up to 6) as well as 5 more SP;</li>
+                            <li>its special attack now uses d12s for damage;</li>
+                            <li>the amount of daily fuel it requires increases to 5 gallons.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Exoskeleton</button>
+                    <div class="gridtent">
+                    <br>
+                        The Magnum Opus Exoskeleton gains the following benefits:
+                        <ul>
+                            <li>Its Armor and STR bonuses increase by another 1;</li>
+                            <li>a fourth tool from the given list (or another suitable tool) can be
+                             affixed to it in the same manner as the others;</li>
+                            <li>charges can now either give you a flying speed of 4m/sec for the 
+                             next minute or quintuple your speed for the next minute.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Turret</button>
+                    <div class="gridtent">
+                    <br>
+                        The last upgrade to the Turret gives it the following features:
+                        <ul>
+                            <li>Its range is now 200/300 meters;</li>
+                            <li>the damage of the flamethrower attack now uses d12s, and the
+                             line & cone have ranges of 25 & 12.5 meters.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p>If your Artifice is lost or destroyed after gaining its Magnum Opus upgrade, it
+             can be replaced/rebuilt as it was using Tinkering Tools, 1000 Aeons’ worth of materials,
+             and a day’s rest to reconstruct it.</p>
+            
+            <h1>Artificer Class Feats</h1>
+            <p style="margin-top:-20px;">An Artificer is an inventor, a mechanic possessing rare genius that allows them to
+             make their own incredible mark on the world. These feats help Artificers to make that
+             mark, giving their inventions and Artifices their own unique styles, perks, and flavors,
+             or expanding upon their other inventions.</p>
+            
+            <h2>Novice</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Armored Creature</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Creature Artifice</i>
+                        <br><br>
+                        You reinforce the plating on your Creature, increasing its Armor by your INT score.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Fists of Steel</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Exoskeleton Artifice</i>
+                        <br><br>
+                        You weld a crossing of steel, iron, brass, or other metal onto the hands of 
+                         your suit, causing your Unarmed attacks to deal 1d6 physical damage.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Healbot</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Creature Artifice</i>
+                        <br><br>
+                        You repurpose your Creature to heal instead of harm; from now on, your 
+                         Creature can no longer expend charges to make a special attack, but can instead
+                         expend them to heal a creature it can touch by 1d8 + its CON score; this die
+                         increases in value whenever you upgrade your Creature, as though it were the 
+                         creature’s special attack.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Long-Range Teleporter</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Medium-Range Teleporter</i>
+                        <br><br>
+                        You’re able to once again extend the range of your teleporter all the way to 
+                         30m.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Medium-Range Teleporter</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Teleporter</i>
+                        <br><br>
+                        You’re able to extend the range of your teleporter to 20m.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Quick Deployment</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Turret Artifice</i>
+                        <br><br>
+                        You’ve gotten much better at deploying your Turret when the going gets tough,
+                         allowing you to both place and set up your Turret using 1.5 seconds each.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Reinforced Plating</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Exoskeleton Artifice</i>
+                        <br><br>
+                        You reinforce the plating on your Exoskeleton, increasing the Armor Bonus it
+                         bestows by your INT score.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Sturdier Build</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Turret Artifice</i>
+                        <br><br>
+                        You refine the structure and general build of your Turret, increasing its Health
+                         to your Artificer level + double your INT score.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Journeyman</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid"><!--Corporeal Demolitionist--></button>
+                    <div class="gridtent">
+                    <br>
+                        <!--<i>Prerequisite: Explosives Kits proficiency <u>></u>3</i>
+                        <br><br>
+                        Expanding on your capabilities with explosives, you have learned how to 
+                         integrate Corporeal Aether into your IEDs. By integrating a ½ pound of Air, 
+                         Earth, Fire, or Water Aether into them, your explosives gain the following
+                         benefits:<br>
+                        <br>
+                        <b>Air.</b> Your explosive blows creatures caught in its area
+                         of effect back by 4m; if a creature collides with anything other than the 
+                         ground in its flight, it takes 1d10 additional damage of the appropriate type.<br>
+                        <br>
+                        <b>Earth.</b> Your explosive deals an additional 2d6 physical
+                         damage as solid chunks of rock and stone explode out of it.<br>
+                        <br>
+                        <b>Fire.</b> Your explosive deals an additional 2d6 burn or electric
+                         damage: if you chose burn, the radius of its area of effect increases
+                         by 2m; if you chose electric, enemies who take final damage must
+                         succeed on a <a href="../Part1/Chapter6.html">Fortitude save</a> against twice the final damage they took or
+                         lose their reaction(s) until the start of their next turn.<br>
+                        <br>
+                        <b>Water.</b> The burn damage your explosive deals is replaced by 
+                         freeze/physical damage, as the eruption of hot gases is replaced by a
+                         burst of intense cold and ice shards.<br>
+                        <br>
+                        You must decide which Aether you integrate at the time you 
+                         make the explosive.-->
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Extra Charge</button>
+                    <div class="gridtent">
+                    <br>
+                        While experimenting with your Artifice(s), you’ve found a way to increase the
+                         number of charges at its disposal, granting your Artifice(s) one additional 
+                         charge with which to use its special ability. This charge does not affect the
+                         damage your Artifice(s) deal(s). This class feat can be taken multiple times.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Harmacist</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Healbot</i>
+                        <br><br>
+                        This feat allows your Creature to regain its special attack; it can now expend
+                         charges to use its special attack as though it had never lost it as well as 
+                         expend them to heal a creature.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Power Punch</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Fists of Steel</i>
+                        <br><br>
+                        You’ve attached a pair of pistons and metal fists onto your suit, allowing you
+                         to use a charge to make your punches incredibly strong until the end of your 
+                         next turn. These punches deal 1d10 physical base damage and scale with the 
+                         Unarmed skill.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Remote Turret</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Turret Artifice</i>
+                        <br><br>
+                        You’ve engineered a way to control your Turret remotely, allowing you to aim
+                         and fire it from a distance of up to 20m (it must already be set up for you to do
+                         this). This feat would also allow you to
+                         prevent the Turret from being used by someone you don’t want using it so long as you
+                         are within 20m of it.
+                    <br><br>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <button type="button" class="grid">Transposed Assault</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Teleporter</i>
+                        <br><br>
+                        You’ve found a way to enhance the workings of the teleporter. The user now 
+                         knows exactly where and how they will place themselves and can use that
+                         knowledge to make a single attack using the same time that they took when
+                         they teleported, assuming the attack would normally take you <u>&#60;</u>3 seconds.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Expert</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid"><!--Ethereal Demolitionist--></button>
+                    <div class="gridtent">
+                    <br>
+                        <!--<i>Prerequisite: Corporeal Demolitionist and Explosives Kits proficiency <u>></u>4</i>
+                        <br><br>
+                        Your talent with explosives grows evermore, allowing you to work Ethereal 
+                         Aether into your fireworks. By integrating a ½ pound of Death, Gravity, Life, or
+                         Magic Aether into your bombs, your explosives gain the following benefits:<br>
+                        <br>
+                        <b>Death.</b> Your explosive deals an extra 2d6 rotting damage
+                         and all creatures that took final damage from the blast must succeed on a 
+                         <a href="../Part1/Chapter6.html">Fortitude save</a> against 
+                         twice the final damage they took or be <a href="../Part6/Chapter3.html">sickened</a>
+                         for the next minute.<br>
+                        <br>
+                        <b>Gravity.</b> Your explosive pulls all creatures in a 4m
+                         radius beyond the explosion’s normal area of effect in by 6m.<br>
+                        <br>
+                        <b>Life.</b> Your explosive does not deal damage, but instead 
+                         restores an amount of Health equal to the damage it would have dealt.<br>
+                        <br>
+                        <b>Magic.</b> The damage of the blast is rolled with advantage, as the
+                         explosive appears to be in one place but is actually in another.<br>
+                        <br>
+                        You must decide which Aether you integrate at the time you 
+                         make the explosive.-->
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Integrated Artifices</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: <u>></u>2 Artifices</i>
+                        <br><br>
+                        Using this feat, you are able to combine two of your Artifices into a single
+                         mechanism, granting the new machine capabilities truly unique to it. You can 
+                         make the following combinations:<br>
+                        <b>Creature and Exoskeleton.</b> You permanently affix the 
+                         Exoskeleton to the Creature, which then gains its benefits.<br>
+                        <b>Creature and Turret.</b> You’ve managed to permanently affix the Turret to the
+                         Creature, allowing the Creature to fire the Turret as though it were the user, or 
+                         for a rider to be the user; for the purposes of firing the Turret, the Creature
+                         gains 3 proficiency in Firearms.<br>
+                        <b>Exoskeleton and Turret.</b> The Turret permanently becomes 
+                         one of the Exoskeleton’s equipped weapons, and it no longer requires any time
+                         to place, though it does require 1.5 seconds to activate/deactivate, and while 
+                         activated that arm cannot be used for anything other than the Turret; additionally,
+                         this means that no one other than you can use the Turret, but otherwise, you can now
+                         use the Turret as normal. Unfortunately, since the Turret has been re-engineered to
+                         be smaller and lighter, its base damage is reduced to 1d8, and the magnitude of
+                         the flamethrower damage is also reduced by 1, i.e. 1d6 base damage becomes 1d4,
+                         1d10 becomes 1d8, etc.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Teleporter</button>
+                    <div class="gridtent">
+                    <br>
+                        You’ve managed to create a mechanical and scientific means of something
+                         that was previously only possible via the arcane: teleportation! With
+                         this feat, you’ve managed to tinker together a short-range,
+                         single-person teleporter that allows the user to take 3 seconds (independent of their DEX) to 
+                         instantly transport themselves to an unoccupied space that they can see
+                         within 10m.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Master</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid"><!--Quintessential Demolitionist--></button>
+                    <div class="gridtent">
+                    <br>
+                        <!--<i>Prerequisite: Ethereal Demolitionist and Explosives Kits proficiency <u>></u>5</i>
+                        <br><br>
+                        Your command of explosives is unparalleled, allowing you to amalgamate 
+                         Quintessential Aether into your pyrotechnics. Using a ½ pound of Dark, Light, 
+                         Space, or Time Aether, your explosives gain the following benefits:<br>
+                        <br>
+                        <b>Dark.</b> In addition to the damage it deals, your explosive
+                         also creates a globe of pure impenetrable darkness of a size equal to its area 
+                         of effect; this globe lasts for the next minute. Since this is arcane darkness,
+                         creatures cannot see through it without arcane aid, such as special enchanted 
+                         items or spells that grant arcane sight.<br>
+                        <br>
+                        <b>Light.</b> Your blast creates a globe of radiant light, with
+                         a radius of bright light equal to the area of effect and an equal radius of dim
+                         light beyond that. Creatures caught in the area of effect of the bright light 
+                         are <a href="../Part6/Chapter3.html">blinded</a> until the end
+                         of their next turn; since this is arcane light, this effect cannot be avoided
+                         except by arcane means. This globe lasts for the next minute.<br>
+                        <br>
+                        <b>Space.</b> The distance that this explosive can be tossed is
+                         doubled, as is its area of effect.<br>
+                        <br>
+                        <b>Time.</b> The explosion causes all creatures who took final
+                         damage from the blast to become <a href="../Part6/Chapter3.html">slowed</a>
+                         for the next minute.<br>
+                        <br>
+                        You must decide which Aether you integrate at the time you 
+                         make the explosive.-->
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var gridtent = this.nextElementSibling;
+                    if (gridtent.style.maxHeight) {
+                        gridtent.style.maxHeight = null;
+                    } else {
+                        gridtent.style.maxHeight = gridtent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </body>
+   
+</html>

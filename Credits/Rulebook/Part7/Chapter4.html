@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 4: Relics</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+       <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 7: Aether</a>
+            <a href="./Chapter1.html">Chapter 1: Aether</a>
+            <a href="./Chapter2.html">Chapter 2: Alchemy</a>
+            <a href="./Chapter3.html">Chapter 3: Concoctions and Enchants</a>
+            <a href="./Chapter4.html" class="active">Chapter 4: Relics</a>
+            <a href="./Chapter5.html">Chapter 5: The Planes</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Chapter3.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Chapter5.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 7: Aether &ensp; &#9776;</span>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 4: Relics</h1></center>
+            
+            <p>Relics are enchanted items that are so incredibly, wondrously powerful, and the 
+             process to create them so complex and beyond Sentient understanding, that their kind 
+             cannot be replicated, which may
+             be for the best, as many of them hold incredible destructive potential within them. So 
+             great is their power that simply by attuning to them – which, strangely enough, can
+             happen near-instantly – the user will be both blessed with some sort of boon and
+             cursed in some way.</p>
+            <p>You can attune to only one relic at a time and cannot unattune from it
+             without destroying the relic. The features, including boons and curses, bestowed by a 
+             relic you have attuned to last until the relic is destroyed or you die; some relic 
+             benefits require the relic to be on your person, and a relic’s description will say if
+             this is the case. If you die and are resurrected within 24 hours, such as through a 
+             Phylactery, the relic is still attuned to you; however, if you die and are not
+             resurrected within that time, the relic is no longer attuned to you. During this 24 
+             hours another person cannot attune to the relic. Lastly, if you ever lose or misplace 
+             the relic, it reappears in your possession next midnight.</p>
+            <p>Given here is a list of relics, along with the boons and curses gained 
+             from attuning to them, and some lore to give them some backstory and an idea of their power,
+             though the information given is vague enough to allow the GM to modify it at their 
+             leisure. Any and all of the information pertaining to a relic, from their very existence
+             to their powers, may be known or unknown to the characters, or even to the common 
+             populace, depending on the nature and history of your GM’s world and their discretion. 
+             You may learn this knowledge through research, from an ally, or through attuning to the
+             relic itself.</p>
+            <p>In addition to its normal properties, which are gained when the user attunes to
+             the relic, each relic can also be awakened, which occurs after the user has 
+             unlocked the relic’s true inner potential. The requirements to do this vary from 
+             relic to relic, and a relic’s description will say what it needs in order to awaken.</p>
+            <p>Lastly, destroying a relic is, as one might imagine, not easy. Each relic has its
+             own special requirements to be destroyed, detailed in the relic’s description;
+             otherwise, the relic is immune to damage.</p>
+             
+            <h2>Relic Boons</h2>
+            <p>Given here is a list of boons, both major and minor, that a relic may bestow when
+             the user attunes to it. The boons should be decided by the GM; when deciding what boons
+             the attuning character receives, you may pick and choose or roll appropriately. If a boon
+             has a * at the end of it, it cannot be granted more than once.</p>
+             
+            <button type="button" class="collapsible">Minor Boons</button>
+            <div class="content">
+            <br>
+                <table>
+                    <tr>
+                        <th>d20</th>
+                        <th>Boons</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>You gain 2 Mana to use on one random <a href="../Part4/Aetherian.html">Aetherian</a>
+                         spell list, determined at the time of your attunement. You regain this Mana
+                         at the end of a rest. If you are an <a href="../Part4/Aetherian.html">Aetherian</a>,
+                         add this to your existing Mana.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>One random ability score increases by .5, to a maximum of 6.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Proficiency in one Action Skill of your choice increases by 1, to a maximum of 5.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Proficiency in one Tool Skill of your choice increases by 1, to a maximum of 5.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Proficiency in one Weapon Skill of your choice increases by 1, to a maximum of 5.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>You become immune to disease.*</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>You have advantage on saves against poisons.*</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>You gain resistance to one random <a href="../Part6/Chapter5.html">damage type</a> that is not true or fatigue.</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Whenever you are healed from any source, you have advantage on the roll to determine the amount.*</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Your DEF score increases by 2 while the relic is in your immediate possession.</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>One of your saves, chosen at random, increases by 1.</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Your walking speed increases by 4m.</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>While you have 1 or more Health, you regain 1 Health at the start of each of your turns.</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>You become immune to a random one of the following: <a href="../Part6/Chapter3.html">blinded</a>, <a href="../Part6/Chapter3.html">charmed</a>, <a href="../Part6/Chapter3.html">deafened</a>, <a href="../Part6/Chapter3.html">frightened</a>, <a href="../Part6/Chapter3.html">paralyzed</a>, <a href="../Part6/Chapter3.html">sickened</a>, <a href="../Part6/Chapter3.html">slowed</a>, or <a href="../Part6/Chapter3.html">stunned</a>.</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>If you are an <a href="../Part4/Aetherian.html">Aetherian</a>, you regain 1 Mana every half hour; otherwise, roll again.</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>You are able to hold your breath for an extra 2 minutes.</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>You gain infrared vision if you did not already have it; otherwise, roll again.*</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Your jump height and distance are doubled.</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Your maximum Health is increased by 1d10.</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>For the purposes of combat, you cannot be surprised.*</td>
+                    </tr>
+                </table>
+            <br>
+            </div>
+            
+            <button type="button" class="collapsible">Major Boons</button>
+            <div class="content">
+            <br>
+                <table>
+                    <tr>
+                        <th>d20</th>
+                        <th>Boons</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>You gain 4 Mana to use on one random <a href="../Part4/Aetherian.html">Aetherian</a>
+                         spell list, determined at the time of your attunement. You regain this Mana
+                         at the end of a rest. If you are an <a href="../Part4/Aetherian.html">Aetherian</a>,
+                         add this to your existing Mana.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>One ability score of your choice increases by 1, up to 6.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Proficiency in one skill of your choice increases by 1, up to 6.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>You gain immunity to <i>moderate</i> or weaker poisons, <i>strong</i> poisons affect you as though they were <i>moderate</i>, and <i>exalted</i> poisons only affect you as though they were <i>strong</i>.*</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>You gain immunity to one <a href="../Part6/Chapter5.html">damage type</a> of your choice that is not true.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Whenever you are healed from any source, you regain the maximum possible amount of Health.*</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Animals become exceptionally friendly with you, granting you advantage on all of your Beast Handling checks and making them hesitant to attack you unless they feel they absolutely have to.*</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Your DEF score increases by 5 while the relic is in your immediate possession.</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Each of your save scores increases by 1.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Your walking speed increases by 8m.</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>While you have 1 or more Health, you regain 1d6 Health at the start of each of your turns.</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>You become immune to any three of the of the following of your choice: <a href="../Part6/Chapter3.html">blinded</a>, <a href="../Part6/Chapter3.html">charmed</a>, <a href="../Part6/Chapter3.html">deafened</a>, <a href="../Part6/Chapter3.html">frightened</a>, <a href="../Part6/Chapter3.html">paralyzed</a>, <a href="../Part6/Chapter3.html">sickened</a>, <a href="../Part6/Chapter3.html">slowed</a>, or <a href="../Part6/Chapter3.html">stunned</a>.</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>If you are an <a href="../Part4/Aetherian.html">Aetherian</a>, you regain 2 Mana every half hour; otherwise, roll again.</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Whenever you are about to perform an action that would result in your misfortune, there is a 50% chance that the relic warns against it in some way, such as by vibrating, a sudden uneasy feeling, or a whisper in your ear.*</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>You are able to breathe safely when you otherwise wouldn’t, such as underwater or in dangerous vapors.*</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>You gain a flying speed of 10m.</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>You immediately become fluent in one language, determined randomly.</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>You gain arcane darkvision if you did not already have it; if you 
+                         do, roll again.*</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>The relic glows with 2m of bright and dim light whenever a creature
+                         hostile to you is within 10m of you. You can suppress this glowing at
+                         will.*</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Your maximum Health is increased by 10+2d10.</td>
+                    </tr>
+                </table>
+            <br>
+            </div>
+            
+            <h2>Relic Curses</h2>
+            <p>Given here is a list of curses, both major and minor, that a relic may bestow when
+             the user attunes to it. The curses should be decided by the GM; when deciding what 
+             curses the attuning character receives, you may pick and choose or roll appropriately. 
+             If a curse has a * at the end of it, then it cannot be received more than once.</p>
+            
+            <button type="button" class="collapsible">Minor Curses</button>
+            <div class="content">
+            <br>
+                <table>
+                    <tr>
+                        <th>d20</th>
+                        <th>Curses</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>One random ability score is reduced by .5, to a minimum of 0.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Proficiency in one random skill that you have <u>></u> 1 proficiency in decreases by 1, to a minimum of 0.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>You have disadvantage on saves against poisons.*</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>You gain vulnerability to one random <a href="../Part6/Chapter5.html">damage type</a> that is not true or fatigue.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Whenever you are healed by any source, you have disadvantage on the roll to determine the amount of Health you regain.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Your DEF score decreases by 2 (minimum 0).</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>One of your saves, chosen at random, decreases by 1.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>You are able to hold your breath for 1 less minute (minimum 30 seconds).</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Your maximum Health is reduced by 1d10.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>You gain permanent disadvantage on saves against a random one of the following conditions: <a href="../Part6/Chapter3.html">blinded</a>, <a href="../Part6/Chapter3.html">charmed</a>, <a href="../Part6/Chapter3.html">deafened</a>, <a href="../Part6/Chapter3.html">frightened</a>, <a href="../Part6/Chapter3.html">paralyzed</a>, <a href="../Part6/Chapter3.html">sickened</a>, <a href="../Part6/Chapter3.html">slowed</a>, or <a href="../Part6/Chapter3.html">stunned</a>.</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>You gain a phobia you did not previously have, causing you to become 
+                         <a href="../Part6/Chapter3.html">frightened</a> whenever it enters your field of
+                         vision or you believe it is within 4m of you.</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>You emit a terrible stench detectable up to 3m away.</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>You immediately go <a href="../Part6/Chapter3.html">unconscious</a> for 1d6 days and cannot be awoken by any means.</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Tiny plants wither and die within 2m of you.</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Tiny flames sputter and die within 2m of you.</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Once every couple of hours, you suffer a horrible coughing fit that deals 1d4 true damage.</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>You lose one of the following, determined randomly: 1 eye, both ears, your nose, 1d4
+                         fingers (not counting your thumbs).</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>When you are <a href="../Part6/Chapter4.html">Enduring</a>, your Endurance Save DR is always 2 higher than normal.</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Whenever you attempt to speak, there is a 5% chance you instead speak gibberish.</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>You lose the ability to smell.*</td>
+                    </tr>
+                </table>
+            <br>
+            </div>
+            
+            <button type="button" class="collapsible">Major Curses</button>
+            <div class="content">
+            <br>
+                <table>
+                    <tr>
+                        <th>d20</th>
+                        <th>Curses</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>One random ability score is reduced by 1, to a minimum of 0.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Proficiency in one random skill that you have <u>></u> 2 proficiency in decreases by 2, to a minimum of 0.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>You automatically fail saves against poisons, and <i>weak</i> poisons affect you as though they were <i>moderate</i>.*</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>You gain vulnerability to three random <a href="../Part6/Chapter2.html">damage types</a> that are not true or fatigue.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Whenever you are healed by any source, all of the dice rolls are taken at their minimum value.*</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Your DEF score decreases by 5 (minimum 0).</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>All of your save scores are decreased by 1.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>You are able to hold your breath for 3 less minutes (minimum 30 seconds).</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Your maximum Health is reduced by 3d10.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Your body takes on the appearance of a half-rotted corpse, though you retain all mechanical functionality.*</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>You immediately go <a href="../Part6/Chapter3.html">unconscious</a> for 5d6 days and cannot be awoken by any means.</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>You become permanently <a href="../Part6/Chapter3.html">deafened</a>.*</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>You gain permanent disadvantage on saves against three of the following conditions, determined at random: <a href="../Part6/Chapter3.html">blinded</a>, <a href="../Part6/Chapter3.html">charmed</a>, <a href="../Part6/Chapter3.html">deafened</a>, <a href="../Part6/Chapter3.html">frightened</a>, <a href="../Part6/Chapter3.html">paralyzed</a>, <a href="../Part6/Chapter3.html">sickened</a>, <a href="../Part6/Chapter3.html">slowed</a>, or <a href="../Part6/Chapter3.html">stunned</a>.</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>If you are an <a href="../Part4/Aetherian.html">Aetherian</a>, your Mana is permanently reduced by 2; otherwise, roll again.</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>You gain a new permanent <a href="../Part6/Chapter17.html">madness</a>.</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Animals are now hostile towards and afraid of you, granting disadvantage on all of your Beast Handling checks and making them willing to attack you at the slightest provocation.*</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>You become <a href="../Part6/Chapter3.html">blinded</a> and <a href="../Part6/Chapter3.html">deafened</a> whenever the relic is not in your immediate possession.*</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>You forget one language, determined randomly.</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>You immediately age 4d10 years.</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>You lose a level; if you have taken a level in more than one class, which class you lose a level in is determined at random.</td>
+                    </tr>
+                </table>
+            <br>
+            </div>
+            
+            <h2>Relics</h2>
+            
+            <center>
+            
+            <button type="button" class="collapsible">Excalibur</button>
+            <div class="content">
+            <br>
+                <p><b>Lore.</b> Throughout the pages of history this mythical sword has gone by many 
+                 names: Excalibur, Masamune, Tyrfing, Andúril. Throughout all of the legends, one 
+                 commonality arises: a blade of great and unmatched power, that makes kings and 
+                 legends of its wielders. It is said that, throughout its life, Excalibur has slain 
+                 millions, be it through warfare, single combat, public execution, or any other 
+                 method. Today, no Sentient can possibly know where history ends and legends begin, 
+                 but any who wield this mythical blade quickly find that with a weapon like this at 
+                 your side, such feats are not outside the realm of possibility.</p>
+                <br>
+                <p><b>Boons and Curses.</b> Excalibur bestows the following boons and
+                 curses: 2 Minor Boons, 1 Major Boon, 1 Minor Curse, and 1 Major Curse. Upon 
+                 awakening, it bestows 1 more Major Boon and 1 more Minor Curse.</p>
+                <br>
+                <p><b>Properties.</b> When attuned to Excalibur, the user’s STR or DEX
+                 (their choice) score immediately increases by .5, to a maximum of 6. Additionally, 
+                 while Excalibur is always described as a sword, the user can use 2 actions to 
+                 transform it into any Small, Medium, or Large weapon. Whatever form the weapon 
+                 takes, and regardless of the user’s proficiency with the appropriate skill, attacks
+                 with it are made at 5 proficiency and have a +5 bonus. At the start of combat, the
+                 user also gains a +1d6 bonus to their initiative roll. Additionally, the mythical
+                 blade grants a +3 bonus to the user’s Armor score so long as Excalibur is on their
+                 person.</p>
+                <p>Excalibur’s final feature is also its most noteworthy: at any time
+                 while the user is holding it, they can choose to instantly engulf the blade in ice,
+                 fire, lightning, acid, venom, or psychic energy. Whichever they choose, the sword 
+                 deals one extra die of damage of the appropriate type: freeze for ice, burn for
+                 fire, electric for lightning, caustic for acid, poison for venom, or psychic for 
+                 psychic energy. So, if Excalibur were to become a dagger engulfed in flame, attacks
+                 made with it would deal 5d4 physical + 1d4 burning damage.</p>
+                <br>
+                <p><b>Awakening.</b> Should Excalibur be wielded by a leader – such as
+                 someone with royal blood or an elected ruler – its true power unlocks.</p>
+                <br>
+                <p><b>Awakened Properties.</b> Once awakened, Excalibur’s power 
+                 increases the user’s previously chosen ability score by another .5 (up to 6), and it
+                 can now change form instantly. Additionally, the user’s proficiency when wielding 
+                 Excalibur increases to 6, as does the bonus to its attacks.  The initiative bonus 
+                 also increases to +1d12, and the +3 Armor bonus becomes +6. The last change is that
+                 the damage of the chosen engulfment increases to two extra damage dice.</p>
+                <br>
+                <p><b>Destruction.</b> Somewhere in the world, legend tells of a lake
+                 from whence Excalibur was gifted to its original wielder, whose name and deeds have
+                 been lost to time. Many scholars and mythologists believe that, should Excalibur be 
+                 returned to this lake, it would disappear from the world forever, never to be seen or
+                 used again. Throwing the sword into the lake requires a successful DR 30 Willpower 
+                 save; should the user fail the save, they must wait 24 hours before they can try 
+                 again.</p>
+            <br>
+            <br>
+            </div>
+            
+            <button type="button" class="collapsible">Handcannon</button>
+            <div class="content">
+            <br>
+                <p><b>Lore.</b> The Handcannon is a perfect marriage of firepower and arcana.
+                 What appears as a single large revolver is, in fact, much more.</p>
+                <br>
+                <p><b>Boons and Curses.</b> The Handcannon bestows the following boons
+                 and curses: 1 Minor Boon, 1 Major Boon, and 2 Minor Curses. Upon awakening, it 
+                 bestows 1 more Minor Boon.</p>
+                <br>
+                <p><b>Properties.</b> For the most part, the Handcannon functions as a
+                 normal revolver, except for a few notable differences: firstly, upon attuning, the 
+                 user’s Firearm proficiency increases by 1, up to 6; secondly, its base 
+                 damage is 1d8; and thirdly, the user gains a bonus to Handcannon attacks equal to 
+                 their Firearm proficiency.</p>
+                <p>The final and much more noteworthy difference between the 
+                 Handcannon and an ordinary revolver is the <b>Arcane Shot</b>, which causes a random
+                 arcane effect to occur every time the Handcannon is fired. Roll on the following 
+                 table to determine which effect occurs whenever you fire the Handcannon.</p>
+                <table>
+                    <tr>
+                        <th>d6</th>
+                        <th>Arcane Effect</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Your bullet deals an additional 1d6 burn damage and sets Tiny or 
+                         smaller items on fire.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Your bullet deals an additional 1d6 freeze damage and freezes Tiny 
+                         or smaller items. It also freezes up to 1x1x1 meters of 
+                         water, even if that water is part of a larger body.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Your bullet deals an additional 1d6 poison damage and your target
+                         must make a Fortitude save against the amount of final damage dealt or
+                         be <a href="../Part6/Chapter3.html">sickened</a> for 1 minute.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Your bullet deals an additional 1d6 physical damage and if your 
+                         target is Big or smaller, they must make a Fortitude save against the
+                         amount of final damage dealt or be pushed back 2m. If they are Tiny,
+                         they are pushed back 4m. Unworn items are also pushed back and 
+                         have a hole blown into them that is about 8-15cm in diameter
+                         and 2-8cm deep, depending on the material.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Your bullet deals an additional 1d6 electric damage and electrifies
+                         conductive surfaces in a 1m radius for an instant, centered on
+                         where the bullet hit the water. Enemies hit by this effect cannot take
+                         reactions until the start of their next turn.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Your bullet deals an additional 1d6 caustic damage and corrodes 
+                         metal in a 5cm radius, centered where the bullet hit the metal. If
+                         your target is wearing metal armor, the Armor bonus from that armor is 
+                         reduced by 1.</td>
+                    </tr>
+                </table>
+                <br>
+                <p><b>Awakening.</b> When the user fires the Handcannon at least once 
+                 every day for one year, it will awaken. As it gets closer to awakening, it relays that
+                 to the user through some kind of stimulus, such as the appearance of decorative 
+                 arcane runes or a growing sense of power and strength.</p>
+                <br>
+                <p><b>Awakened Properties.</b> When it awakens, the Handcannon increases the 
+                 user’s Firearm proficiency by another 1, up to 6, and the user can now choose
+                 which Arcane Effect occurs whenever you fire, instead of having to roll for it.</p>
+                <br>
+                <p><b>Destruction.</b> To destroy a Handcannon, it must be subjected 
+                 to each and every one of the Arcane Effects from another Handcannon by the next 
+                 midnight. This means that it must be shot by one or more other Handcannons at least
+                 6 times, until it has suffered each of the Arcane Effects, at which point it 
+                 shatters. Alternatively, striking the Handcannon with each of Excalibur’s engulfments
+                 will also shatter it.</p>
+            <br>
+            <br>
+            </div>
+            
+            <button type="button" class="collapsible">The Necronomicon</button>
+            <div class="content">
+            <br>
+                <p><b>Lore.</b> Bound in Sentient flesh and inked in Sentient blood, the Book of
+                 the Dead is the sum culmination of an insane warlock's studies, knowledge, 
+                 worship, and contact with various beings from the Unknown Plane. As such,
+                 as the receptor for such vile and corrupting alien energies, the Necronomicon
+                 is an unmatched collection of otherworldly knowledge and power, its power
+                 having grown so great as to gain a corrupting will of its own.</p>
+                <br>
+                <p><b>Boons and Curses.</b> The Necronomicon bestows 1 Minor Boon, 1 Major Boon,
+                 2 Minor Curses, and 1 Major Curse, as well as a new 
+                 <a href="../Part6/Chapter17.html">madness</a> that cannot be cured while attuned
+                 to the book. Upon awakening, it bestows 1 more Minor Boon,
+                 1 more Minor Curse, 1 more Major Curse, and another incurable 
+                 <a href="../Part6/Chapter17.html">madness</a>.</p>
+                <br>
+                <p><b>Properties.</b> The Necronomicon is a sentient grimoire chock-full of evil,
+                 eldritch, otherworldy spells, containing 10 + 1d10
+                 <a href="../Part4/Spellcasting.html">otherworldly spells</a> (some of which can be
+                 <a href="../Part4/Aetherian.html">Aetherian</a> spells), and 20 Mana with
+                 which to cast them; exactly which spells are up to the GM. While attuned, the 
+                 Necronomicon is telepathically linked to the user, and will corrupt them and
+                 bid them toward vile deeds as frequently as it sees fit.</p>
+                <p>Another property of the Necronomicon is that, while attuned, any spell 
+                 the user casts through it has a 10% chance of misfiring.</p>
+                <br>
+                <p><b>Awakening.</b> There are a handful of passages within the Necronomicon so
+                 absolutely vile and corrupting that simply reading them aloud has a tangible
+                 effect on both the user and the tome itself, awakening it.</p>
+                <br>
+                <p><b>Awakened Properties.</b> Upon awakening, 1d10 more spells appear or become
+                 readable to the user in the tome.
+                 Secondly, the chances of a spell misfiring when cast through the book increases to 15%.</p>
+                <p>Lastly, the overpowering will of the book itself becomes stronger as well:
+                 whenever the Necronomicon bids the user to perform its bidding, the user must 
+                 succeed on a DR 20 Willpower save or perform the desired action; every time this
+                 save is failed, the DR increases by 1.</p>
+                <br>
+                <p><b>Destruction.</b> By otherworldly powers the Necronomicon was created, and
+                 so by those same eldritch forces it must be undone: should the Necronomicon be
+                 consumed by an Other or subjected to 500 points of damage from otherworldly spells,
+                 it will be destroyed and wiped from this 
+                 universe forever. Other worlds' Necronomicons, however...</p>
+            <br>
+            <br>
+            </div>
+            
+            <button type="button" class="collapsible">The Philosopher's Stone</button>
+            <div class="content">
+            <br>
+                <p><b>Lore.</b> The Magnum Opus, the Elixir of Life, the White Stone; the 
+                 Philosopher’s Stone goes by all of these names and many more. Considered the 
+                 absolute pinnacle of alchemy, the Stone holds the power to make nigh-undying
+                 emporers of those who can master its power. It is unknown when or how the Stone
+                 was forged, and all attempts to replicate it have failed, but many historians
+                 and archaeologists have found material that suggests doing so
+                 requires the sacrifice of living beings.</p>
+                <br>
+                <p><b>Boons and Curses.</b> The Philosopher’s Stone bestows the 
+                 following boons and curses: 2 Minor Boons, 1 Major Boon, 1 Minor Curse, 1 Major 
+                 Curse. Upon awakening, it bestows 1 more Minor Curse.</p>
+                <br>
+                <p><b>Properties.</b> One of the most well-known and widely misrepresented
+                 features of the Philosopher’s Stone is that it can permanently transform any 
+                 substance, regardless of physical makeup, into any other substance of any other
+                 physical makeup (popularized as "turning lead into gold", though the Stone 
+                 could turn any substance into gold, or anything else for that matter).</p>
+                <p>Upon attuning to the Stone, the user’s proficiency with Alchemy Tools 
+                 immediately increases by 3, up to 6. While the Stone is in their immediate 
+                 possession, they can brew any concoction without the need for non-Aether
+                 resources in half the time; likewise, enchanting items takes half as long as it
+                 normally would.</p>
+                <p>Additionally, the Stone has 20 Mana, which the user can use to cast the <i>Shape
+                 Matter</i> spell, with the following changes:</p>
+                <ul>
+                    <li>The Casting Time is only 1 action;</li>
+                    <li>The Area of Effect is a 5-meter cube;</li>
+                    <li>The Range increases to 20 meters.</li>
+                </ul>
+                <p>The third property of the Stone is that through it, the user can transmute flesh to both
+                 heal wounds and extend their own life. In addition to the <i>Shape Matter</i> spell, the
+                 user can also use an action and expend <u>></u>1 Mana to restore 1d10 Health to any living
+                 creature they can touch; for every 1 extra Mana they spend to do this, the amount of Health
+                 they restore increases by 1d10 - this does not restore missing organs or appendages, but 
+                 will seal fatal wounds. The Stone regains all 20 Mana at midnight. 
+                 Additionally, the Stone slows the user’s aging process; while attuned to it,
+                 the user ages 1 year for every 10 years that pass.</p>
+                <p>Fourth and lastly, the knowledge the Stone imparts increases the user’s INT 
+                 score by .5, to a maximum of 6, and increases their Arcana, Nature, and Alchemy Supplies 
+                 proficiencies by 1, up to 6.</p>
+                <br>
+                <p><b>Awakening.</b> Awakening the Philosopher’s Stone requires that which it does best:
+                 transmutation. Should the user spend all of the Stone's Mana on casting the <i>Shape
+                 Matter</i> spell 10 times, the Stone will awaken.</p>
+                <br>
+                <p><b>Awakened Properties.</b> When the Stone awakens, the Mana at its
+                 disposal increases to 30, all of which it regains at midnight; it can now also
+                 replenish the Health of any creature that has died within 24 hours and restore
+                 lost organs and appendages (if the target's soul is unable or unwilling to return
+                 to its body, the body will be revived as a 
+                 <a href="../../Bestiary/Sentients.html">Revenant</a>). It also further increases the user’s
+                 INT score by another .5, up to 6, and increases their Arcana, Nature, and Alchemy Supplies
+                 proficiencies by another 1, up to 6.</p>
+                <br>
+                <p><b>Destruction.</b> Should the Stone be consumed by a pregnant 
+                 Sentient, that child will be born a Rebus - a hermaphroditic 2nd level
+                 <a href="../Part4/Aetherian.html">Mattemancer</a>
+                 and <a href="../Part3/Elementia.html">Space Elementia</a>, with an 
+                 additional amount of Mana at their disposal equal to half their <a href="../Part4/Aetherian.html">Aetherian</a>
+                 level, rounded up; additionally, the Rebus will live 10 times longer than they 
+                 otherwise would. When the Rebus dies, the Philosopher’s Stone is destroyed. If the
+                 pregnancy does not come to term, such as through an abortion, miscarriage, or 
+                 stillbirth, then the Sentient who ingested the Stone will vomit it back up when the
+                 fetus dies.</p>
+            <br>
+            <br>
+            </div>
+            
+            <button type="button" class="collapsible">Titan Scale</button>
+            <div class="content">
+            <br>
+                <p><b>Lore.</b> Beings with power second only to the gods, Titans are creatures of 
+                 immense power and colossal size, of which only a handful have ever existed, and even
+                 fewer have been killed; to say that this is an incredibly difficult feat would be a
+                 massive understatement, but it is not impossible. However, when they are killed, 
+                 that then allows the slayer to take one or more of their scales as a trophy, which
+                 themselves contain a fragment of the Titan’s power. Over time, a Titan’s body rots 
+                 away and decays, and only two remnants of their existence remain: their skeletons,
+                 which are monumental in and of themselves; and fragments of their scales, which are
+                 occasionally found and dug up, granting their wielder the powers of a Titan.</p>
+                <br>
+                <p><b>Boons and Curses.</b> A Titan Scale bestows the following boons
+                 and curses: 1 Minor Boon, 1 Major Boon, 1 Minor Curses, and 1 Major Curse. Upon 
+                 awakening, it bestows 1 more Minor Boon and 1 more Minor Curse.</p>
+                <br>
+                <p><b>Properties.</b> When the user attunes to a Scale, it becomes 
+                 part of their body as it embeds itself in their flesh. In so doing, it imparts
+                 several of the Titan’s powers to the user, and for all of them except the STR 
+                 increase and Drake fluency, the Scale has 3 charges at its disposal to use them; it
+                 regains all of the expended charges at midnight.</p>
+                <p>The first and second of these powers immediately increases the 
+                 user’s STR score to 5 (or increases it by .5, up to 6, if the user’s STR score is 
+                 already 5 or 5.5) and makes them fluent in Drake if they weren’t already.</p>
+                <p>The third and more noteworthy power is the Titan’s breath weapon. 
+                 There are 6 possible breath weapons: acid, fire, ice, lightning, psychic energy, and
+                 poison; the obtainer of the Scale gains use of one of these (GM’s choice). At the 
+                 cost of 2 actions and 1 charge, the user can choose to exhale a stream of their
+                 breath weapon in either a 16m line or an 8m cone. In either case, every 
+                 creature caught in the blast takes 6d6 of the appropriate damage (caustic for acid,
+                 burn for fire, freeze for ice, electric for lightning, psychic for psychic energy, 
+                 and poison for poison).</p>
+                <p>The fourth and final power is the Titan’s flight, which manifests 
+                 as a pair of magnificent wings that sprout from the user’s back at the cost of 2 
+                 actions and 1 charge. These wings grant the user a flying speed of 16m for 1 hour.</p>
+                <p>The last property of the Scale is not a power of the Titan’s, but
+                 more its mark. When the user attunes to the Scale, in several random places on their
+                 body, scales of the Titan’s color begin to grow (black, blue, green, purple, red, or
+                 white), increasing the user’s Armor score by 2.</p>
+                <br>
+                <p><b>Awakening.</b> Should the user obtain and “attune” to a second 
+                 Scale from the same Titan, the Scale will awaken.</p>
+                <br>
+                <p><b>Awakened Properties.</b> When the Scale awakens, the user’s STR
+                 score becomes 6 if it wasn’t already, and the Scale gains 3 more charges with which
+                 to use its powers. Additionally, each of the powers undergoes the following changes:
+                 the breath weapon’s range increases to 30m (line)/15m (cone), 
+                 and the damage increases to 8d8; the flight speed increases to 20m; the
+                 scales grow, becoming thicker and covering more of your body, increasing your Armor score 
+                 by another 2; and lastly, your Intimidation proficiency increases by 1, up to 6, as
+                 the might and sheer power of the Titan fills your body, mind, and soul.</p>
+                <br>
+                <p><b>Destruction.</b> A Scale can only be destroyed by another 
+                 Titan’s breath. A Scale has 50 Health (100 if awakened) separate from the user, and
+                 should the user be hit by another Titan’s breath weapon, any damage they take is 
+                 likewise applied to the Scale. If the Scale’s Health is reduced to 0, it shatters, 
+                 and the scales that have grown on the user’s body rot and fall off.</p>
+            <br>
+            <br>
+            </div>
+            
+            </center>
+            
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+   
+</html>

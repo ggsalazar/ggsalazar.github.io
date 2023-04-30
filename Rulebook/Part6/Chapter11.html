@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 11: Crafting</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+       <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 6: Adventuring</a>
+            <a href="./Chapter1.html">Chapter 1: Actions</a>
+            <a href="./Chapter2.html">Chapter 2: Damage Types</a>
+            <a href="./Chapter3.html">Chapter 3: Conditions</a>
+            <a href="./Chapter4.html">Chapter 4: Enduring</a>
+            <a href="./Chapter5.html">Chapter 5: Combat</a>
+            <a href="./Chapter6.html">Chapter 6: Brightness</a>
+            <a href="./Chapter7.html">Chapter 7: Weather</a>
+            <a href="./Chapter8.html">Chapter 8: Traveling</a>
+            <a href="./Chapter9.html">Chapter 9: Languages</a>
+            <a href="./Chapter10.html">Chapter 10: Downtime</a>
+            <a href="./Chapter11.html" class="active">Chapter 11: Crafting</a>
+            <a href="./Chapter12.html">Chapter 12: Chases</a>
+            <a href="./Chapter13.html">Chapter 13: Traps</a>
+            <a href="./Chapter14.html">Chapter 14: Puzzles</a>
+            <a href="./Chapter15.html">Chapter 15: Random Encounters</a>
+            <a href="./Chapter16.html">Chapter 16: Lingering Injuries</a>
+            <a href="./Chapter17.html">Chapter 17: Madness</a>
+            <a href="./Chapter18.html">Chapter 18: Adventure Hooks</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Chapter10.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Chapter12.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 6: Adventuring &ensp; &#9776;</span>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 11: Crafting</h1></center>
+            <h2>Creating Equipment</h2>
+            <p>Crafting is exactly what it sounds like: you are using tools that you own and have
+             proficiency with to create gear and equipment from scratch (provided you also have the 
+             necessary materials). Given here is a list of tools, and for each tool, a list of items
+             that can be created and the resources (including time and money) needed to make each 
+             item. <a href="../Part5/Chapter4.html">This chapter</a> contains a
+             list of crafting resources and their costs. If an activity does not explicitly say how
+             long it takes, assume it takes an entire day’s rest.</p>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Alchemy Supplies</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Alchemy.</b> The details of alchemy are covered 
+                         <a href="../Part7/Chapter2.html">here</a>.<br>
+                        <br>
+                        <b>Gunpowder.</b> These tools can be used to create a pound of gunpowder, provided 
+                         you also have 1 Aeon's worth of sulfur, charcoal, and saltpeter. This requires a 
+                         successful DR 15 check with these tools; should you fail, you will take 2d6 burn 
+                         final damage as the reagent violently explodes.<br>
+                        <br>
+                        <b>Smoke Bombs.</b> Smoke bombs allow a creature to take the Hide action so long as
+                         they are standing within the area covered by the smoke. The smoke from one of these 
+                         bombs lasts for a minute or until a strong wind blows it away. The DR to create a 
+                         smoke bomb of a given size is equal to 3 times a single dimension of space that the smoke 
+                         would occupy, e.g. the DR to craft a smoke bomb that covers a 6x6x6 area is 18. 
+                         These can also be crafted with Explosives Kits.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Art Supplies</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Drawing.</b> To create a drawing, you need 1 sheet of parchment and drawing 
+                         utensils, both of which are included with the supplies. 6d4 hours must be spent 
+                         working on the drawing, though the amount of d4s that must be rolled is reduced by
+                         an amount equal to your Art Supplies proficiency. The quality of the drawing is 
+                         determined by the result of an Art Supplies check. The drawing is not worth very 
+                         much on its own, but may come in handy in other ways.<br>
+                        <br>
+                        <b>Painting.</b> To create a painting, you need an easel, paints, and paint brushes,
+                         all of which are included with the supplies. 10d10 hours must be spent working on 
+                         the painting, though the amount of d10s that must be rolled is reduced by an amount
+                         equal to your Art Supplies proficiency. The quality of the painting is determined 
+                         by the result of an Art Supplies check; the exact worth of the painting in Aeons is
+                         equal to half the result of your check.<br>
+                        <br>
+                        <b>Sculpture.</b> To create a sculpture, you need sculpting tools – included with the
+                         supplies – and enough clay to sculpt your project. It takes 1d12 hours to sculpt 
+                         something from 30 cubic centimeters of clay, which costs 2 Aeons. Ergo, if you wished to 
+                         create a 180cm tall sculpture of a Sentient, it would cost you 12 (2 times 6) 
+                         Aeons in clay and 6d12 hours in time. The worth of your creation in Aeons is equal to twice
+                         the result of your check.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Blacksmithing Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Armor.</b> To forge armor, you need a forge and enough materials to craft the
+                         desired item. For simplicity, assume a single ingot of metal is enough to forge 
+                         20 pounds of armor, and it takes a number of hours equal to double the weight of
+                         the armor to forge it. The DR to craft armor is triple the Armor bonus the armor
+                         gives you; ergo, the DR to forge Normal plate armor (Beast Hide and Steel)
+                         would be 30; to forge Masterful plate armor (Dragon Scale and Monster 
+                         Hide) would be 48. Failing the check will not expend your resources, and you can
+                         try again as many times as you need.<br>
+                        <br>
+                        <b>Weapons.</b> To forge weapons, you need a forge and enough steel or adamantite to
+                         craft the desired item (mithril is too heavy to use for weaponry). For simplicity,
+                         assume a single ingot of metal is enough to forge 20 pounds of weaponry, and it takes a
+                         number of hours equal to double the weight of the weapon to forge it. The DR to 
+                         create Normal weapons is equal to double the maximum value of its base 
+                         damage die, e.g. the DR to create a Normal dagger is 8, since its base 
+                         damage die is a d4. For higher-quality weapons, the DR increases by the maximum value
+                         of the base damage die for each level of quality above Normal, e.g. the DR to craft a 
+                         Fine dagger is 12 (8+4), the DR for an Exquisite dagger is 16, and so
+                         on. Repeaters and revolvers are the exception; for them, the Normal DR is triple the
+                         maximum value of their base damage die. Normal and Fine weapons require steel, while
+                         Exquisite and Masterful weapons require adamantite. Failing the check will
+                         not expend your resources, and you can try again as many times as you need.<br>
+                        <br>
+                        <b>Mech Weapons.</b> To create a mech weapon, you can forge the individual parts using
+                         the normal DRs, but must use tinkering tools to amalgamate them into one object; 
+                         refer to <b>Mech Weapons</b> under Tinkering Tools below.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Carpentry Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Furniture.</b> Crafting furniture requires twice the weight in timber as the 
+                         final weight of the finished item, and takes 6d6 days, though the number of d6s 
+                         rolled to determine the time necessary is reduced by an amount equal to your 
+                         Carpentry Tools proficiency. The DR to create a piece of furniture is equal to its
+                         weight in pounds. The worth of your creation in Aeons is equal to ¼ the result of 
+                         your check.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Cartography Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Maps.</b> During your downtime, you can use your cartography tools to create a map of
+                         an area you are familiar or unfamiliar with. In either case, the quality and 
+                         accuracy of the map is determined by the result of your check with these tools. 
+                         Creating a map of an area that you are familiar with requires 1d6 Aeons in research
+                         to reaffirm your knowledge and 1 day doing the research and drawing the map; to 
+                         create a map of an unfamiliar area, you need to spend 2d10 Aeons in research, 2 
+                         days doing the research and drawing the map, and you have disadvantage on the check.
+                         The Navigation bonus granted by a map is equal to half the result of your check.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Cooking Supplies</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Meals.</b> Over the course of 1d4 hours, you can prepare enough food for 1-5 
+                         people that restores an amount of Health equal to the result of your check with 
+                         these tools + their CON score; this can be done twice a day, and each instance 
+                         must be at least 6 hours apart.<br>
+                        <br>
+                        <b>Rations.</b> You can use 1d6 hours to prepare 1 day of rations for 1-5 people. Once per
+                         day, these rations restore an amount of Health equal to half the result of your 
+                         check + their CON score.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Disguise Kits</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Disguises.</b> A disguise kit can be used to create a disguise of your design, 
+                         expending the kit in so doing. To make the disguise, you must expend 1d6 Aeons and 
+                         1 day in research and resource-gathering, then spend another day creating the 
+                         costume itself. The Insight/Perceive DR to see through your disguise is equal to
+                         the result of your check.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Explosives Kits</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Explosives.</b> Using a bit of gunpowder and a handful of hours, you can craft
+                         grenades and other improvised explosive devices, or IEDs.<br>
+                        Each meter of radius for your explosives requires ½ a pound of gunpowder
+                         and 1d6 hours; so for example, if you wanted to create a grenade that 
+                         affects a 6m diameter sphere, that would require 1½ pounds of gunpowder
+                         and 3d6 hours. The fuse time – the time it takes for an explosive to
+                         explode – for a standard grenade is a few seconds, but you can specify
+                         a different fuse time for any explosives of your own creation. For a
+                         fuse time of 3 seconds, assume the grenade explodes at the end of 
+                         your turn; for 3.1-6 seconds, assume it explodes during your next turn;
+                         for 6.1-9 seconds, assume it explodes during your second next turn, and
+                         so on.<br>
+                        <br>
+                        The damage your explosive deals starts at 2d8 burn with ½ a pound of gunpowder, and
+                         increases with additional ½-pounds: specifically, at 1 pound of gunpowder, your
+                         explosive deals 3d8 burn damage, then 3d10 at 1½ pounds, then 4d10 at 2 pounds,
+                         then 4d12 at 2½; each additional ½-pound then increases the damage by 1d12.<br>
+                        <br>
+                        Lastly, while crafting an explosive of any kind, you must succeed on a DR 10 DEX + 
+                         your Explosives Kits proficiency check to avoid making a mistake and having the 
+                         entire thing explode, in which case you and all other creatures in the would-be
+                         area of effect take the damage the finished explosive would have dealt;
+                         <b>you</b> do not reduce this damage by your RaDEF score, only your Armor score.<br>
+                        <br>
+                        <b>Smoke bombs.</b> Smoke bombs allow a creature to take the Hide action so long as
+                         they are standing within the area covered by the smoke. The smoke from one of these
+                         bombs lasts for a minute or until a strong wind blows it away. The DR to create a 
+                         smoke bomb of a given size is equal to 3 times a single dimension of space that the
+                         smoke would occupy, e.g. the DR to craft a smoke bomb that covers a 6x6x6 area 
+                         is 18. These can also be crafted with Alchemy Supplies.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Forgery Kits</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>“Official” Documents.</b> Using these tools, you can forge documents that state
+                         that you are someone else, including but not limited to nobles, government
+                         officials, and other aristocracy; doing so expends the parchment, ink, and wax of the
+                         kit (the cost to replace these is half the cost of the kit). To craft such papers 
+                         requires 1d10 Aeons in research and 2 days to perform said research and forge the
+                         documents themselves. The Insight DR to see through your forgeries is equal to the
+                         result of your check with these tools.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Gunsmithing Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Bullets.</b> Provided you have gunpowder at your disposal, you can spend your
+                         downtime forging bullets with these tools. Over the course of a night's rest, you
+                         can make a check with these tools and create a number of bullets equal to half the
+                         result, granted you have enough gunpowder; it takes ½ an ounce of gunpowder to make
+                         1 bullet (there are 16 ounces in a pound).
+                         During a day's rest, you make an amount of bullets equal to twice the 
+                         result of your check. LRR bullets, on the other hand, take 2 ounces of gunpowder
+                         and during a night's rest, you make a number of those equal to 1/10th the result
+                         of your check, disregarding the remainder; during a day's rest, you make a
+                         number of LRR bullets equal to 1/4 the result of your check, again disregarding
+                         the remainder.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Leatherworking Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Armor.</b> During your downtime, assuming you have the required amount of 
+                         leather, you can craft any armor of your choice that is made of hide. The amount of
+                         leather required, in pounds, is equal to the weight of the armor you wish to craft;
+                         the DR to make the armor is equal to twice the weight of the armor.<br>
+                        <br>
+                        <b>Leather.</b> Using these tools you can tan any hides you may
+                         have in your possession, turning them into leather over the course of a week. You 
+                         can then use that leather to make armor.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Tinkering Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Devices.</b> With an appropriate amount of scrap metal (and 
+                         <a href="../Part7/Chapter1.html">Aether</a> if necessary), you can create any device
+                         you can think of, so long as you can adequately explain how it works and how you 
+                         make it, and most importantly, as long as your GM allows it. The amount of scrap
+                         metal needed to make a device is equal to twice the finished device’s weight.<br>
+                        <br>
+                        <b>Mechanical Weapons.</b> To create mechanical weapons, you need the base 
+                         weapon(s) and an amount of scrap metal equal to the weight of the 
+                         desired weapon. The DR to create the weapon is equal to four times the
+                         maximum value of the desired weapon’s base damage die (if it has two or
+                         more, use the damage die with the highest value).
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Woodcarving Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Carvings.</b> Using these tools and the required amount of wood, you can whittle
+                         small, hand-held statuettes and figurines. The amount of wood required is equal to
+                         twice the weight of the finished product. The worth of your carving in Aeons is 
+                         equal to half its weight.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var gridtent = this.nextElementSibling;
+                    if (gridtent.style.maxHeight) {
+                        gridtent.style.maxHeight = null;
+                    } else {
+                        gridtent.style.maxHeight = gridtent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+   
+</html>

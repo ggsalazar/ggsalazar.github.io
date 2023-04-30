@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+
+        <!-- JS and CSS will go here --> 
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1">
+      
+        <title>Others</title>
+        
+        <link rel = "stylesheet" href = "./BestiaryStyle.css">
+        <script src="./BestiaryFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../index.html">
+                    <img src="../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px" style="margin: -4.5px .21%;"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenter">
+                <a href="./BestiaryHome.html">Table of Contents</a>
+            </div>
+
+        </div>
+        
+        
+        <center><h1>Others</h1></center>
+        
+        <h2>The Gillith</h2>
+        <!--Illithid-likes-->
+        
+        <div class="row">
+            <div class="leftcolumn">
+                <button type="button" class="Monster"></button>
+                <div class="statistics">
+                    <br>
+                    <i></i><br>
+                    <br>
+                    <b>Statistics</b><br>
+                    <b>STR</b>  () <b>CON</b>  () <b>AGI</b>  () <b>DEX</b>  () <b>INT</b>  () <b>WIS</b> () <b>CHA</b>  ()<br>
+                    <b>DEF</b> <i>(Armor , Dodge )</i>, <b>RaDEF</b> <br>
+                    <b>Health</b>  ()<br>
+                    <b>Damage Immunities</b><br>
+                    <b>Damage Resistances</b><br>
+                    <b>Damage Vulnerabilities</b><br>
+                    <b>Saves</b> Fort. (+), Ref. (+), Will. (+)<br>
+                    <b>Condition Immunities</b><br>
+                    <b>Condition Resistances</b><br>
+                    <b>Condition Vulnerabilities</b><br>
+                    <b>Speed</b> <br>
+                    <b>Skills</b> <br>
+                    <b>Senses</b> <br>
+                    <b>Languages</b> <br>
+                    <b>Difficulty</b> Tier <br>
+                    <b>Locations</b> Air, coast, desert, forest, mountains, plains, ruins, sea, swamp, tundra, underground, urbanity<br>
+                    <hr>
+                    <b>Passive Abilities</b><br>
+                    <hr>
+                    <b>Actions</b><br>
+                    <hr>
+                    <b>Treasure</b><br>
+                    <b>Armor Materials:</b>
+                </div>
+            </div>
+            
+            <div class="rightcolumn">
+                <button type="button" class="Monster"></button>
+                <div class="statistics">
+                    <br>
+                    <i></i><br>
+                    <br>
+                    <b>Statistics</b><br>
+                    <b>STR</b>  () <b>CON</b>  () <b>AGI</b>  () <b>DEX</b>  () <b>INT</b>  () <b>WIS</b> () <b>CHA</b>  ()<br>
+                    <b>DEF</b> <i>(Armor , Dodge )</i>, <b>RaDEF</b> <br>
+                    <b>Health</b>  ()<br>
+                    <b>Damage Immunities</b><br>
+                    <b>Damage Resistances</b><br>
+                    <b>Damage Vulnerabilities</b><br>
+                    <b>Saves</b> Fort. (+), Ref. (+), Will. (+)<br>
+                    <b>Condition Immunities</b><br>
+                    <b>Condition Resistances</b><br>
+                    <b>Condition Vulnerabilities</b><br>
+                    <b>Speed</b> <br>
+                    <b>Skills</b> <br>
+                    <b>Senses</b> <br>
+                    <b>Languages</b> <br>
+                    <b>Difficulty</b> Tier <br>
+                    <b>Locations</b> Air, coast, desert, forest, mountains, plains, ruins, sea, swamp, tundra, underground, urbanity<br>
+                    <hr>
+                    <b>Passive Abilities</b><br>
+                    <hr>
+                    <b>Actions</b><br>
+                    <hr>
+                    <b>Treasure</b><br>
+                    <b>Armor Materials:</b>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("Monster");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var stats = this.nextElementSibling;
+                    if (stats.style.maxHeight) {
+                        stats.style.maxHeight = null;
+                    } else {
+                        stats.style.maxHeight = stats.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+    
+</html>

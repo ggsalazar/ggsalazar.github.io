@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Rogue</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+         <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 4: Classes</a>
+            <a href="./Introduction.html">Introduction</a>
+            <a href="./Artificer.html">Artificer</a>
+            <a href="./Mutant.html">Mutant</a>
+            <a href="./Psychokinetic.html">Psychokinetic</a>
+            <a href="./Rogue.html" class="active">Rogue</a>
+            <a href="./Warrior.html">Warrior</a>
+            <a href="./Spellcasting.html">Spellcasting</a>
+            <a href="./Aetherian.html">Aetherian</a>
+            <a href="./ClasslessFeats.html">Classless Feats</a>
+            <a href="./LevelingUp.html">Leveling Up</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Psychokinetic.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Warrior.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 4: Classes &ensp; &#9776;</span>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Rogue</h1></center>
+            <h2>Cunning Tricksters</h2>
+            <p>Known for their ability to take an advantage of an enemy’s weakness, Rogues use 
+             their Sneak Attack to make quick work of their opponents, and their unmatched skills to
+             help them and their parties out whenever an expert’s hand is needed.</p>
+            
+            <h2 style="text-decoration:none;"><b>The Rogue</b></h2>
+            <table style="margin:0;">
+                <tr>
+                    <th>Level</th>
+                    <th>Features</th>
+                    <th>Sneak Attack</th>
+                </tr>
+                <tr>
+                    <td>1st</td>
+                    <td>Expertise, Sneak Attack, Thieves’ Cant</td>
+                    <td>+1 damage die</td>
+                </tr>
+                <tr>
+                    <td>2nd</td>
+                    <td>Extra Actions</td>
+                    <td>+1 damage die</td>
+                </tr>
+                <tr>
+                    <td>3rd</td>
+                    <td>Class Feat (Novice)</td>
+                    <td>+2 damage dice</td>
+                </tr>
+                <tr>
+                    <td>4th</td>
+                    <td>Ability Score Improvement</td>
+                    <td>+2 damage dice</td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>Enhanced Dodge</td>
+                    <td>+3 damage dice</td>
+                </tr>
+                <tr>
+                    <td>6th</td>
+                    <td>Expertise</td>
+                    <td>+3 damage dice</td>
+                </tr>
+                <tr>
+                    <td>7th</td>
+                    <td>Superior Reflexes</td>
+                    <td>+4 damage dice</td>
+                </tr>
+                <tr>
+                    <td>8th</td>
+                    <td>Ability Score Improvement</td>
+                    <td>+4 damage dice</td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>Class Feat (Journeyman)</td>
+                    <td>+5 damage dice</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>Ability Score Improvement</td>
+                    <td>+5 damage dice</td>
+                </tr>
+                <tr>
+                    <td>11th</td>
+                    <td>Honed Skill</td>
+                    <td>+6 damage dice</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>Ability Score Improvement</td>
+                    <td>+6 damage dice</td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>Class Feat (Expert)</td>
+                    <td>+7 damage dice</td>
+                </tr>
+                <tr>
+                    <td>14th</td>
+                    <td>6th Sense</td>
+                    <td>+7 damage dice</td>
+                </tr>
+                <tr>
+                    <td>15th</td>
+                    <td>Slippery Mind</td>
+                    <td>+8 damage dice</td>
+                </tr>
+                <tr>
+                    <td>16th</td>
+                    <td>Ability Score Improvement</td>
+                    <td>+8 damage dice</td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>Class Feat (Master)</td>
+                    <td>+9 damage dice</td>
+                </tr>
+                <tr>
+                    <td>18th</td>
+                    <td>Elusive</td>
+                    <td>+9 damage dice</td>
+                </tr>
+                <tr>
+                    <td>19th</td>
+                    <td>Ability Score Improvement</td>
+                    <td>+10 damage dice</td>
+                </tr>
+                <tr>
+                    <td>20th</td>
+                    <td>Reliable Luck</td>
+                    <td>+10 damage dice</td>
+                </tr>
+            </table>
+            
+            <h2>Class Features</h2>
+            <p>As a Rogue you gain the following class features.</p>
+            <h3>Health</h3>
+            <p><b>Health at 1st Level:</b> 8 + your CON score</p>
+            <p><b>Health Beyond 1st Level:</b> 1d8 (or 4.5) + your CON score per Rogue level after 1st</p>
+            <h3>Proficiencies</h3>
+            <p><b>Skills at 1st Level:</b></p>
+            <ul>
+                <li>You gain 2 WP to place in any Weapon Skill(s) of your choice;</li>
+                <li>You gain 1 proficiency in Thieving Tools.</li>
+            </ul>
+            <p><b>Skills Beyond 1st Level:</b> You gain 1 SP every time you level up and 1 WP at every 
+             even-numbered level.</p>
+             
+            <br>
+            
+            <h2>Expertise</h2>
+            <p>At 1st level, you are extraordinarily skilled with some of your talents. Pick any
+             two Action or Tool Skills that you have <u>></u> 1 proficiency in; your proficiency in 
+             both of those skills increases by 1, and both of those skills can now be increased to 6,
+             even if another feature says they can only be increased to 5.</p>
+            <p>At 6th level, pick two more Action or Tool skills for this feature to 
+             apply to.</p>
+            
+            <h2>Sneak Attack</h2>
+            <p>Also at 1st level, you know how to take advantage of a creature’s weakness. If 
+             you deal final damage on an attack that you had advantage on and was made with a 
+             Small, Unarmed, or ranged weapon, you can roll 1 more of that weapon's base damage
+             die and add that to the damage you deal; the number of dice you roll increases as
+             you gain Rogue levels, as shown in the Rogue class table. You also gain this
+             benefit whenever there is a creature within 2m of your target that is an active
+             threat to them and you don’t have disadvantage.</p>
+            <p>You can only use this feature once per turn, and you cannot use it while wearing
+            any armor that grants disadvantage on DEX checks or Medium or Large shields.</p>
+            
+            <h2>Thieves' Cant</h2>
+            <p>Lastly at 1st level, you can speak and write Thieves’ Cant.</p>
+            
+            <h2>Extra Action</h2>
+            <p>At 2nd level, your roguish finesse grants you two additional actions on each of your turns;
+             these actions cannot be used to attack or cast.</p>
+            
+            <h2>Class Feats</h2>
+            <p>At 3rd level, you are skilled and learned enough that you start to specialize your
+             talents. At the end of the class description, under “Class Feats”, you may select one 
+             Novice class feat.</p>
+            <p>At 9th level, you may select either one Journeyman or two Novice class
+             feats.</p>
+            <p>When you reach 13th level, you may choose either one Expert, one 
+             Journeyman and one Novice, or three Novice class feats.</p>
+            <p>Lastly, at 17th level your skills are the stuff of legend, and you may
+             now select one Master, one Expert and one Novice, two Journeyman, one Journeyman and two
+             Novice, or four Novice class feats.</p>
+            <p>If a feat has any prerequisites, you must meet those prerequisites 
+             before you can take it. Feats cannot be taken more than once unless they explicitly say 
+             so. Your feat choices are permanent and cannot be changed.</p>
+            
+            <h2>Ability Score Improvement</h2>
+            <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you
+             can increase one of your ability scores by 1, two of them by .5, or take a
+             <a href="./ClasslessFeats.html">classless feat</a>. You cannot increase an ability
+             score beyond 5 via this feature.</p>
+            
+            <h2>Enhanced Dodge</h2>
+            <p>Starting at 5th level, your ability to anticipate and avoid incoming danger is 
+             unsurpassed. From now on, when determining your Dodge, double your AGI 
+             and DEX scores.</p>
+            
+            <h2>Superior Reflexes</h2>
+            <p>By the time you hit 7th level, your ability to save yourself from incoming harm is
+             extraordinary. From now on, when determining your Reflex save, do not divide the 
+             sum of your AGI and DEX by 2; if you already gain this benefit from another source,
+             your Reflex save instead increases by another 2.</p>
+            
+            <h2>Honed Skill</h2>
+            <p>At 11th level, your skills are starting to become unmatched. From now on, whenever
+             you make any sort of skill check, if one of the die you rolled come up as a 1, you can
+             reroll one of them once. This feature stacks with other abilities that give similar benefits.</p>
+            
+            <h2>6th Sense</h2>
+            <p>Starting at 14th level, you cannot be surprised, and so long as you can see and 
+             hear, you automatically know the location of any being within 3m of you, so long as
+             they are not hidden from you.</p>
+            
+            <h2>Slippery Mind</h2>
+            <p>When you hit 15th level, your sharp mind grants you added protection against 
+             mental intrusion. From now on, do not half the sum of your mental scores when 
+             determining your <a href="../Part1/Chapter6.html">Willpower score</a>.</p>
+            
+            <h2>Elusive</h2>
+            <p>At 18th level, you’re very difficult to hit. From now on, attacks against you 
+             that would have advantage become normal attacks.</p>
+            
+            <h2>Reliable Luck</h2>
+            <p>Finally, at 20th level, your uncanny luck seems to always have you covered. 
+             Whenever you make any kind of skill check or attack with a weapon that has the DEX 
+             property, if you fail the check or deal no final damage, you can roll again and use 
+             either result.</p>
+            
+            <h1>Rogue Class Feats</h1>
+            <p style="margin-top:-20px;">Rogues are tricksters, clever combatants, and capable skill monkeys, and their 
+             class feats enhance their tricks and wits and give them more options to obtain their 
+             goals. Some focus on their skills, enhancing their ability to aid their groups outside
+             of combat, while others enhance their combat prowess and Sneak Attacks, making 
+             themselves the most feared combatant on the battlefield.</p>
+            
+            <h2>Novice</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Climber</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain 1 proficiency in Climb, up to 5, and can now add your Climb proficiency
+                         to Climb checks. Lastly, your running jump distance is now increased by an amount 
+                         equal to your AGI score.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Imposter</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain 1 proficiency in Disguise Kits, up to 5, and if you roll a 1 on one or more
+                         of the dice when making a check to create a disguise, you can reroll one of them 
+                         once.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Infiltrator</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain 1 proficiency in Beguilement, up to 5, can add your Beguilement proficiency to
+                         Beguilement checks, and have advantage on Beguilement checks when pretending to be someone
+                         the target knows of but is not personally familiar with, or when pretending to be
+                         acting on their behalf.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Nimble</button>
+                    <div class="gridtent">
+                    <br>
+                        You now add both your AGI and DEX scores to your Reflex saves.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Pickpocket</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain 1 proficiency in Sleight of Hand, to a maximum of 5, and you can now add
+                        your Sleight of Hand proficiency to Sleight of Hand checks. Lastly, if you roll a 1
+                        on one or more of the dice when making a Sleight of Hand check, you can reroll one
+                        of them once.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Poisoner</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain 1 proficiency in Alchemy Supplies, up to 5, and brewing poisons
+                         takes you 2 less days than normal (minimum 1). Additionally, the save DR for poisons
+                         you brew is increased by an amount equal to your Alchemy Supplies proficiency. 
+                         Lastly, if a poison you brewed deals damage, one of the damage dice is automatically
+                         taken at its highest value.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Quick-footed</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain an extra 10m of movement and 1 proficiency in both Climb and
+                         Swim, up to 5.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Quickshot</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Firearms proficiency <u>></u>3</i>
+                        <br><br>
+                        Your practice with firearms has made you lightning-fast with them. If 
+                         your first attack in combat is made with a Firearm that does not need
+                         to reload after every attack, you gain the necessary amount of actions
+                         required to fire the weapon one more time; these actions can only be
+                         used to fire the weapon once and/or chamber the next round.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Skirmisher</button>
+                    <div class="gridtent">
+                    <br>
+                        You’re a master at getting out of trouble. Whenever an enemy ends its 
+                         turn within 2m of you, you can use your reaction to move up to
+                         5m without provoking opportunity attacks.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Skulker</button>
+                    <div class="gridtent">
+                    <br>
+                        Whenever you make an attack whilst hidden from your target, you do not reveal your
+                         location if your attack deals no final damage.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Sneaky</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain 1 proficiency in Stealth, up to 5, and can now add your Stealth
+                         proficiency to Stealth checks. Additionally, you have advantage on Stealth checks if
+                         you move <u>&#60;</u> half your movement on your turn.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Journeyman</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Lightning Reflexes</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain an additional reaction.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Superior Sneak Attack</button>
+                    <div class="gridtent">
+                    <br>
+                        Whenever you use your Sneak Attack feature, if any of the dice rolled come up as a
+                         1, you can reroll one of them once.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Taking Initiative</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Nimble</i>
+                        <br><br>
+                        Your roguish finesse allows you to always be ready and act quickly in 
+                         combat, doubling the bonus to your Reflex save when rolling initiative.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Thermal Mask</button>
+                    <div class="gridtent">
+                    <br>
+                        You’ve learned how to counteract the infrared vision some of your victims possess.
+                         Whenever you take the Hide action, you are now also hidden from creatures with 
+                         infrared sight if you otherwise would not be.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Uncanny Senses</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain the ability to tell lies from truth. You can automatically
+                         discern the presence of illusions when within 5m of them and you
+                         aren’t <a href="../Part6/Chapter3.html">blinded</a> or
+                         <a href="../Part6/Chapter3.html">deafened</a>; additionally, if a
+                         shapechanger not in their true form becomes the focus of your 
+                         attention, is within 10m of you, and you are not 
+                         <a href="../Part6/Chapter3.html">blinded</a> or
+                         <a href="../Part6/Chapter3.html">deafened</a>, you immediately become
+                         aware of the fact that they are a shapechanger, but not what their true
+                         form is.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Watchful</button>
+                    <div class="gridtent">
+                    <br>
+                        You’ve learned to watch your opponents carefully for weaknesses and 
+                         openings in their defenses. You can now use 3 actions to make an Insight
+                         or Perception check contested by an opponent’s Beguilement check. If 
+                         you succeed, you gain advantage on your next attack against them. This
+                         benefit lasts for 1 minute.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Expert</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Assassinate</button>
+                    <div class="gridtent">
+                    <br>
+                        Your ability to exploit an enemy’s weakness is unparalleled. From now 
+                         on, your Sneak Attack uses the next highest die value instead of the 
+                         weapon's base damage die, e.g. if your weapon's base damage die is d4,
+                         your Sneak Attack now uses d6s.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">High Noon</button>
+                    <div class="gridtent">
+                    <br>
+                        You have mastered the art of clearing your mind to focus on just your 
+                         targets. If you have a revolver on your person, you
+                         can sacrifice your turn to focus on picking out as many targets as
+                         you have bullets left in your gun; these targets can be a single 
+                         person/object or multiple people/objects. At any point within the next
+                         minute, you can use 2 actions to very quickly draw and fire your
+                         weapon once at each target you selected; roll once with advantage for
+                         all of these shots. You can do this twice between rests.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Stealing Initiative</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Taking Initiative</i>
+                        <br><br>
+                        You gain a second turn on the first round of combat, which occurs on the 
+                         initiative count equal to the number you rolled before applying any
+                         bonuses to your initiative roll.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Superior Evade</button>
+                    <div class="gridtent">
+                    <br>
+                        You’re too slippery to be hit. From now on, whenever you take the Evade action, 
+                         attacks against you deal minimum damage.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Master</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Unerring Strike</button>
+                    <div class="gridtent">
+                    <br>
+                        Once per round, if you attack a creature and deal no final damage, you
+                         can immediately make another attack against that creature with advantage.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var gridtent = this.nextElementSibling;
+                    if (gridtent.style.maxHeight) {
+                        gridtent.style.maxHeight = null;
+                    } else {
+                        gridtent.style.maxHeight = gridtent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </body>
+   
+</html>

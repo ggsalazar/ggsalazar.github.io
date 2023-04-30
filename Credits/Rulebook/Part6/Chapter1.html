@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 1: Actions</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 6: Adventuring</a>
+            <a href="./Chapter1.html" class="active">Chapter 1: Actions</a>
+            <a href="./Chapter2.html">Chapter 2: Damage Types</a>
+            <a href="./Chapter3.html">Chapter 3: Conditions</a>
+            <a href="./Chapter4.html">Chapter 4: Enduring</a>
+            <a href="./Chapter5.html">Chapter 5: Combat</a>
+            <a href="./Chapter6.html">Chapter 6: Brightness</a>
+            <a href="./Chapter7.html">Chapter 7: Weather</a>
+            <a href="./Chapter8.html">Chapter 8: Traveling</a>
+            <a href="./Chapter9.html">Chapter 9: Languages</a>
+            <a href="./Chapter10.html">Chapter 10: Downtime</a>
+            <a href="./Chapter11.html">Chapter 11: Crafting</a>
+            <a href="./Chapter12.html">Chapter 12: Chases</a>
+            <a href="./Chapter13.html">Chapter 13: Traps</a>
+            <a href="./Chapter14.html">Chapter 14: Puzzles</a>
+            <a href="./Chapter15.html">Chapter 15: Random Encounters</a>
+            <a href="./Chapter16.html">Chapter 16: Lingering Injuries</a>
+            <a href="./Chapter17.html">Chapter 17: Madness</a>
+            <a href="./Chapter18.html">Chapter 18: Adventure Hooks</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Chapter2.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 6: Adventuring &ensp; &#9776;</span>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 1: Actions</h1></center>
+            
+            <p>Characters are able to perform a variety of actions as they explore and interact
+             with the world during their adventures. These actions can be performed in or out of 
+             combat, and many can be performed as reactions.</p>
+            <p>During each round of combat, a creature can perform up to a number of actions on their turn 
+             determined by their <a href="../Part1/Chapter1.html">DEX score</a> and 1 reaction during any
+             other creature’s turn. Certain 
+             class features, spells, enchanted items, or other special circumstances may grant a 
+             creature more actions or reactions.</p>
+             
+            <h2>Holding Actions</h2>
+            <p>If a creature so desires, instead of using all of their actions on their turn, they can
+             instead hold up to two of their actions while they wait for a specific trigger, which they
+             must state at the time they decide to hold these actions; if this trigger occurs, they then
+             use their reaction to perform their held actions; if it doesn't, they lose those actions, but
+             can use their reaction for something else if they desire.</p>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Attack</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: Varies</i><br>
+                        <br>
+                        When a creature takes this action, they are choosing to attack a creature, character,
+                         or object within range using their currently equipped weaponry, their spells, or 
+                         whatever else they may wish to use. When making an attack with a weapon, unless the 
+                         weapon has the “DEX” property, add your STR score to the roll.<br>
+                        <br>
+                        Typically, attacking once requires the use of a single action, however there are
+                         some weapons that require more than 1 action to be used effectively. If you do
+                         not have enough actions at your disposal to effectively attack with this weapon,
+                         you can use the rest of your remaining actions to attack with it once with disadvantage.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Blind</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        To blind a creature, the blinder must make a DEX check 
+                         contested against the target’s Reflex save. On a success, the target is 
+                         <a href="./Chapter3.html">blinded</a>
+                         until they use 2 actions to remove the blinding element from their eyes.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Change Equipped Weapon</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        Whatever weapons a character has in their equipment slots at any given point are
+                         their equipped weapons, and they can attack with only those weapons unless they
+                         swap out one weapon for another.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Disarm</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        To disarm a creature, the disarmer must make a Sleight of Hand
+                         or STR check contested by the DEX or STR check of the creature they are attempting
+                         to disarm. On a success, the weapon is plucked out of their hand and thrown 1d3 
+                         meters away in a direction of the disarmer’s choosing. The weapon can be caught by
+                         you or another person in the weapon’s path with a successful DR 15 Sleight of Hand
+                         check, provided the being attempting to catch it has an empty hand and their reaction.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Disengage</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        A creature disengages when they wish to leave the melee range
+                         of all opponents they are currently in melee range of without provoking any 
+                         opportunity attacks. If they enter a new opponent’s melee range, they must 
+                         disengage again if they wish to continue avoiding opportunity attacks.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Evade</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        Evading is a being’s way of preparing for an incoming attack or harmful effect and 
+                         bracing themselves against it. When a creature evades,
+                         their Dodge score is doubled and all attacks and damage-dealing effects have
+                         disadvantage against them until the start of their next turn; they also have
+                         advantage on all <a href="../Part1/Chapter6.html">Reflex saves</a> for the same
+                         period.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Grapple</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        When choosing to grapple another creature, the grappler must make a STR
+                         or DEX check contested against the
+                         <a href="../Part1/Chapter6.html">Reflex save</a> of the target. On a
+                         success, the target is <a href="./Chapter3.html">grappled</a> by the
+                         grappler, and may use 2 actions on their turn to make a STR or DEX
+                         check to free themselves contested against the grappler’s STR or DEX
+                         check. Alternatively, you can choose to restrain the target, though
+                         you cannot take other actions while restraining them.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Help</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        A helping creature make the same check as the creature
+                         they are helping, and adds half of the result (rounded down to the nearest half)
+                         to the result of their check.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Hide</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        The Hide action is used when a creature wishes to avoid being spotted by another 
+                         entity. In order to hide, a creature needs something to
+                         hide behind/in and must make a
+                         Stealth check contested by the searching party’s Perception check.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Jump</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        Your maximum jump height in meters is equivalent to 1/3 your STR score,
+                         while your maximum jump length is equal to half your STR score; with a 
+                         running start, it becomes your full STR score. A running start requires a 
+                         character to run uninterrupted for at least 4m in a straight line
+                         before the jump.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Improvise</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: Varies</i><br>
+                        <br>
+                        This is arguably the most loosely-definable action, since it can apply to almost 
+                         infinitely different situations. This action is used when a creature wishes to interact
+                         with their environment in such a way that is not otherwise described here; examples 
+                         include propping a chair up against a door, flipping a table over to use it as cover,
+                         or smashing through a glass pane. It is up to the GM whether the action a creature 
+                         wishes to improvise is doable and, if it is, how difficult it is and how many actions
+                         it takes to do.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Move</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 1+</i><br>
+                        <br>
+                        You move in a direction of your choosing, to a distance of your choosing,
+                         so long as you have enough movement to get there and nothing is in your
+                         way. Moving through difficult terrain and moving while
+                         <a href="./Chapter3.html">prone</a> requires twice as much movement as
+                         moving through normal terrain, unless otherwise stated by a special 
+                         exception. For example, if a character with 10m of movement tried to 
+                         move through difficult terrain, they could only move through 5m of it
+                         at most. The amount of movement at your disposal is determined
+                         by your <a href="../Part1/Chapter8.html">Size</a> and 
+                         <a href="../Part1/Chapter1.html">AGI score</a>.<br>
+                        <br>
+                        The amount of movement a creature has assumes they are dedicating their entire
+                         turn to moving; to determine how much you can move using an action, simply divide
+                         your movement by the number of actions you have. For example, a creature with 24
+                         meters of movement and 4 actions could use just 1 action to move up to 6 meters, 
+                         allowing them to use their remaining actions for something else.<br>
+                        <br>
+                        Lastly, it is important to note that when you decide to use an action to move, the
+                         movement does not all need to be used at once and can be broken up; you could, for instance,
+                         use a single action to move 3 meters, use another to attack once, and then move another
+                         3 meters without expending another action.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Pin</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: Varies</i><br>
+                        <br>
+                        Using almost any weapon and/or appropriate item, a creature can pin
+                         another to a surface, usually by impaling their clothes to that surface
+                         or weighing them down with something heavy. When a creature takes this
+                         action, they must make a STR/DEX check contested against the target’s
+                         <a href="../Part1/Chapter6.html">Fortitude/Reflex</a> save (determined
+                         by what check the pinner is making): if the pinner wins the contest, 
+                         the target is considered <a href="./Chapter13.html">grappled</a> by
+                         whatever is pinning them, and can take 2 actions on their next turn to
+                         make a STR/DEX check to free themselves. The DR for this check is the 
+                         result of the pinner’s original STR/DEX check.<br>
+                        <br>
+                        The action cost to do this varies depending on what is being used: if
+                         using a weapon, the action cost is the same as the weapon, and if using
+                         an item found in the immediate environment, the action cost is 2.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Shove</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        To shove a creature, make a STR check contested against their attempted
+                         victim’s <a href="../Part1/Chapter6.html">Fortitude/Reflex save</a>;
+                         on a success, they are shoved a number of meters equal to twice the
+                         shover’s STR score (minimum 1) in a direction of their choice.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Speech</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: Varies</i><br>
+                        <br>
+                        When one creature wishes to speak to another, whether by verbal communication or otherwise,
+                         they can do so without using any of their actions, unless the GM rules otherwise.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Stand Up</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 2</i><br>
+                        <br>
+                        A creature stands up when they are <a href="./Chapter3.html">prone</a>
+                         and no longer want to be.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Tackle</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 1</i><br>
+                        <br>
+                        To tackle a creature, one must first have moved in a straight line towards 
+                         their target for <u>></u> 4m, at which point the target must make a
+                         Fort./Ref. save against the tackler's STR check or be knocked 
+                         <a href="./Chapter3.html">prone</a> and become 
+                         <a href="./Chapter3.html">grappled</a> by the tackler.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Trip</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 1</i><br>
+                        <br>
+                        To trip another creature, make a STR or DEX check contested against 
+                         their <a href="../Part1/Chapter6.html">Fortitude or Reflex save</a>;
+                         on a success, they are knocked <a href="./Chapter3.html">prone</a>.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Use Item</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Action Cost: 1+</i><br>
+                        <br>
+                        This action is performed whenever a creature wishes to use an item that can be found 
+                         either in their immediate environment or their inventory. A couple of examples would be
+                         quaffing a potion (2 actions) or opening a container (1 action). If the item
+                         is large and/or would take a large amount of time and/or effort to use, then it may
+                         require more than one action to perform.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Reactions</h2>
+            
+            <p>Reactions are performed in immediate response to something in the environment;
+             every creature has at least 1 reaction at their disposal each round, which can be used 
+             on any turn other than their own. As stated above, there are some features that add to
+             a character’s list of possible reactions, but those are not described here.</p>
+            
+            <div class="row">
+                <div class="column" style="margin-left:7.5%; margin-right:2.5%; width:40%;">
+                    <button type="button" class="grid">Opportunity Attack</button>
+                    <div class="gridtent">
+                    <br>
+                        An opportunity attack, or attack of opportunity, can be performed whenever a creature
+                         leaves the melee range of another creature, allowing them to take the chance to cause
+                         them injury, provided the weapon they are attacking with only takes 1 action to attack
+                         with. The Disengage action can be used to avoid attacks of opportunity.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column" style="margin-right:7.5%; margin-left:2.5%; width:40%;">
+                    <button type="button" class="grid">Trigger Action</button>
+                    <div class="gridtent">
+                    <br>
+                        Whenever a character holds up to 2 actions, they can then perform them whenever the
+                         trigger that they determine is activated.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var gridtent = this.nextElementSibling;
+                    if (gridtent.style.maxHeight) {
+                        gridtent.style.maxHeight = null;
+                    } else {
+                        gridtent.style.maxHeight = gridtent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </body>
+   
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 18: Adventure Hooks</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 6: Adventuring</a>
+            <a href="./Chapter1.html">Chapter 1: Actions</a>
+            <a href="./Chapter2.html">Chapter 2: Damage Types</a>
+            <a href="./Chapter3.html">Chapter 3: Conditions</a>
+            <a href="./Chapter4.html">Chapter 4: Enduring</a>
+            <a href="./Chapter5.html">Chapter 5: Combat</a>
+            <a href="./Chapter6.html">Chapter 6: Brightness</a>
+            <a href="./Chapter7.html">Chapter 7: Weather</a>
+            <a href="./Chapter8.html">Chapter 8: Traveling</a>
+            <a href="./Chapter9.html">Chapter 9: Languages</a>
+            <a href="./Chapter10.html">Chapter 10: Downtime</a>
+            <a href="./Chapter11.html">Chapter 11: Crafting</a>
+            <a href="./Chapter12.html">Chapter 12: Chases</a>
+            <a href="./Chapter13.html">Chapter 13: Traps</a>
+            <a href="./Chapter14.html">Chapter 14: Puzzles</a>
+            <a href="./Chapter15.html">Chapter 15: Random Encounters</a>
+            <a href="./Chapter16.html">Chapter 16: Lingering Injuries</a>
+            <a href="./Chapter17.html">Chapter 17: Madness</a>
+            <a href="./Chapter18.html" class="active">Chapter 18: Adventure Hooks</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Chapter17.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 6: Adventuring &ensp; &#9776;</span>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 18: Adventure Hooks</h1></center>
+            
+            <h2>Ideas and Inspirations</h2>
+            <p>Sometimes, especially for new GMs, it can be difficult to come up with ideas for
+             campaigns, be it for an entire arc or just a simple side quest. For this reason, a
+             handful of ideas for different campaigns and quests at various tiers are supplied here;
+             these can be the source of anything from a short quest to a full-blown campaign. The 
+             only limit is your imagination!</p>
+            
+            <h2>Any Tier</h2>
+            <p>The hooks given here are designed to be vague and open-ended, so that a GM can 
+             easily modify them appropriately and slide them into their campaign regardless of their
+             party’s collective level.</p>
+            
+            <br>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Cosmic Invader</button>
+                    <div class="gridtent">
+                    <br>
+                        Something eldritch has arrived from the <a href="../Part7/Chapter5.html">Unknown Plane</a>,
+                         and either has started causing trouble or will soon. Perhaps the PCs arrive at a 
+                         town and notice all the residents acting a little… off, or perhaps they see the 
+                         silhouette of an Elder God against the sky the day after a meteor crashes into the
+                         ocean. Consult the <a href="../../Bestiary/Others.html">Others</a> 
+                         section of the Bestiary and see what sparks your imagination!
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Monster Hunt</button>
+                    <div class="gridtent">
+                    <br>
+                        A small hamlet has a <a href="../../Bestiary/Monstrosities.html">cockatrice</a>
+                         problem they need taken care of; a <a href="../../Bestiary/Dragons.html">dragon</a>
+                         has started stealing sheep right out of farmers’ fields; a <a href="../../Bestiary/Fae.html">succubus/incubus</a>
+                         is working their way through members of the government and needs to be stopped. 
+                         Consult the <a href="../../Bestiary/BestiaryHome.html">Bestiary</a>
+                         and try to imagine an interesting and engaging quest based around hunting and 
+                         stopping a monster of an appropriate tier for your party.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Silent City</button>
+                    <div class="gridtent">
+                    <br>
+                        A remote city-state has suddenly gone silent: trade caravans sent there are never
+                         heard from again, and messengers sent there never return. The cause of and solution
+                         to this problem could be anything, so take a look through the <a href="../../Bestiary/BestiaryHome.html">Bestiary</a>
+                         and see what strikes your fancy.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Elemental Invasion</button>
+                    <div class="gridtent">
+                    <br>
+                        A volcano has suddenly erupted, pouring out <a href="../../Bestiary/Scorched.html">Scorched</a>
+                         like a geyser of burning hate; a portal in undiscovered ruins has suddenly switched
+                         on, allowing <a href="../../Bestiary/Undead.html">Undead</a> to 
+                         leave the <a href="../Part7/Chapter5.html">Plane of Soul</a> and 
+                         roam free; a host of <a href="../../Bestiary/Buried.html">Buried</a>
+                         have emerged from the ground, wreaking havoc on a nearby city. Any of these and 
+                         dozens more might make for an exciting and interesting adventure for your party.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <h2>Tier 1</h2>
+            <p>These hooks are for beginning, low-level parties, and as such don’t present a very
+             big threat or much of a challenge to parties with a lot of adventuring experience under
+             their belt. Still, every adventurer has to start somewhere!</p>
+            
+            <br>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Bandit Infestation</button>
+                    <div class="gridtent">
+                    <br>
+                        A group of bandits has moved in near the tracks of a supply train and has started
+                         taking every opportunity to rob it that they can. This problem needs to be solved
+                         sooner rather than later.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Haunted House</button>
+                    <div class="gridtent">
+                    <br>
+                        A Specter has recently been discovered in the basement of a local’s home, and it 
+                         is frightening their guests and keeping them awake at night. The owner would like it
+                         dealt with in one way or another, before it becomes angry and escalates.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Animancer Issues</button>
+                    <div class="gridtent">
+                    <br>
+                        Recently, minor <a href="../../Bestiary/Undead.html">Undead</a> (Zombies, 
+                         Skeletons, etc.) have begun attacking people at night – the casualties are 
+                         thankfully few so far, but the locals would like this looked into before any serious
+                         damage is done.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Tier 2</h2>
+            <p>At this point the PCs have had a few tastes of combat, and may even be making a 
+             name for themselves. As such, the threats that they are able to handle have increased in
+             scale a bit, presenting bigger problems, but still nothing overtly serious or 
+             catastrophic, and the hooks presented here should provide a few examples of just that.</p>
+            
+            <br>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Ancient Ruins</button>
+                    <div class="gridtent">
+                    <br>
+                        The group stumbles upon ancient and as-yet-undiscovered ruins, and inside there 
+                         could be incredible and wondrous treasures – or mortal danger!
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Pirate Problems</button>
+                    <div class="gridtent">
+                    <br>
+                        Pirates have begun raiding ships out at sea, and the merchants and governments 
+                         whom this affects would like to see justice brought to these sea-faring brigands.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Tribal War</button>
+                    <div class="gridtent">
+                    <br>
+                        Two tribes of Sentients have gone to war with each other, whether over resources,
+                         racial tensions, a misunderstanding, or some other cause. The PCs must find a way to
+                         bring the conflict to an end, either through diplomatic means or by picking a side
+                         and ensuring their victory.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Tier 3</h2>
+            <p>At this point in their adventuring career, the PCs should definitely have some 
+             fame attached to them, and the local populace should at least have heard their names or
+             tales of their deeds. So in turn, they should be able to handle threats that may present
+             serious challenges to lesser parties, and in some cases may grow into larger problems if
+             left unchecked. Use these hooks as examples.</p>
+            
+            <br>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Civil Unrest</button>
+                    <div class="gridtent">
+                    <br>
+                        The citizens of a large town or city have accrued a rather long list of complaints
+                         against their leaders, and something must be done to remind them that governments 
+                         serve the people, not the other way around; alternatively, a terrorist cell has 
+                         taken root in the city and is instigating riots, causing property damage and getting
+                         bystanders caught in the crossfire. In either case, the PCs must investigate the 
+                         claims and subdue the guilty party accordingly.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Heart of Darkness</button>
+                    <div class="gridtent">
+                    <br>
+                        A rich archaeologist, explorer, or merchant has brought the party on as hired 
+                         muscle for an expedition into an unexplored region of the world. Many unknown 
+                         dangers await them in those strange lands!
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Security Test</button>
+                    <div class="gridtent">
+                    <br>
+                        A rich merchant, a local bank, or a government agency has made an announcement 
+                         that they are creating a new vault and would like its security measures thoroughly 
+                         tested. They are offering any person(s) who is/are able to break into the vault 
+                         twice their weight in Aeons (or four times their weight in the case of Small beings).
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Tier 4</h2>
+            <p>By now the party is likely famous – or infamous – for what they have done and 
+             should now be trusted by most to handle large and formidable threats, including even 
+             inter-planar ones. Refer to the example hooks given here for some ideas as to the scale
+             of threats your party should be facing.</p>
+            
+            <br>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">National War</button>
+                    <div class="gridtent">
+                    <br>
+                        Two nations have gone to war with each other for one reason or another, and the
+                         PCs must resolve the conflict in any way they see fit.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Slander Campaign</button>
+                    <div class="gridtent">
+                    <br>
+                        A powerful government official has taken to slandering the party and condemning 
+                         all that they have done, reframing all of their deeds in a negative light and 
+                         painting them as threats and terrors to the people. The party must find a way to 
+                         clear their names and silence the noble, who is too well protected and too powerful
+                         for a direct assault or assassination attempt.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">The Soulless</button>
+                    <div class="gridtent">
+                    <br>
+                        Recent years have seen the rise of a disturbing trend: Sentients being born with a 
+                         condition that can only be described as Soulless – quite literally, they are being 
+                         born without souls. The PCs must travel to the Plane of Soul, confront the Unliving,
+                         and see what the problem is and how it can be solved.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Tier 5</h2>
+            <p>Finally, the PCs are beginning to approach the absolute apex of their abilities.
+             Their names are well-known, the world regards them as heroes – or villains – and their
+             tales will likely be recorded in the history books and told around campfires for
+             generations to come. They may even be unmatched in their abilities, and for this reason
+             are entrusted with resolving only the greatest of threats – threats to the entire world
+             or the planes themselves. Refer to the hooks below for inspiration if you feel so 
+             inclined.</p>
+            
+            <br>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Enraged Titan</button>
+                    <div class="gridtent">
+                    <br>
+                        One of the Titans has, for some reason, become absolutely enraged at the Sentients,
+                         either as a whole or a specific group of them, and threatens to wipe them out. 
+                         Resolving this will take everything the PCs have.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">The Long Night</button>
+                    <div class="gridtent">
+                    <br>
+                        One day, the sun and/or the moon simply stopped going across the sky, resulting in
+                         a single long night that has left everyone the world over frightened to their very 
+                         core. The PCs must go to the appropriate plane and investigate what has prevented 
+                         these vital celestial bodies from making their rounds.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Missing Relic(s)</button>
+                    <div class="gridtent">
+                    <br>
+                        A collector of ancient artifacts contacts the party, telling them that one of the
+                         powerful relics in their possession has gone missing, and that in the wrong hands, 
+                         that relic can wreak true havoc.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var gridtent = this.nextElementSibling;
+                    if (gridtent.style.maxHeight) {
+                        gridtent.style.maxHeight = null;
+                    } else {
+                        gridtent.style.maxHeight = gridtent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+   
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 0: Getting Started</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &ensp; Part 1: The Basics</a>
+            <a href="./Chapter0.html">Chapter 0: Creating a Character</a>
+            <a href="./Chapter1.html">Chapter 1: Ability Scores</a>
+            <a href="./Chapter2.html">Chapter 2: Skills</a>
+            <a href="./Chapter3.html">Chapter 3: Proficiency</a>
+            <a href="./Chapter4.html">Chapter 4: Health</a>
+            <a href="./Chapter5.html">Chapter 5: Defenses</a>
+            <a href="./Chapter6.html">Chapter 6: Saves</a>
+            <a href="./Chapter7.html">Chapter 7: Resting</a>
+            <a href="./Chapter8.html">Chapter 8: Size</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Chapter0.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 1: The Basics &ensp; &#9776;</span>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Introduction</h1>
+            
+            <i>"...we plan even now to raise, beyond them all, thy great cathedral sacred 
+             industry, no tomb, a keep for life for practical invention.<br>As in a waking 
+             vision, e'en while I chant I see it rise, I scan and prophesy outside and in, its
+             manifold ensemble.<br>Around a palace, loftier, fairer, ampler than any yet, 
+             Earth's modern wonder, history's seven outstripping, high rising tier on tier with
+             glass and iron façades, gladdening the sun and sky..."</i><br>-Walt Whitman, Song
+             of the Exposition</center>
+            
+            <h2>Iron and Aether</h2>
+            <p>Throughout the 19th century, the world underwent its Second Industrial Revolution.
+             Technological and industrial progress skyrocketed, and much of the world was moved 
+             into a new age of science, reason, and technology. Of course, there were still those
+             corners of the world that had yet to make the same progress...</p>
+            <p>Though it does not take place in the real world, this is the central theme of
+             Iron and Aether, or I&A for short. The idea that while the world moves forward, and
+             technology and progress unceasingly advance, there are still those places that
+             continue to rely on or prefer the old ways, for one reason or another. Though these
+             rules do largely focus on Second Industrial Revolution-era technologies, such as
+             <a href="../Part5/Chapter2.html">guns</a>, <a href="../Part5/Chapter5.html">transportation</a>, 
+             <a href="../Part5/Chapter4.html">prosthetics</a>, and more, it still engages with
+             magic in a handful of ways, mostly via the mystical substance referred to herein 
+             as <a href="../Part7/Chapter1.html">Aether</a>. I&A explores the idea of a fantasy
+             world undergoing its own Industrial Revolution, and it opens up to you the ability
+             to tell stories in that space.</p>
+            
+            <br>
+            
+            <h2>Important Terms</h2>
+            <p>There are a handful of terms used throughout these rules that may be confusing or
+             not entirely clear in their meaning if you are new to tabletop RPGs. Detailed below
+             are a handful of terms that are frequently used, defined for clarity and your
+             convenience.</p>
+            <p><b>DR.</b> Difficulty Rating, or DR, numerically measures how hard it is for a creature
+             to accomplish a specified task. In order for a check to be considered successful/passed,
+             the result of the required rolls must be <u>></u> the DR of the given check.</p>
+            <p><b>GM.</b> The Game Master, frequently referred to as the GM, 
+             is the main rule-master and arbiter of the game world: they are in charge of 
+             writing and roleplaying non-player characters, writing quests, building dungeons 
+             and the worlds they inhabit, and of playing the role of essentially everything the 
+             player-characters encounter during their adventures. The GM’s job is the hardest, 
+             but also has the potential to be the most rewarding as they help the group weave 
+             incredible stories and forge unforgettable memories.</p>
+            <p><b>PC.</b> A Player-Character, or PC, is a character that is being 
+             played by one of the players. They are completely under that player’s control, and 
+             their class, heritage, background, skills, and more are all up to the player playing 
+             them. You will find the rules and guides for all of that information in Parts 1 - 4.</p>
+            <p><b>NPC.</b> Conversely, a Nonplayer-Character, or NPC, simply refers to any 
+             character not being played by any of the players, but instead by the GM, who decides
+             their personal information and the role they play in the story.</p>
+            <p><b>ydx.</b> The letter “d” followed by a number (typically 4, 6, 8, 10, 12, or 20)
+             refers to a die with that many sides, e.g. a d6 refers to the normal 6-sided die, a 
+             d20 refers to the 20-sided die, and so on. A number preceding the “d” refers to the 
+             amount of that die to be rolled, so 3d4 means roll 3 of the pyramid-shaped dice and 
+             add up the result of each roll; if there is no number before the “d”, then only 1 of 
+             the indicated die is rolled. In the case of yd100, roll 2d10 and use one of the 
+             numbers as the ten’s place and the other as the one’s place; if both come up as 10 
+             (typically shown as a 0 on the die face) then that is 100. In the case of yd3, simply 
+             roll y amount of d6s and divide each number (or the total result) by half, rounded up.</p>
+
+            <br>
+
+            <h2>Playing the Game</h2>
+            <p>As a player, it is your responsibility to be respectful of both other 
+             players and your GM’s time and rulings (provided they are fair) and respect the authority 
+             they have as the arbiter of the rules and constructor of the world your party is adventuring 
+             in. This includes (but is not limited to) doing such things as: listening to what they say 
+             to the best of your ability; not arguing with them about rulings without good reason; not 
+             intruding on their or anyone else’s fun or moments to shine within the story; being honest 
+             about dice rolls; and so on. Essentially, just be respectful of your GM and co-players. 
+             Theirs is the hardest job at the table, and they likely spent hours crafting a fun and 
+             engaging story that they thought would be enjoyable to play out with their friends. 
+             Remember, even though the story (usually) revolves around the PCs, the GM is also a player, 
+             and should be having just as good a time as everyone else at the table.</p>
+            
+            <br>
+            
+            <h2>Running the Game</h2>
+            <p>As the GM, your workload is by far the largest. You are responsible for creating
+             the world the game takes place in, writing the quests your players will go on, 
+             roleplaying anything and anyone the PCs come across in their adventures. You are 
+             the arbiter of the rules and you have final say on any rulings that come under 
+             debate by the players. It is your responsibility to craft a believable and 
+             reasonably immersive world for the PCs to adventure in, to be prepared for whatever
+             the players may encounter or decide to do, to treat all the players fairly and in a
+             manner that is equally fun and engaging for all of them.</p>
+            <p><b>Session 0.</b> When you and your prospective group all agree to start
+             playing I&A, it is important that you host what is called a <b>Session 0</b>.
+             This is a session that occurs prior to the official start of the adventure wherein
+             you sit down with all the players and decide on various important factors,
+             including but not limited to: what kind of game does everyone want to play (e.g. a
+             hack-and-slash combat-filled thrill-ride of an adventure, a roleplay-heavy 
+             slow-paced game of intrigue and mystery, etc.), are any of the players 
+             uncomfortable with anything and/or is there any topic any of the players would like
+             to avoid (e.g., "this adventure may feature elements of racism/kidnapping/child 
+             violence/etc., is everyone okay with that?"), what the players want out of the game,
+             and more. Always remember that everyone has the most fun when everyone is playing
+             the same game – and one that they agreed to play!</p>
+            <p><b>Creating Worlds and Adventures.</b> Coming up with an entire world
+             and writing entire multi-session campaigns and quests can be a daunting and time-consuming
+             feat. If you have decided to be the GM for your group but do not have the time or
+             creative energies to do one or both of these things don't fret! Example worlds and quests,
+             such as the world of Aethra and the [EXAMPLE MODULE] module provide pre-built materials
+             that you can use ad hoc or simply draw inspiration from as you please.</p>
+            
+            <br>
+            
+            <h2>What is Important and What is Optional</h2>
+            <p>I&A has many, many, <i>many</i> rules to keep track of. If you feel
+             overwhelmed by all of it, <b>DO NOT WORRY</b>; not all of the rules need to be kept 
+             track of all of the time. As the GM, it is part of your job to keep track of what is
+             important to account for and what can be left by the wayside. For example, if your
+             group enjoys combat and does it frequently, learning the rules for combat to the point
+             that you practically have them memorized may be a good idea; or, if your
+             group doesn't care about travelling or weather, the rules for those things can be 
+             largely ignored until they gain relevance for one reason or another.</p>
+            <p>As a baseline, most of the rules in Part 1 should be learned and understood by
+             everyone playing, while many of the rules in all of the other parts likely do not
+             need to be heavily pored over except for what is relevant to you and your group
+             specifically.</p>
+             
+            <h2>What's Next?</h2>
+            <p>It is not difficult to see that Iron & Aether, both as a game and as a website,
+             is not finished. Whole chapters are missing, there is practically no artwork, the
+             Bestiary is exceedingly barren, and there are so many places where the game could
+             simply be improved in one way or another. It is my plan to continue working on and
+             supporting the game for the foreseeable future, adding and fixing content and 
+             progressively acquiring more artwork to decorate the site. Player feedback will be
+             absolutely invaluable in these efforts, so if you feel so inclined to join the 
+             game's Discord, please do so! It is appreciated beyond words.</p>
+            <p>I also plan to keep the game free and in digital/website format forever, as I 
+             feel the many advantages to keeping it this way far outweigh the benefits of 
+             publishing the game into a physical medium and selling it. However, since I enjoy
+             not being homeless and not starving to death, I would kindly ask you to consider
+             joining my <a href="https://www.patreon.com/griffingsalazar">Patreon</a> or 
+             supporting me on <a href="https://ko-fi.com/griffingsalazar">Ko-Fi</a> so I can 
+             continue doing what I love and putting all of my focus and energy into this and 
+             other projects.</p>
+            
+        </div>
+        
+    </body>
+   
+</html>

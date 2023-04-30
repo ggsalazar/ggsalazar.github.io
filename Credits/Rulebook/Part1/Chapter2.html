@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 2: Skills</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 1: The Basics</a>
+            <a href="./Chapter0.html">Chapter 0: Creating a Character</a>
+            <a href="./Chapter1.html">Chapter 1: Ability Scores</a>
+            <a href="./Chapter2.html" class="active">Chapter 2: Skills</a>
+            <a href="./Chapter3.html">Chapter 3: Proficiency</a>
+            <a href="./Chapter4.html">Chapter 4: Health</a>
+            <a href="./Chapter5.html">Chapter 5: Defenses</a>
+            <a href="./Chapter6.html">Chapter 6: Saves</a>
+            <a href="./Chapter7.html">Chapter 7: Resting</a>
+            <a href="./Chapter8.html">Chapter 8: Size</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Chapter1.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Chapter3.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 1: The Basics &ensp; &#9776;</span>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 2: Skills</h1></center>
+            
+            <p>Skills of all kinds are necessary to not just an adventuring party’s survival, but
+             their success as well. In this chapter are described, in detail, each and every one of 
+             the skills in I&A, as well as a brief treatise on how to increase your 
+             <a href="./Chapter3.html">proficiency</a> with them.</p>
+            
+            <h2>Action Skills</h2>
+            <p>Action Skills are used whenever you want to perform certain actions in the world 
+             around you. There are a wide variety of skills used to perform a wide variety of actions,
+             and they have each been categorized under one of the seven Ability Scores and are 
+             detailed below. Every character at level 1 starts 1 proficiency in each Action Skill,
+             and your <a href="../Part2/Chapter1.html">Background</a> (and possibly your Heritage)
+             will grant you a few more proficiencies, though you can always gain proficiency in more
+             as time goes on.</p>
+            <p>To make an Action Skill check, simply roll the same number of d10s as your proficiency
+             in the skill, then add the appropriate Ability Score; if the result is <u>></u> the DR of the
+             check, then you succeed! If your
+             proficiency with a skill is 0, then just roll 1d6
+             and add the appropriate score. Though most Action Skills use the Ability Score it is
+             categorized under, there are times when the GM might require you to make a skill check
+             using a different score. In these instances, you still roll the appropriate 
+             number of d10s, however instead of adding the score you would normally use, you instead
+             add the score specified by the GM.</p>
+            <p>It takes 1 Skill Point (SP) to increase your proficiency with an Action Skill,
+             and all Action Skills have a proficiency cap of 5, though like Ability Scores, special features
+             can increase this cap to 6. You gain 1 SP every time you 
+             level up.</p>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">STR Skills</button>
+                    <div class="gridtent">
+                    <br>
+                        The purposes of the Climb and Swim skills are twofold: the first is to 
+                         give their user a climbing/swimming speed equal to double their 
+                         proficiency + double their STR score, and the second is to be able to
+                         climb or swim in difficult situations or whenever a significant 
+                         challenge to the activity is present.<br>
+                    <br>
+                        <b>Climb.</b> Climb checks are needed whenever a creature faces a 
+                         challenge in scaling a relatively vertical surface, such as the rope they’re 
+                         climbing being cut, some force shaking the wall the are hanging onto, or a creature
+                         attempting to pull them off the surface they are scaling.<br>
+                    <br>
+                        <b>Swim.</b> Swim checks are required whenever a non-aquatic 
+                         creature attempts to swim through troubled waters or other difficult situations, 
+                         such as upstream, in a storm, or with another creature on their back.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">DEX Skills</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Sleight of Hand.</b> Sleight of Hand checks are required whenever a creature 
+                         attempts to perform some sort of trickery or deceitful maneuver with their hands. 
+                         Some examples include pickpocketing, planting an object, or concealing something on
+                         your person.<br>
+                    <br>
+                        <b>Stealth.</b> Stealth is used whenever a creature attempts to 
+                         conceal themselves from others or hide in their surroundings. Some examples include
+                         hiding from pursuers, camouflaging oneself using the terrain, or sneaking past an
+                         unaware enemy. Stealth checks should be contested by the opposing party’s Perception
+                         checks.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">INT Skills</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Arcana.</b> Arcana is used when studying enchanted items, concoctions, and 
+                         other arcane effects such as eldritch glyphs or a sampling of <a href="../Part7/Chapter1.html">Aether</a>.
+                         Some examples include checking for arcane traps, determining the properties of an 
+                         enchanted item, or figuring out what effect a given concoction will have.<br>
+                    <br>
+                        <b>Lore.</b> The Lore skill is used when you wish to discern or 
+                         recall more information about a specific part of the world. Perhaps you wish to 
+                         remember the history behind a specific enchanted item, recall the role a specific 
+                         location played in some event, or are trying to learn who the leader of a given 
+                         region of land is.<br>
+                    <br>
+                        <b>Mechanics.</b> Mechanics is used to discern how a machine works
+                         and what it is designed to do. Passing a Mechanics check will allow a character to 
+                         understand the workings of a machine and/or its components, or allow them to alter 
+                         its function in a desired way – provided they have the necessary tools, components,
+                         and ability to do so.<br>
+                    <br>
+                        <b>Medicine.</b> The Medicine skill tells of your ability to 
+                         discern and diagnose various illnesses or the nature and effects of a grisly wound.
+                         For healing or stabilizing an ally, look to the “Medicine Kit” Tool Skill, detailed
+                         below.<br>
+                    <br>
+                        <b>Nature.</b> Nature is used whenever you want to recall 
+                         information on a specific aspect of something found in the natural world, such as a
+                         creature, plant, or gas. Examples include learning about a specific breed of beast,
+                         remembering information about a monster in the middle of a fight, or identifying the
+                         effects of a gas.<br>
+                    <br>
+                        <b>Theology.</b> Theology measures your knowledge of the religions
+                         and spiritual practices of the world. Some examples of Theology checks include 
+                         recognizing the religious hierarchies of a cult, remembering the primary deity of a
+                         specific religion, or inferring the proper religious gestures to make at certain 
+                         times.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">WIS Skills</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Appraisal.</b> Appraisal is used to discern the monetary value of 
+                         items, and if they might be worth more to some people than to others. 
+                         Some examples include figuring out the worth or rarity of a gem, how
+                         much an ancient artifact would fetch for, or which fence might pay the 
+                         best for stolen goods.<br>
+                    <br>
+                        <b>Beast Handling.</b> Beast Handling comes into play whenever you
+                         attempt to gain control of or domesticate a beast. Hungry, scared, or angry beasts
+                         will require higher Beast Handling checks than beasts that have been 
+                         calmed or placated in some way.<br>
+                    <br>
+                        <b>Insight.</b> Insight is used when trying to discern someone’s true 
+                         motives, emotions, or current mental state. Examples include telling if someone is 
+                         lying, determining how someone feels about received news, or determining whether or not
+                         someone is presently hostile to you.<br>
+                    <br>
+                        <b>Navigation.</b> Navigation is used to find your way and prevent
+                         yourself from getting lost, especially in unfamiliar terrain. Examples include 
+                         navigating rough waters, finding your way through a foreign swamp, and forging your
+                         way up a mountain. Navigation is also used when <a href="../Part6/Chapter8.html">traveling</a>.<br>
+                    <br>
+                        <b>Perception.</b> Perception determines your ability to - unsurprisingly - perceive 
+                         the goings-on in the world around you and not get caught unawares. If a character or
+                         player wishes to, they can specify which sense they want to focus their perceptions
+                         on, such as seeing, hearing, smelling, etc., which may give them advantage or 
+                         nullify the disadvantage they would have when using a different sense. For GMs, if a
+                         player does not specify which sense they are using, assume they are perceiving with
+                         all of their senses equally. A character's immediate surroundings, such as the <a href="../Part6/Chapter7.html">weather</a>
+                         or their <a href="../Part6/Chapter6.html">lighting</a> may affect their 
+                         ability to perceive. Some examples include searching a room, listening for the 
+                         approach of enemies, or sniffing the air to see if something smells amiss. For both
+                         PCs and NPCs, if a character is sneaking up on or around another, the party that is
+                         not sneaking must make a Perception check contested by the sneaking party’s Stealth
+                         check to determine if the sneaking party is detected or not.<br>
+                    <br>
+                        <b>Survival.</b> Survival is used primarily for tracking, hunting, and
+                         surviving in the wilds. The amount of <a href="../Part6/Chapter8.html">food
+                         and water found during rests</a> is determined via Survival checks. 
+                         Examples include tracking a creature(s) through a forest, hunting for
+                         game to survive, or finding food that is safe to eat.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">CHA Skills</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Beguilement.</b> The purpose of Beguilement checks is twofold: the first is when direct 
+                         deception is called for, such as lying or attempting to disguise yourself; the second
+                         is when you are performing in some way, such as via acting or performing impressive 
+                         physical feats. The reason for this is because lying and performing largely requires
+                         the same underlying talents, so hybridizing them into a single skill is just efficient.<br>
+                    <br>
+                        <b>Intimidation.</b> Intimidation is used whenever you wish to 
+                         "coerce" another being into submitting to your will. When a creature makes an 
+                         Intimidation check, the creature they are attempting to intimidate should make a 
+                         Willpower save against their check to see if they resist the attempt.
+                         Examples include forcing someone to follow your orders, scaring someone out of a 
+                         fight, or intimidating others into avoiding you.<br>
+                    <br>
+                        <b>Persuasion.</b> Persuasion is used when you/your character believes diplomacy would be
+                         most suited to a given situation, and wishes to use their words instead of fear or
+                         violence. Examples include bartering on the price of goods, convincing a guard to
+                         let you go free, or diplomatically resolving a tense situation.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Tool Skills</h2>
+            <p>Tools are an important part of not just an adventurer’s work, but any craftsman,
+             artisan, or other skilled worker - after all, where would a thief be without her 
+             lockpicks, or an alchemist without his mortar and pestle? <a href="./Chapter3.html">Proficiency</a>
+             with Tool Skills goes up the same way proficiency with Action Skills does, via Skill
+             Points. Like Action Skills, it takes 1 SP for proficiency with a Tool Skill to increase
+             by 1, and all Tool Skills have a proficiency cap of 5 that can be increased to 6 through special means.</p>
+            <p>Checks with Tool Skills are made similarly to how checks with
+             Action Skills are, in that you roll a number of d10s equal to your proficiency in the 
+             appropriate skill (or 1d6 if your proficiency is 0); however, unlike Action Skills,
+             you gain a bonus to your roll equal to your proficiency in the Tool Skill and not a 
+             given Ability Score.</p>
+            <p><b>Components.</b> Every set of tools is made up of a handful of 
+             components. Someone who has <u>></u> 1 proficiency in a set of tools is familiar
+             with all of its components and knows how to use them.</p>
+            <p><b>Action Skills.</b> Most every set of tools directly relates to 
+             and/or benefits <u>></u> 1 Action Skill(s). If proficiency with a set of tools directly relates to
+             a specific skill pointed out in the tool’s description, then when making checks on that
+             Action Skill, you may add your proficiency in the Tool Skill to your Action Skill check.
+             You can add this bonus from multiple sets of tools.</p>
+            <p><b>Special Use.</b> In addition to aiding with Action Skill checks, 
+             many tools also have a handful of other activities they can be used for, such as brewing
+             concoctions, fixing armor, or patching up an ally. Special uses for each set of tools 
+             are described after the Action Skills that that set of tools gives a bonus to, though 
+             there may be some others that aren’t listed. If you think of a special use, discuss it 
+             with your GM.</p>
+            <p><b>Sample DRs.</b> Lastly, for each set of tools, some sample DRs are
+             given for various activities that can be performed using the described tools. The 
+             activities given are by no means an exhaustive list, merely some examples.</p>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Alchemy Supplies</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Alchemy Supplies are comprised of a mortar and pestle,
+                         vials and flasks of various sizes and shapes, and a distillation set.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves any sort of 
+                         chemicals, concoctions, reagents, alchemical processes, or the like, you 
+                         can add your proficiency with these tools to the following skills:
+                         Appraisal, Arcana, Mechanics, Medicine, Nature, and Perception.<br>
+                        <br>
+                        <b>Gather Alchemy Ingredients.</b> Concoctions require ingredients to be brewed, and
+                         if you have <u>></u>1 proficiency with these tools, you can gather ingredients for
+                         <i>weak</i> and <i>moderate</i> concoctions either on your travels or using a day of
+                         downtime; to gather ingredients for <i>strong</i> and <i>exalted</i> concoctions
+                         requires <u>></u>2 proficiency and 2 days of downtime if not done on your adventures.<br>
+                        <br>
+                        <b>Perform Alchemy.</b> These tools can be used to brew concoctions and enchant items 
+                         via <a href="../Part7/Chapter2.html">alchemy</a> (assuming you have the
+                         time and resources).<br>
+                        <br>
+                        <b>Make Gunpowder.</b> Using 3 Aeons' worth of sulfur, charcoal, and saltpeter, you can use
+                         these tools to craft a pound of gunpowder (DR below). Failing this check results causes
+                         you to take 2d6 burn final damage.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Identify a non-concoction substance</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Craft gunpowder</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Identify a concoction and its effects</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Neutralize an acid or a base</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>Create a <a href="../Part6/Chapter11.html">smoke bomb</a></td>
+                                <td>Varies</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Art Supplies</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Art supplies are made up of several pencils, colored dyes and paints,
+                         paintbrushes, a palette, a 3x3 easel, enough clay to create a 1-cubic-foot sculpture, 
+                         and various sculpting tools.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves any sort of piece of
+                         artwork, you can add your proficiency with these tools to the following 
+                         skills: Appraisal, Arcana, Beguilement, Insight, Lore, Perception,
+                         Persuasion, and Theology.<br>
+                        <br>
+                        <b>Create Art.</b> During your downtime, you can <a href="../Part6/Chapter11.html">create</a>
+                         an art piece of your choosing.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Mold small clay figurine</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Create forgery</td>
+                                <td>25</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Blacksmithing Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Blacksmithing tools are comprised of a hammer, tongs, and a whetstone.
+                         Without a forge, anvil, and crucible, these tools are not very useful.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves any sort of metal 
+                         equipment or smithing materials, you can add your proficiency with these
+                         tools to the following skills: Appraisal, Arcana, Lore, Mechanics, Nature,
+                         and Perception.<br>
+                        <br>
+                        <b>Forge and Repair Equipment.</b> Assuming you have a forge and the proper materials at
+                         your disposal, you can spend some of your downtime <a href="../Part6/Chapter11.html">forging</a>
+                         new equipment for you or your allies. How difficult it is to repair equipment is
+                         generally determined by how badly damaged the equipment is, but a good guideline to 
+                         follow is half the DR to create the piece from scratch.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Forge a weapon</td>
+                                <td>Varies</td>
+                            </tr>
+                            <tr>
+                                <td>Forge armor</td>
+                                <td>Varies</td>
+                            </tr>
+                            <tr>
+                                <td>Repair a weapon</td>
+                                <td>Varies</td>
+                            </tr>
+                            <tr>
+                                <td>Repair armor</td>
+                                <td>Varies</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Carpentry Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Used to build wooden structures, these tools are comprised of a 
+                         hammer, some nails, a hatchet, a saw, an adze, a plane, and a chisel.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves a wooden 
+                         construction of some form, you can add your proficiency with these tools to
+                         the following skills: Appraisal, Arcana, Beguilement, Mechanics,
+                         Perception, and Persuasion.<br>
+                        <br>
+                        <b>Construct.</b> Given an appropriate amount of wood and time, you can <a href="../Part6/Chapter11.html">build</a>
+                         a construction of your choice. The quality – including the structural stability – of 
+                         your construction is determined by the result of your check.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Build wooden furniture</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Reinforce a door or window</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Design a simple wooden structure</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Find a weak point in a wooden structure</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Design a complex wooden structure</td>
+                                <td>24</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Cartography Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Cartography tools are comprised of a compass, a ruler, calipers, a 
+                         pencil, a pen, and some ink.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves a map or 
+                         navigational documents you can add your proficiency with these tools to the
+                         following skills: Appraisal, Arcana, Beguilement, Insight, Lore, Perception,
+                         and Persuasion.<br>
+                        <br>
+                        <b>Create a Map.</b> During your travels or downtime you can <a href="../Part6/Chapter11.html">draw</a>
+                         a map to keep track of your progress and keep your group from getting lost; you can also
+                         attempt to create a map during your downtime. The result of your check determines the 
+                         quality and accuracy of the map.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Estimate direction and distance to a landmark</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Determine the age and origin of a map</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Discern the accuracy of a map</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Fill in missing parts of a map</td>
+                                <td>18</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Cooking Supplies</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Cooking supplies are comprised of a small multitude of pots and pans,
+                         a ladle, a stirring spoon, and some basic utensils.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves food, cooking, or 
+                         ingredients, you can add your proficiency with these tools to the following
+                         skills: Appraisal, Beguilement, Insight, Nature, Perception, and Survival.<br>
+                        <br>
+                        <b>Cook a Meal.</b> During your downtime, you can <a href="../Part6/Chapter11.html">whip up</a>
+                         a delicious meal for <u>&#60;</u> 5 people (or more, though this takes longer), provided
+                         you have the ingredients. The consumer then has their Health restored by an amount equal
+                         to the result your check. You can also prepare rations during your downtime, which 
+                         restore an amount of Health equal to half your check.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Determine the quality of a meal</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Duplicate a simple meal</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Duplicate a gourmet meal</td>
+                                <td>22</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Disguise Kits</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> A disguise kit utilizes various cosmetics such as
+                         makeups, hair dyes, a multitude of props, and several articles of clothing.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves cosmetics, disguises,
+                         or costumes (not including perceiving someone in a costume), you can add
+                         your proficiency with these tools to the following skills: Appraisal,
+                         Arcana, Beguilement, Insight, and Nature.<br>
+                        <br>
+                        <b>Create a Disguise.</b> During your downtime you can <a href="../Part6/Chapter11.html">create</a>
+                         a disguise for yourself or someone else. The Perception DR to see through your disguise
+                         is equal to the result of your check. Creating any sort of full disguise or costume 
+                         completely uses up the kit, while smaller activities such as covering up distinguishing
+                         marks will only use part of it, such as ½ or ¼, at your GM’s discretion.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Slightly alter your appearance</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Cover injuries or distinguishing marks</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Copy the appearance of a Sentient of similar heritage</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>Copy the appearance of a Sentient of differing heritage</td>
+                                <td>35</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Explosives Kits</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> An explosives kit is made up of various vials, flasks, a mortar and 
+                         pestle, a measuring cup, a funnel, and a scale. The kit does not include any gunpowder 
+                         or the ingredients to make it, however each of those things can be purchased or can be
+                         created using Alchemy Supplies.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves explosives, 
+                         gunpowder, or any sort of volatile and dangerous substance or chemical, you
+                         can add your proficiency with these tools to the following skills: 
+                         Appraisal, Arcana, Beguilement, Intimidation, Mechanics, Nature, Perception,
+                         Persuasion, and Sleight of Hand.<br>
+                        <br>
+                        <b>Create Explosives.</b> During your downtime and with the right materials, you can 
+                         <a href="../Part6/Chapter11.html">craft</a> various explosives.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Determine the strength of an explosive</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Create a smoke bomb</td>
+                                <td><a href="../Part6/Chapter11.html">Varies</a></td>
+                            </tr>
+                            <tr>
+                                <td>Disarm an explosive</td>
+                                <td><a href="../Part6/Chapter13.html">Varies</a></td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Forgery Kits</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> These tools are comprised of several different types of ink, 
+                         parchments, wax, gold and silver leaf, a multitude of quills, and a handful of small 
+                         tools to sculpt melted wax into a seal.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check involving seals and official 
+                         documents, you can add your proficiency with these tools to the following
+                         skills: Appraisal, Arcana, Beguilement, Insight, Lore, Perception, 
+                         Persuasion, and Theology.<br>
+                        <br>
+                        <b>Create Forgery.</b> During your downtime, you can 
+                         <a href="../Part6/Chapter11.html">forge</a> an official document. The 
+                         result of your check sets the Perception DR to detect the falsehood of the 
+                         forgery.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Duplicate a wax seal</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Mimic handwriting</td>
+                                <td>24</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Gaming Sets</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Like Musical Instruments, there are multiple Gaming Sets
+                         in Iron & Aether, but for simplicity’s sake they have been narrowed down to
+                         3: Cards, Dice, and Juggling.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves a Gaming Set that 
+                         you have proficiency in, you can add your proficiency with these tools to
+                         the following skills: Appraisal, Arcana, Beguilement, Insight, Lore, 
+                         Mechanics, Perception, Persuasion, and Sleight of Hand.<br>
+                        <br>
+                        <b>Play.</b> During your downtime, you can play games using any Gaming Set in your 
+                         possession. When playing, it is up to you whether you wish to gamble or just play a 
+                         friendly game. In either case, your check is contested against your opponents’ checks.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Catch a player cheating</td>
+                                <td>Contested</td>
+                            </tr>
+                            <tr>
+                                <td>Cheat</td>
+                                <td>Contested</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Gunsmithing Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> These tools, used to clean and repair firearms, are made up of a 
+                         metallic brush, a small screwdriver, and a pair of pliers.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check involving flintlocks, arquebuses, 
+                         repeaters, revolvers, or any other kind of firearm (excepting blowguns or
+                         crossbows of any kind), you can add your proficiency with these tools to 
+                         the following skills: Appraisal, Arcana, Beguilement, Insight, Intimidation,
+                         Lore, Mechanics, Perception, and Persuasion.<br>
+                        <br>
+                        <b>Make Bullets.</b> During your downtime you can use these tools to 
+                        <a href="../Part6/Chapter11.html">create</a> bullets for a repeater or 
+                        revolver.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Disable a gun</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Repair a gun</td>
+                                <td>15</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Herbalism Kits</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> An herbalism kit is comprised of a pair of shears, a small pair of 
+                         clippers, a magnifying glass, an eyedropper, a mortar and pestle, and a handful of small
+                         vials and containers.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check involving herbs, spices, plants,
+                         or other flora, you can add your proficiency with these tools to the
+                         following skills: Appraisal, Arcana, Beguilement, Insight, Lore, Medicine,
+                         Nature, Perception, Persuasion, Survival, and Theology.<br>
+                        <br>
+                        <b>Brew <i>Weak</i> Concoctions.</b> Using your knowledge of various flora and their 
+                         effects, you can spend your downtime <a href="../Part7/Chapter2.html">brewing</a>
+                         <i>weak</i> concoctions using materials that you have bought or gathered.<br>
+                        <br>
+                        <b>Gather Alchemy Ingredients.</b> Concoctions require ingredients to be brewed, and
+                         if you have <u>></u>1 proficiency with these tools, you can gather ingredients for
+                         <i>weak</i> and <i>moderate</i> concoctions either on your travels or using a day of
+                         downtime; to gather ingredients for <i>strong</i> and <i>exalted</i> concoctions
+                         requires <u>></u>2 proficiency and 2 days of downtime if not done on your adventures.
+                         Though you can only brew <i>weak</i> concoctions with these tools, the stronger ingredients
+                         you find can be sold to alchemists.<br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Identify a plant</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Safely harvest a dangerous plant</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Discern a plant’s effect(s)</td>
+                                <td>16</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Jeweling Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Jeweling Tools are made up of a small microscope, a magnifying glass,
+                         a set of scales, a pair of tweezers, a pair of pliers, a small hammer, a small saw, and
+                         a file.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check involving any sort of jewel or 
+                         precious mineral, you can add your proficiency with these tools to the 
+                         following skills: Appraisal, Arcana, Beguilement, Insight, Lore, Nature, 
+                         Perception, Persuasion, and Theology.<br>
+                        <br>
+                        <b>Cut Gems.</b> Using these tools, you can carve and shape gems and other precious 
+                         minerals into shapes and designs of your choice, within reason. The value, in Aeons,
+                         of the gem you cut is equal to 3 times the result of your check.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Identify a gem</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Determine a gem’s recent history</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Find a weak point in a gem</td>
+                                <td>20</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Leatherworking Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Leatherworking tools are comprised of a small knife, an awl, an edger,
+                         a hole punch, and several lengths of thread.<br>
+                        <br>
+                        <b>Action Skills.</b> Whenever making a check involving any sort of leather
+                         goods, you can add your proficiency with these tools to the following 
+                         skills: Appraisal, Arcana, Beguilement, Insight, Nature, Perception,
+                         Persuasion, and Survival.<br>
+                        <br>
+                        <b>Tan Hides.</b> You can tan hides and animal skins in your possession, turning them 
+                         into leather over the course of 6 days.<br>
+                        <br>
+                        <b>Make Armor.</b> During your downtime, you can <a href="../Part6/Chapter11.html">craft</a>
+                         leather and hide armor.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Repair a pair of leather gloves/boots</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Craft a pair of leather gloves/boots</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Repair hide armor</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Repair leather armor</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Craft hide armor</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Craft leather armor</td>
+                                <td>28</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Masonry Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Used to construct stone structures, masonry tools include a trowel, a
+                         hammer, a ruler, a chisel, and some brushes.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check involving any sort of stone 
+                         structure or construction, you can your proficiency with these tools to the
+                         following skills: Appraisal, Arcana, Beguilement, Climb, Insight, Mechanics,
+                         Nature, Perception, Persuasion, and Theology.<br>
+                        <br>
+                        <b>Demolish.</b> Using your knowledge of stonework, you can find and exploit the weak 
+                         points of a stone structure, allowing you to easily tear it down however you see fit.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Chisel a hole into a stone wall</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Find a weak point in a stone wall</td>
+                                <td>14</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Medicine Kits</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> A medicine kit is comprised of a surgical needle and thread, a small
+                         pair of scissors, several lengths of gauze, a collection of various sizes of small, 
+                         adhesive, single-use bandages, and a sampling of pain-relieving drugs.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves some sort of disease, sickness, 
+                         or poison, you can add your proficiency with these tools to the Medicine skill.<br>
+                        <br>
+                        <b>Healing.</b> A single medicine kit can be used to heal a single person over a period 
+                         of roughly 10 minutes. To do this, a character who is proficient with Medicine Kits and
+                         has at least one in their inventory makes a check with it on a creature of their choice;
+                         the creature that the kit is being used on regains an amount of Health equal to the 
+                         total result of the roll. In doing so, the kit is consumed and its components are 
+                         completely used up. This does not work on <a href="../Part3/Automata.html">Automata</a>;
+                         instead, Tinkering Tools must be used.<br>
+                        <br>
+                        <b>Stabilizing.</b> If a creature is <a href="../Part6/Chapter4.html">Enduring</a>,
+                         someone who is proficient with Medicine Kits and has one can attempt to stabilize them.
+                         To do this, that character can use 4 actions to make a check on the <a href="../Part6/Chapter4.html">Enduring</a>
+                         creature; this check has a DR equal to the current save DR of the <a href="../Part6/Chapter4.html">Enduring</a>
+                         creature. If this check succeeds, the creature is stabilized and no longer needs to make
+                         Endurance Saves; otherwise, the Endurance Save DR doubles, to a maximum of 20. The kit 
+                         is consumed regardless of success or failure. This does not work on <a href="../Part3/Automata.html">Automata</a>;
+                         instead, Tinkering Tools must be used.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Staunch bleeding</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Temporarily relieve disease/poison symptoms</td>
+                                <td>Varies</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Musical Instrument</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> A musical instrument is made up of just the instrument itself. There 
+                         are as many instruments in I&A as one can think of, but for the sake of 
+                         simplicity, there are four instruments described here: the Drum, the Flute, the Lute, 
+                         and the Viola. Each is an example of one type of instrument: percussion, wind, plucked 
+                         string, and string, respectively. Your proficiency with one type of instrument does not
+                         extend to the other types.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check involving musical instruments, you
+                         can add your proficiency with these tools to the following skills: 
+                         Appraisal, Beguilement, Insight, Lore, Mechanics, and Perception.<br>
+                        <br>
+                        <b>Perform.</b> Using an instrument in your possession, you can add the full result of a
+                         check with these tools to a Beguile check as you use this instrument to <a href="../Part6/Chapter10.html">perform</a>.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Tune an instrument</td>
+                                <td>12</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Navigation Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Navigation Tools contain a sextant, a compass, calipers,
+                         and a ruler.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check involving navigating or tools used
+                         to do so, you can add your proficiency with these tools to the following
+                         skills: Appraisal, Beguilement, Insight, Lore, and Mechanics.<br>
+                        <br>
+                        <b>Navigate.</b> Navigation tools, unsurprisingly, make <a href="../Part6/Chapter8.html">navigation</a>
+                         easier. Whenever attempting to find your way to another place, particularly to someplace
+                         you’ve never been before, you can use these tools to help you find your way. If you have
+                         just a compass, you have advantage on your Navigate checks to find your way to your
+                         destination; if you have a full set of Navigation Tools, you still have advantage and 
+                         you can add half the result of a check with these tools to your Navigate check.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Read a map</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Plot a course</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Discover your position on a map or nautical chart</td>
+                                <td>20</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Thieving Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Thieving Tools are comprised of a small file, a set of lock picks, a
+                         small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of
+                         pliers.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves some sort of trap 
+                         or lock, you can add your proficiency with these tools to the following 
+                         skills: Mechanics, Perception, and Sleight of Hand.<br>
+                        <br>
+                        <b>Set Traps.</b> Using these tools and your knowledge of the workings of traps you can make a 
+                         check to spend an appropriate an amount of time creating and setting various <a href="../Part6/Chapter13.html">traps</a> 
+                         provided you have the materials available. The total of your check becomes the DR for 
+                         someone else to discover and disarm your trap, and the damage your trap deals (if it is
+                         a damage-dealing trap) is a number of d6s equal to your proficiency.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Disable a trap</td>
+                                <td>Varies</td>
+                            </tr>
+                            <tr>
+                                <td>Discern how a trap works</td>
+                                <td>Varies</td>
+                            </tr>
+                            <tr>
+                                <td>Pick a lock</td>
+                                <td>Varies</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Tinkering Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Tinkering tools include a variety of small hand tools (wrenches, 
+                         pliers, wirecutters, etc.), some needles, some copper wires, nuts and bolts, and some
+                         glue.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves a mechanism, 
+                         machine, or device, you can add your proficiency with these tools to the
+                         following skills: Appraisal, Beguilement, Insight, Intimidation, Lore,
+                         Mechanics, Nature, Perception, and Persuasion.<br>
+                        <br>
+                        <b>Repair.</b> Using an hour of your time and these tools, you can make a check to repair
+                         a damaged device. The amount of Health the device regains is equal to the result of your
+                         check; this also applies to <a href="../Part3/Automata.html">Automata</a>,
+                         in much the same way medicine kits work on organic creatures.<br>
+                        <br>
+                        <b>Tinker.</b> During your downtime, you can <a href="../Part6/Chapter11.html">tinker</a>
+                         together a device of your own design.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Assess a mechanism’s non-obvious condition</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Repair a somewhat damaged prosthetic</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Create a small device or toy</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Improve an existing mechanism</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>Repair a severely damaged prosthetic</td>
+                                <td>30</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Vehicles (Air)</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Air vehicles are comprised of small, medium, and large airships, as 
+                         well as hot air balloons and blimps. Various air vehicles can be read about <a href="../Part5/Chapter6.html">here</a>.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves any sort of 
+                         air-based vehicle or mount, you can add your proficiency with these tools
+                         to the following skills: Appraisal, Arcana, Beguilement, Beast Handling,
+                         Lore, Nature, Navigation, Mechanics, Perception, and Persuasion.<br>
+                        <br>
+                        <b>Pilot an Aircraft.</b> Using your proficiency with air-based vehicles, you are able to 
+                         pilot and commandeer aircraft and winged mounts.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Assess a vehicle’s non-obvious condition</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Perform a difficult maneuver</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>Navigate turbulent weather</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>Land a crashing vehicle</td>
+                                <td>38</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Vehicles (Land)</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Land vehicles are comprised of wagons, autocars, and trains, as well as
+                         different mounts and ridable beasts. Various land vehicles can be read about <a href="../Part5/Chapter6.html">here</a>.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves any sort of 
+                         land-based vehicle or mount, you can add your proficiency with these
+                         tools to the following skills: Appraisal, Arcana, Beguilement, Beast
+                         Handling, Lore, Nature, Navigation, Mechanics, Perception, and
+                         Persuasion.<br>
+                        <br>
+                        <b>Drive a Vehicle.</b> Using your proficiency with land-based vehicles, you are able to
+                         drive and commandeer mounts and wheeled transportation.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Assess a vehicle’s non-obvious condition</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Navigate turbulent weather at slow speeds</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Navigate turbulent weather at high speeds</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Perform a difficult maneuver</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>Maintain control of a crashing vehicle</td>
+                                <td>25</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Vehicles (Water)</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Water vehicles are largely comprised of ships and boats of various 
+                         sizes, as well as submarines. Various water vehicles can be read about <a href="../Part5/Chapter5.html">here</a>.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves any sort of 
+                         water-based vehicle or mount, you can add your proficiency with these
+                         tools to the following skills: Appraisal, Arcana, Beguilement, Beast
+                         Handling, Lore, Nature, Navigation, Mechanics, Perception, and
+                         Persuasion.<br>
+                        <br>
+                        <b>Helm a Boat.</b> Using your proficiency with water-based vehicles, you are able to
+                         helm and commandeer ships, boats, and aquatic mounts.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Assess a vehicle’s non-obvious condition</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Navigate troubled waters</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Navigate troubled waters</td>
+                                <td>30</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Woodcarving Tools</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>Components.</b> Woodcarving tools are comprised of a carving knife, a gouge, a small
+                         chisel, a small saw, and a pair of carving gloves.<br>
+                        <br>
+                        <b>Action Skills.</b> When making a check that involves anything to do
+                         with wood that has been carved or manufactured in some way, you can
+                         add your proficiency with these tools to the following skills:
+                         Appraisal, Lore, Mechanics, Nature, and Perception.<br>
+                        <br>
+                        <b>Whittle.</b> Provided you have wood at your disposal, you can use 
+                         your downtime to whittle.<br>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>Activity</th>
+                                <th>DR</th>
+                            </tr>
+                            <tr>
+                                <td>Carve a small statue</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Craft a small toy</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Carve a small piece of furniture</td>
+                                <td>20</td>
+                            </tr>
+                        </table>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Weapon Skills</h2>
+            <p>Weapon Skills measure one’s <a href="../Part1/Chapter3.html">proficiency</a>
+             with a given weapon, specifically through what category of weapon that weapon belongs 
+             to: Archery, Exotic, Firearm, Large, Medium, Polearm, Small, Throwing, or Unarmed. <a href="../Part5/Chapter2.html">This chapter</a>
+             contains the full list of weaponry in I&A, and your <a href="../Part2/Chapter1.html">background</a>,
+             class, and personal decisions at <a href="../Part1/Chapter0-1.html">character 
+             creation</a> will tell you what weapons you initially have proficiency in – though just
+             like with Action and Tool Skills, you can gain proficiency in more types of weaponry as
+             you level up.</p>
+            <p>It takes 1 Weapon Point (WP) to increase your proficiency with a Weapon Skill by
+             1, and all Weapon Skills have a proficiency cap of 5. All characters gain 1 WP at
+             every even-numbered level, except for <a href="../Part4/Aetherian.html">Aetherians</a>
+             who gain 1 every four levels starting at level 4.</p>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Archery Weapons</button>
+                    <div class="gridtent">
+                    <br>
+                        Archery weapons are weapons that fire arrows or small projectiles, and are comprised
+                         of bows and slings.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Exotic Weapons</button>
+                    <div class="gridtent">
+                    <br>
+                        Exotic weapons are unique, usually quite rare weapons that require specialized 
+                         training of their own to be used effectively; for this reason, there is no “Exotic” 
+                         Weapon Skill – instead, you put WP into each Exotic weapon individually. Most are 
+                         foreign to the vast majority; even veteran warriors are usually not quite sure how to
+                         handle one when they first encounter it. Many of them are unique to certain monk 
+                         monasteries and are extremely rare or unheard of outside of them. Some Exotic weapons 
+                         are made to be dual-wielded, while others cannot be without the “Two-handed 
+                         Dual-Wielding” feat. Some examples of Exotic weapons included meteor hammers, 
+                         nun’chaku, and chakram.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Firearm Weapons</button>
+                    <div class="gridtent">
+                    <br>
+                        Firearm weapons are not just weapons that fire bullets and use gunpowder, but also 
+                         fire bolts; this includes crossbows, flintlocks, and repeaters. Shots made with Firearm
+                         weapons while <a href="../Part6/Chapter3.html">prone</a> have advantage.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Large Weapons</button>
+                    <div class="gridtent">
+                    <br>
+                        Large weapons are very heavy and almost always need to be wielded with two hands; for
+                         this reason, Large weapons cannot be dual-wielded without the “Two-handed 
+                         Dual-Wielding” <a href="../Part4/ClasslessFeats.html">classless feat</a>.
+                         Examples of Large weapons include greatclubs and claymores.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Medium Weapons</button>
+                    <div class="gridtent">
+                    <br>
+                        Medium weapons are a bit heavier than Small weapons and can usually be wielded with
+                         one or two hands; while Medium weapons can be dual-wielded, each individual weapon 
+                         may deal less damage than it would if wielded with two hands. Some examples of
+                         Medium weapons are swords, battleaxes, and maces.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Polearm Weapons</button>
+                    <div class="gridtent">
+                    <br>
+                        Polearm weapons are long weapons that typically have a lot of reach and end with a
+                         bladed tip. Polearm weapons require the use of two hands to wield, and under no 
+                         circumstances can be dual-wielded. Examples of Polearm weapons include pikes, halberds,
+                         and glaives.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Small Weapons</button>
+                    <div class="gridtent">
+                    <br>
+                        Small weapons are weapons that are usually light and always fit in one hand; because
+                         of this, it is easy to dual-wield Small weapons. Some examples of these weapons are 
+                         daggers, clubs, and handaxes.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Throwing Weapons</button>
+                    <div class="gridtent">
+                    <br>
+                        Throwing weapons are weapons that are designed or able to be thrown. These weapons 
+                         have their standard/long ranges in the property column of the Normal Weapons table. 
+                         Examples of throwing weapons include daggers, javelins, and nets.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Unarmed Weapons</button>
+                    <div class="gridtent">
+                    <br>
+                        Unarmed weapons apply to both attacks made with just your body, such as your hands 
+                         and feet, and attacks made with weapons that simulate bodily movements, such as claws.
+                         Unarmed strikes (e.g. your punches and kicks) deal 1d2 + your STR physical 
+                         base damage and cost an action unless otherwise indicated by a special exception.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Skill Checks Using Weapons</h2>
+            <p>Sometimes, a character may wish to perform a task using their weapon that isn't explicitly an
+             attack, but more a test of skill, like an archer trying to shoot an apple off the head of another
+             creature. In these instances, rather than roll using the weapon's damage dice, instead have the
+             player roll a number of d10s equal to their Weapon Skill proficiency, like you would with an
+             Action or Tool Skill check, and add the appropriate Ability Score.</p>
+            
+            <h2>Improvised and Mechanical Weapons</h2>
+            <p>Two types of weapons - improvised and mechanical - do not have corresponding skills of
+             their own, and are instead explained here.</p>
+            <p><b>Improvised Weapons.</b> Improvised weapons are objects that are not typically meant
+             to be wielded as weapons but are used as such by the clever and creative adventurer 
+             thinking on their feet. When a character decides to use an object as an improvised
+             weapon, it is up to the GM to decide whether that object can be wielded as a weapon and,
+             if it can, its damage, its corresponding skill (Small, Medium, Polearm, etc.) and by 
+             extension your character’s proficiency with it, and other such information; most
+             improvised weapons happen to fit the criteria for Small weapons, but this is not always
+             the case. Some examples of improvised weapons include bottles, chairs, and sticks.</p>
+            <p><b>Mechanical Weapons.</b> Mechanical weapons are special weapons that contain some sort of 
+             mechanical component; some can transform into another weapon at the 
+             behest of the character wielding it, while others have varying alterations that may,
+             for instance, make them easier to carry or allow them to fire more frequently. The mechanics of a mech weapon
+             can be figured out with a successful DR 14 Mechanics check; unless this check is passed,
+             a character cannot figure out how to properly use a mech weapon unless they are shown
+             how or are trained in its use.</p>
+            
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var gridtent = this.nextElementSibling;
+                    if (gridtent.style.maxHeight) {
+                        gridtent.style.maxHeight = null;
+                    } else {
+                        gridtent.style.maxHeight = gridtent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+   
+</html>

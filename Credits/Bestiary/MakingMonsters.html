@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1">
+      
+        <title>Making Your Own Monsters</title>
+        
+        <link rel = "stylesheet" href = "./BestiaryStyle.css">
+        <script src="./BestiaryFunc.js"></script>
+        
+    </head>
+    
+    <body>
+         <!--Site Nav-->
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../index.html">
+                    <img src="../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px" style="margin: -4.5px .21%;"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenter">
+                <a href="./BestiaryHome.html">Table of Contents</a>
+            </div>
+
+        </div>
+        
+        
+        <div class="rules">
+        
+            <center><h1>Making Your Own Monsters</h1></center>
+            <h2>Letting Creativity Flow</h2>
+            <p>There are a great, great many monsters and creatures presented in this book that
+             players are free to use and place into their campaigns as they wish. But what if you 
+             have an idea for a monster that isn’t presented here? The solution to this is simple:
+             just make a stat block for it yourself! Presented here is a step-by-step method of 
+             creating your own creatures in manner akin to those presented here.</p>
+             
+            <br>
+            
+            <h2>Step 0: Modify an Existing Creature</h2>
+            <p>Before dedicating the time and energy necessary to making a creature of your own,
+             try to find an existing creature already in this book that is similar to the one you 
+             have an idea for, and modify it (in lore, mechanics, or both) to suit your idea. This 
+             may prove more fruitful than you think!</p>
+             
+            <Br>
+            
+            <h2>Step 1: What is its Name?</h2>
+            <p>Every great monster needs a name. Think of a name that properly captures the 
+             beast’s essence, its gravitas, the terror (or otherwise) that it should strike in all 
+             those that hear it.</p>
+             
+            <br>
+            
+            <h2>Step 2: What Type of Creature is It?</h2>
+            <p>Is this creature a <a href="./Monstrosities.html">Monstrosity</a>,
+             <a href="./Beasts.html">Beast</a>, <a href="./Undead.html">Undead</a>, an
+             <a href="./Others.html">Other</a>, or something else entirely? Knowing what type of
+             creature your monster is is important to knowing its niche in the world and under
+             what circumstances your players can/should encounter it.</p>
+             
+            <br>
+            
+            <h2>Step 3: How Big is It?</h2>
+            <p>A creature’s size is important for a multitude of factors. A creature’s size will
+             inform you of its Health, its defenses, how much damage it should deal, and the scale of
+             its threat.</p>
+            
+            <br>
+            
+            <h2>Step 4: What are its Ability Scores?</h2>
+            <p>A creature’s ability scores convey a great deal of information about it, primarily
+             what it is good at and what its strengths and weaknesses are. Additionally, its ability
+             scores will inform its defenses and saves. The highest any creature’s ability scores can
+             go is 10, though there are exceptions for creatures such as gods and Titans.</p>
+             
+            <br>
+            
+            <h2>Step 5: How Good are its Defenses?</h2>
+            <p>The next step is determining the creature’s DEF/RaDEF scores and its saves: 
+             assuming it is wearing Light, Medium, or no Armor, its Dodge score is determined by its
+             <a href="../Rulebook/Part1/Chapter8.html">Size Penalty</a> + its DEX score + its AGI score (minimum 0).</p>
+            <p>Armor is a bit more difficult, and requires some arbitration, but with
+             a solid baseline: a creature’s Armor is dependent on the strength and toughness of its 
+             hide and scales, if it has any, as well as its size; it can also wear actual physical 
+             armor, increasing its Armor score even more.  Use the following table as a guide.</p>
+            <table>
+                <caption><b>Natural Armor</b></caption>
+                <tr>
+                    <th>Size</th>
+                    <th>None</th>
+                    <th>Beast Hide</th>
+                    <th>Monster Hide</th>
+                    <th>Monster Scale</th>
+                    <th>Dragon Scale</th>
+                </tr>
+                <tr>
+                    <td>Tiny</td>
+                    <td>0 or 1</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>10</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>0 or 1</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>10</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>0 or 1</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Big</td>
+                    <td>0 or 1</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>0 or 1</td>
+                    <td>6</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Huge</td>
+                    <td>0 or 1</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>15</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Massive</td>
+                    <td>0 or 1</td>
+                    <td>8</td>
+                    <td>15</td>
+                    <td>20</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Colossal</td>
+                    <td>0 or 1</td>
+                    <td>10</td>
+                    <td>18</td>
+                    <td>20</td>
+                    <td>25</td>
+                </tr>
+            </table>
+            <p>If a creature has more than one type of natural armor, simply add the two values
+             for those types of armor together; for example, if a Large creature has Beast Hide
+             and Monster Scale armor, its base Armor value would be 21 (6+15). A creature can have
+             only one type of hide and one type of scale.</p>
+            <p>A creature's <a href="../Rulebook/Part1/Chapter6.html">saves</a> are determined by its
+             ability scores: Fortitude is its STR score + CON score divided by 2, minimum .25;
+             Reflex is the creature’s AGI score + DEX score divided by 2, minimum .25; Willpower
+             is comprised of the creature's CHA score + either its INT or WIS score divided by 2,
+             minimum .25.</p>
+             
+            <br>
+            
+            <h2>Step 6: How Much Health Does it Have?</h2>
+            <p>Much like its Armor score, a creature’s Health is also informed by its size: 
+             refer to the following table as a guide.</p>
+            <table>
+                <tr>
+                    <th>Size</th>
+                    <th>Health Die (Average)</th>
+                </tr>
+                <tr>
+                    <td>Tiny</td>
+                    <td>d2 (1.5)</td>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>d4 (2.5)</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>d6 (3.5)</td>
+                </tr>
+                <tr>
+                    <td>Big</td>
+                    <td>d8 (4.5)</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>d10 (5.5)</td>
+                </tr>
+                <tr>
+                    <td>Huge</td>
+                    <td>d12 (6.5)</td>
+                </tr>
+                <tr>
+                    <td>Massive and Colossal</td>
+                    <td>d20 (10.5)</td>
+                </tr>
+            </table>
+            <p>As for determining exactly how much Health a creature has, that is up
+             to you to decide, and is ultimately a big factor in how difficult you want the monster 
+             to be/how long you want the fight to be, i.e. monsters with more Health will be more
+             difficult and make for longer fights. If your creature ends up having an odd amount of
+             Health Dice, round its average Health down, so a creature with 3d8 Health should have 13
+             average Health; also, don’t forget to multiply its CON score by the number of Health
+             Dice used and add that to its average Health, e.g. a creature with a CON score of 2
+             and 5 Health Dice will have 10 (2 times 5) added to its average Health. If you want to
+             vary a creature’s Health without rolling all of its Health Dice, consider rolling a 
+             single Health Die and adding or subtracting that to its average Health depending on 
+             whether the result is odd or even, respectively.</p>
+             
+            <br>
+            
+            <h2>Step 7: What is it Vulnerable/Resistant/Immune To?</h2>
+            <p>Depending on a creature’s nature, it may be vulnerable, resistant, or immune to 
+             certain damage types or conditions, e.g. Scorched will be immune to burn damage but
+             vulnerable to freeze damage, and snakes cannot be knocked prone.</p>
+            <p>If a creature is vulnerable or resistant to any conditions, then it has
+             disadvantage or advantage respectively on saves against those conditions.</p>
+             
+            <br>
+            
+            <h2>Step 8: How Fast is It?</h2>
+            <p>A creature’s speed is largely determined by its size, but is also modified by its
+             AGI score and general body shape: for example, Tiny creatures are able to cover a lot 
+             less ground than Large ones, and quadrupeds are much quicker than bipeds. If a creature
+             is a quadruped, add 6 meters to its walking speed; aside from that, refer to the 
+             following table for determining a creature’s walking speed – remember a creature’s Base
+             Movement refers to its speed when its AGI score is 2 and it uses all of its actions to move.</p>
+            <table>
+                <tr>
+                    <th>Size</th>
+                    <th>Base Movement</th>
+                </tr>
+                <tr>
+                    <td>Tiny</td>
+                    <td>10 meters</td>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>16 meters</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>20 meters</td>
+                </tr>
+                <tr>
+                    <td>Big</td>
+                    <td>24 meters</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>28 meters</td>
+                </tr>
+                <tr>
+                    <td>Huge</td>
+                    <td>32 meters</td>
+                </tr>
+                <tr>
+                    <td>Massive</td>
+                    <td>36 meters</td>
+                </tr>
+                <tr>
+                    <td>Colossal</td>
+                    <td>40 meters</td>
+                </tr>
+            </table>
+            <p>Also remember that a creature may be more at home in the water or in 
+             the air than on land, in which case the above table applies to their swimming/flying 
+             speed rather than their walking speed.</p>
+             
+            <br>
+            
+            <h2>Step 9: What Skills Does it Have?</h2>
+            <p>This step is rather straightforward: whatever you believe your creature is good
+             at, give it the appropriate proficiency in the appropriate skill, e.g. a land-based
+             creature that is good at swimming should have a Swim proficiency of <u>></u>3.</p>
+             
+            <br>
+            
+            <h2>Step 10: Does it Have any Special Senses?</h2>
+            <p>Some creatures, particularly nocturnal ones or those that have lived in the dark
+             for extended periods of time, will develop special senses to help them survive in their
+             environment, or they may have these senses as a result of arcane influence: senses like
+             infrared vision, blindsense, or something else entirely.</p>
+             
+            <br>
+            
+            <h2>Step 11: What Language(s) Does it Speak?</h2>
+            <p>Many creatures and monsters are able to speak, either physically or 
+             telepathically. If your creature can speak, consider what languages it does know,
+             or if other creatures simply interpret what it “says” as a language they already 
+             know, such as in the case of some of the Others. Remember that Common is a language
+             that a creature must be taught.</p>
+             
+            <br>
+            
+            <h2>Step 12: Where can it be Found?</h2>
+            <p>Determined in large part by what type of creature it is – but ultimately by you –
+             where a creature is found either in general or by your party specifically is a very 
+             important aspect of that creature’s existence; <a href="./Unliving.html">Unliving</a>,
+             for example, are almost solely found on the Plane of Life.</p>
+             
+            <br>
+            
+            <h2>Step 13: Does it Have Passive Abilities?</h2>
+            <p>Some creatures have abilities that do not require an action to use or are simply
+             always active. One such example of this is the Shark’s Bloodlust feature, which 
+             activates immediately upon the Shark tasting blood or dealing final damage to a creature.
+             A creature’s passive abilities can heavily impact its difficulty.</p>
+             
+            <br>
+            
+            <h2>Step 14: What are its Attacks, and How Much do They Hurt?</h2>
+            <p>For their attacks, most creatures will likely use their natural weapons, such as
+             their claws or teeth. As a creature gets larger, the value of its damage die will 
+             generally increase - as shown in the table below - but this is not a hard-and-fast
+             rule, as creatures may have varying weapons that deal different amounts of damage
+             and bestow different effects.</p>
+            <table>
+                <tr>
+                    <th>Size</th>
+                    <th>Damage Die</th>
+                </tr>
+                <tr>
+                    <td>Tiny</td>
+                    <td>d2-d4</td>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>d6</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>d6</td>
+                </tr>
+                <tr>
+                    <td>Big</td>
+                    <td>d6</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>d8</td>
+                </tr>
+                <tr>
+                    <td>Huge</td>
+                    <td>d10</td>
+                </tr>
+                <tr>
+                    <td>Massive and Colossal</td>
+                    <td>d12</td>
+                </tr>
+            </table>
+            <p>When determining how much damage a creature deals, keep the party’s defenses in
+             mind: most DEF scores start at around 5-10 and usually increase as PCs gain levels.</p>
+             
+            <br>
+            
+            <h2>Step 15: Does it Have Active Abilities?</h2>
+            <p>Aside from a creature’s attacks, it is important to consider whether it has any
+             other abilities, such as innate elemancy, shapeshifting, or anything else of note.
+             All creatures also have access to the actions listed
+             <a href="../Rulebook/Part6/Chapter1.html">here</a>.</p>
+             
+            <br>
+            
+            <h2>Step 16: What Does it Have on It?</h2>
+            <p>Many creatures will have loot on their person, which they usually lose possession
+             of when they die or are otherwise defeated. Additionally, many monsters and creatures 
+             can be skinned or have other parts that can be scavenged off of their bodies (such as a
+             dragon’s scales) to be used as armor materials.</p>
+             
+            <br>
+            
+            <h2>Step 17: How Difficult is It?</h2>
+            <p>Finally, you must determine how much of a challenge your creature is. There are 7
+             tiers of difficulty in Twelve Elements, ranging from 0 – 6, that convey a general sense 
+             of a beast’s toughness for parties of various levels. The different tiers assume a 
+             monster of that tier is being faced by 4 party members of various classes of the same 
+             level, and should present a decent challenge to such parties. Use the <a href="../Rulebook/Part4/LevelingUp.html">Tiers 
+             table</a> as a guide.</p>
+            
+        </div>
+    </body>
+   
+</html>

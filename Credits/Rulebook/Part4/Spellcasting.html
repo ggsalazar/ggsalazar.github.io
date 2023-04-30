@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Spellcasting</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+         <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 4: Classes</a>
+            <a href="./Introduction.html">Introduction</a>
+            <a href="./Artificer.html">Artificer</a>
+            <a href="./Mutant.html">Mutant</a>
+            <a href="./Psychokinetic.html">Psychokinetic</a>
+            <a href="./Rogue.html">Rogue</a>
+            <a href="./Warrior.html">Warrior</a>
+            <a href="./Spellcasting.html" class="active">Spellcasting</a>
+            <a href="./Aetherian.html">Aetherian</a>
+            <a href="./ClasslessFeats.html">Classless Feats</a>
+            <a href="./LevelingUp.html">Leveling Up</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Warrior.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Aetherian.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 4: Classes &ensp; &#9776;</span>
+            </div>
+
+        </div>
+        
+        
+        <div class="rules">
+        
+            <center><h1>Spellcasting</h1></center>
+            
+            <h2>Spells</h2>
+            <p>A spell is a special arcane effect produced by the inherent power of the casting
+             Aetherian, or of the power imbued into whatever enchanted item the caster is 
+             wielding. Spells usually produce some sort of visible and immediately noticeable 
+             effect, though this is not always the case.</p>
+            
+            <h2>Perceiving a Spell Being Cast</h2>
+            <p>All spells require movement of some kind, usually some sort of somatic allegory
+             for what the spell is trying to do, e.g. when casting the spell <i>Burst</i> an 
+             Aeromancer might forcefully push their hands out in a mimicry of what the spell is
+             doing, or a Tempomancer might use their hands to wind back the arms of a spectral
+             clock when casting <i>Rewind</i>. Because of these movements, an Aetherian cannot
+             cast spells while wearing Medium or Heavy armor (except chain shirts) or Medium or 
+             larger shields. If an Aetherian wishes to cast a spell subtly so as not to be 
+             noticed doing so, they can make a Sleight of Hand check contested against the other
+             party’s Perception check.</p>
+            
+            <h2>Spell Traits</h2>
+            <p>Every spell has a collection of traits which detail specific and important 
+             aspects of the spell: <b>Mana Cost</b>, <b>Casting Time</b>, <b>Range</b>, 
+             <b>Damage</b>, <b>Save</b>, <b>Duration</b>, <b>Area of Effect</b>, and <b>Notable
+             Effects</b>.</p>
+            <p><b>Mana Cost.</b> The amount of Mana the caster must expend to unleash the
+             spell’s power; the caster’s maximum Mana must be <u>></u> to the Mana Cost of a
+             spell for them to be able to cast it at all. When casting a spell, the caster must
+             subtract the Mana Cost of the spell from their remaining Mana; if the Mana Cost of
+             the spell is > their remaining Mana, they can still cast it, however their Mana 
+             will be reduced to 0 and their current Health will be depleted by 5 times the 
+             remaining difference.</p>
+            <p><b>Casting Time (C.T.).</b> How long it takes for the spell to be cast. If a spell has a
+             casting time of > 1 action, then the caster cannot take any other actions while casting or
+             the casting will fail. Until the casting is complete, the caster is considered to 
+             be concentrating (see <b>Duration</b> below) on the spell.</p>
+            <p><b>Range (Rng.).</b> How far away from the caster’s current position the origin 
+             point of the spell can be placed/the target(s) can be; the caster must have
+             line of sight on the origin point/target in order to cast the spell. If the caster
+             has line of sight but cannot actually see the origin point/target, then the damage
+             of the spell may be rolled with disadvantage, or if the spell requires a save, the
+             target can make it with advantage.</p>
+            <p><b>Damage (Dam.).</b> The type of damage (if any) a spell deals; spells deal 1d8 base
+             damage and scale to the caster's Aether proficiency, which also doubles as the bonus
+             to the spell's damage. For example, if a spell says it deals burn damage and the caster
+             has 3 Aether proficiency, then the caster rolls 3d8 +3 and measures that against the
+             target's (Ra)DEF. Aetherians are immune to damage from their own spells, however the
+             wielders of spellcasting items are not.</p>
+            <p><b>Save.</b> What type of save, if any, is needed; saves are always made against
+             the caster's Aether Save DR. The effects of failing the save will be given in <b>Notable
+             Effects</b>.</p>
+            <p><b>Duration (Dur.).</b> How long the spell can last. Spells with the 
+             <b>Concentration</b> tag as part of their duration require the caster’s constant
+             focus, and being attacked can cause the caster to lose focus, ending the spell 
+             prematurely. If a caster takes damage while casting a spell with the concentration
+             tag, they must make a Willpower save against twice the final damage dealt; on a 
+             failure, the spell ends. A caster can have only one concentration spell going at a
+             time.</p>
+            <p><b>Area of Effect (AoE).</b> Detailed below.</p>
+            <p><b>Notable Effects (Efcs.).</b> What will happen inside the spell’s AoE/to its 
+             targets. Unless stated otherwise, Aetherians are immune to the Effects of their own spells,
+             however the wielders of spellcasting items are not.</p>
+            
+            <h2>Areas of Effect</h2>
+            <p>A spell’s <b>Area of Effect (AoE)</b> gives the shape of the spell, as well as 
+             the dimensions of that shape. Each shape has a point of origin, or a spot from
+             which the spell’s power and energy erupts. The direction into which it erupts is 
+             usually up to the caster, though some spells default to the direction the caster is
+             facing.</p>
+            <p>The shape and dimensions of a spell’s AoE is specified in its description, and 
+             the different possible shapes (and their respective points of origin) are given 
+             here:</p>
+            <ul>
+                <li>A <b>cone</b> has length and width and the point of origin is at the tip;</li>
+                <li>A <b>cube</b> has the length of the faces and the point of origin is in the
+                 middle of one face;</li>
+                <li>A <b>cylinder</b> has diameter and length and the point of origin is on one
+                 face;</li>
+                <li>A <b>line</b> has length (and sometimes height), is assumed to be 
+                 1 meter wide, and the point of origin is at one end;</li>
+                <li>And a <b>sphere</b> has diameter and the point of origin is in the exact 
+                 center.</li>
+            </ul>
+            <p>Instead of a shape, a spell may specify a number of targets for the spell to 
+             affect. In this case, the spell’s description will specify what the targets must be
+             and how many of them there can be. A creature will usually not know it has been 
+             targeted unless the spell produces some sort of perceivable effect, though some
+             spells, such as an Animancer’s <i>Read Thoughts</i>, are not typically perceivable
+             unless the spell’s description says otherwise.</p>
+             
+            <h2>Improving Spells</h2>
+            <p>Spells can be improved at the cost of additional Mana: typically, a spell’s 
+             <b>Range</b>, <b>Damage</b>, <b>Duration</b>, and <b>AoE</b> are what can be 
+             improved. Some spells are exceptions to the guidelines given here and will specify
+             in their descriptions if that is the case.</p>
+            <p><b>Range.</b> If a spell does not have a range of “Touch” or “Self”, then its 
+             range can be extended by 4 meters for every 1 extra Mana spent.</p>
+            <p><b>Damage.</b> A spell’s damage can be improved at the cost of 2 Mana per 
+             additional d8.</p>
+            <p><b>Duration.</b> When extending a spell's duration, the caster can expend 1 Mana at the end of
+             the spell to keep the spell going for half of the original duration, e.g. at the end of a 1
+             minute spell, the caster can spend 1 Mana to keep the spell going for another 30 seconds. This
+             applies to all durations except "Instant", which cannot be extended at all.</p>
+            <p><b>Area of Effect.</b> To extend a spell’s AoE by 2 meters in a single
+             dimension (such as making a cone 2m wider or a line 2m longer) costs 1 
+             Mana. For target spells, additional targets can be selected at the cost of 2 Mana
+             per target or the Mana Cost of the spell if the spell costs <u>&#60;</u>1 Mana.</p>
+             
+            <h2>Creating Spells</h2>
+            <p>The spells any given Aetherian has access to are many and varied. However, the
+             imaginations of players are infinite, and it is almost certain that you or another
+             player may want to cast a spell that is not listed. While the various aspects of 
+             the spell may be easy to come up with, determining the Mana Cost of a new spell may
+             seem like a strange and esoteric practice; thankfully, however, this is not the 
+             truth. Determining a spell's Mana Cost is (mostly) quite easy and can be done by
+             following this table (assume the cost of the spell starts at 0):</p>
+             
+            <center>
+            <div class="row">
+                <table class="tablecolumnleft">
+                    <tr>
+                        <th>Spell Aspect</th>
+                        <th>M.C. Alteration</th>
+                    </tr>
+                    <tr>
+                        <td><i><b>Range</b></i></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&#60; 50m</td>
+                        <td>+0</td>
+                    </tr>
+                    <tr>
+                        <td>50m - 250m</td>
+                        <td>+1</td>
+                    </tr>
+                    <tr>
+                        <td>250m - ½km</td>
+                        <td>+2</td>
+                    </tr>
+                    <tr>
+                        <td>½km - 1km</td>
+                        <td>+3</td>
+                    </tr>
+                    <tr>
+                        <td><u>></u> 1km</td>
+                        <td>+4</td>
+                    </tr>
+                    <tr>
+                        <td><i><b>Damage</b></i></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Default</td>
+                        <td>+0</td>
+                    </tr>
+                    <tr>
+                        <td>Each extra d8</td>
+                        <td>+1</td>
+                    </tr>
+                    <tr>
+                        <td>Sustained damage</td>
+                        <td>+1</td>
+                    </tr>
+                    <tr>
+                        <td>Less or no damage</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td><i><b>Save</b></i></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Any save required</td>
+                        <td>+1</td>
+                    </tr>
+                    <tr>
+                        <td><i><b>Duration</b></i></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Instant</td>
+                        <td>+0</td>
+                    </tr>
+                    <tr>
+                        <td>1-9 minutes</td>
+                        <td>+1</td>
+                    </tr>
+                    <tr>
+                        <td>10-59 minutes</td>
+                        <td>+2</td>
+                    </tr>
+                    <tr>
+                        <td>1-12 hours</td>
+                        <td>+3</td>
+                    </tr>
+                    <tr>
+                        <td>13-24 hours</td>
+                        <td>+4</td>
+                    </tr>
+                    <tr>
+                        <td>> 1 day</td>
+                        <td>+5</td>
+                    </tr>
+                </table>
+                
+                <table class="tablecolumnright">
+                    <tr>
+                        <th>Spell Aspect</th>
+                        <th>M.C. Alteration</th>
+                    </tr>
+                    <tr>
+                        <td><i><b>AoE</b></i></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Cone</td>
+                        <td>+1 for every 1-6m</td>
+                    </tr>
+                    <tr>
+                        <td>Cube</td>
+                        <td>+1 for every 1-8m</td>
+                    </tr>
+                    <tr>
+                        <td>Cylinder</td>
+                        <td>+1 for every 1-4m of diameter,
+                         +1 for every 1-10m of length</td>
+                    </tr>
+                    <tr>
+                        <td>Line</td>
+                        <td>+1 for every 1-5m of height,
+                         +1 for every 1-10m of length</td>
+                    </tr>
+                    <tr>
+                        <td>Sphere</td>
+                        <td>+1 for every 1-10m of diameter</td>
+                    </tr>
+                    <tr>
+                        <td>Targets</td>
+                        <td>+1 for every 1-3, not counting the first</td>
+                    </tr>
+                    <tr>
+                        <td><i><b>Notable Effects</b></i></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Highly variable, may increase or
+                         decrease the spell's cost.</td>
+                        <td>+/- Varies</td>
+                    </table>
+                </div>
+                </center>
+            <p>The table given here should mostly be used as a guideline to give you a
+             foundation to start with, rather than an absolute. If you believe your spell should
+             cost a little bit more or less than the value you arrived at, then feel free to
+             adjust it as you feel is necessary, just be certain to clear the spell with your
+             GM.</p>
+            
+            <h2>Enhanced Element</h2>
+            <p>Many spells benefit from the Enhanced Element feature that Aetherians gain at
+             level 11. If a spell has the <b>EE Optional</b> tag in its description, the caster
+             can make use of their Enhanced Element feature to enhance the spell’s abilities 
+             (usually just altering the spell’s damage type); if a spell has the <b>EE Required</b>
+             tag, the caster cannot cast the spell until they reach level 11; a spell with 
+             neither cannot be modified with the Enhanced Element feature at all.</p>
+            
+            <h2>Spell Traps</h2>
+            <p>Any spell that does not have the "Concentration" tag and does not have a range of
+             "Self" can be set as a trap. When it is, the spell becomes a glyph, or a circular
+             collection of arcane runes, symbols, and energy that faintly glow with the spell’s
+             power and which must be 15cm - 1m in diameter. A glyph cannot be disarmed
+             or dispelled by any ordinary means, though when set off, the energy of the glyph is
+             expended and it disappears. If a spell set as a trap has a range, it targets itself;
+             if it requires a target to be selected, the target is whoever triggered the glyph;
+             and if it has a direction for the AoE, that direction is the direction the glyph is
+             facing.</p>
+            <p>There are 5 steps to setting a spell as a trap:</p>
+            <ol>
+                <li>The caster casts the spell as normal;</li>
+                <li>They designate a surface or small object that they can touch to embed the 
+                 power and effects of the spell into;</li>
+                <li>They spend the casting time of the spell imbuing the spell’s power into that
+                 surface or object;</li>
+                <li>They set the conditions for the spell trap to trigger, e.g. touching the
+                 spell glyph, moving the object the glyph is placed on, opening the book the
+                 glyph was placed in, etc. All spell traps have the following conditions:
+                 <b>1. if the glyph is moved 3m from where it was placed, the spell goes 
+                 off</b>, and <b>2. the glyph lasts 6 days by default, but its lifespan can be 
+                 extended by 6 days for every 2 extra Mana spent on it at the time it was
+                 created.</b></li>
+            </ol>
+            <p>To spot a glyph, a creature can make an Arcana or Perception check against what 
+             the caster’s Aether Save DR was at the time they made the glyph, and to determine
+             what spell the glyph contains, the creature can either be the same type of
+             Aetherian as the one who set the trap or succeed on an Arcana check against what 
+             the caster’s Aether Save DR was at the time they set the trap.</p>
+            
+            
+            <h2>Otherworldly Spellcasting</h2>
+            <p>The vast majority of spellcasting in Iron & Aether is done by either Aetherians 
+             or enchanted items; however, there exists in the I&A ruleset extradimensional and
+             otherworldly forces, and it is not unheard of for these forces, these beings, these
+             Others, to find their way into an I&A-based world. These Others bring with them 
+             their own arcane abilities and powers, and while they would typically operate by
+             different rules, by simply existing within an I&A-borne world, the machinations of
+             their arcana alter to reflect the nature of the universe they have found themselves
+             in.</p>
+            <p>Given here is a list of spells that these Others might be capable of casting, at
+             the GM's discretion (most Others would also likely be able to cast various
+             Aetherian spells as well). Nearly all Sentients would absolutely <b>not</b> have
+             the ability to cast these spells on their own, though Otherian enchanted items can
+             provide a limited means of access to them.</p>
+            
+            <h2>Otherworldly Spells</h2>
+            <p>It is worth noting that all Otherworldly spells require the caster to speak and
+             gesticulate in order to command and direct the power of the spell; in the case of 
+             Sentients using enchanted items, assume that the item itself transfers the knowledge
+             of the words and movements necessary to the user at the time of attunement.</p>
+             
+            <div class="row">
+                <div class="spellcolumnleft">
+                    <button type="button" class="grid">Arcane Hand</button>
+                    <div class="gridtent">
+                        <div class="row">
+                            <div class="column">
+                                <b>Mana Cost:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Casting Time:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Range:</b> 10m
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="column">
+                                <b>Damage:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Save:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Duration:</b> 1 minute
+                            </div>
+                        </div>
+                        <b>Area of Effect:</b> Single Point<br>
+                        <b>Notable Effects:</b> You create an ethereal hand out of pure arcane
+                         energy that you can control at-will, as if it were one of your own
+                         hands; it cannot lift an object heavier than 10lbs and it cannot
+                         travel outside of the spell's range.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                    
+                <div class="spellcolumncenter">
+                    <button type="button" class="grid">Arcane Missile</button>
+                    <div class="gridtent">
+                        <div class="row">
+                            <div class="column">
+                                <b>Mana Cost:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Casting Time:</b> 2 actions
+                            </div>
+                            <div class="column">
+                                <b>Range:</b> 20m
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="column">
+                                <b>Damage:</b> 1d6 true
+                            </div>
+                            <div class="column">
+                                <b>Save:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Duration:</b> Instant
+                            </div>
+                        </div>
+                        <b>Area of Effect:</b> Single Target<br>
+                        <b>Notable Effects:</b> For every 2 extra Mana this spell is cast with, another
+                         missile is created, and you select which missile strikes which target.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="spellcolumnright">
+                    <button type="button" class="grid">Maddening Chant</button>
+                    <div class="gridtent">
+                        <div class="row">
+                            <div class="column">
+                                <b>Mana Cost:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Casting Time:</b> 2 actions
+                            </div>
+                            <div class="column">
+                                <b>Range:</b> Self
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="column">
+                                <b>Damage:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Save:</b> Willpower
+                            </div>
+                            <div class="column">
+                                <b>Duration:</b> Instant
+                            </div>
+                        </div>
+                        <b>Area of Effect:</b> Sphere (4m)<br>
+                        <b>Notable Effects:</b> You chant loudly in Otherian, causing all 
+                         creatures in the AoE who fail the save to become
+                         <a href="../Part6/Chapter3.html">stunned</a> until the end of their next
+                         turn.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="spellcolumnleft">
+                    <button type="button" class="grid">Phase Shift</button>
+                    <div class="gridtent">
+                        <div class="row">
+                            <div class="column">
+                                <b>Mana Cost:</b> 1
+                            </div>
+                            <div class="column">
+                                <b>Casting Time:</b> 1 action
+                            </div>
+                            <div class="column">
+                                <b>Range:</b> Self
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="column">
+                                <b>Damage:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Save:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Duration:</b> A few seconds
+                            </div>
+                        </div>
+                        <b>Area of Effect:</b> Single Target<br>
+                        <b>Notable Effects:</b> You briefly disappear from this dimension, becoming
+                         completely incorporeal, though you cannot pass through solid objects and you still
+                         perceive everything around you. During this time, your movement is doubled and you
+                         have advantage on your next attack. This spell ends after you have expended all of
+                         your movement, take any action other than movement, or end it prematurely (no 
+                         action required).
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="spellcolumncenter">
+                    <button type="button" class="grid">Counterspell</button>
+                    <div class="gridtent">
+                        <div class="row">
+                            <div class="column">
+                                <b>Mana Cost:</b> 1+
+                            </div>
+                            <div class="column">
+                                <b>Casting Time:</b> 1 reaction
+                            </div>
+                            <div class="column">
+                                <b>Range:</b> 30m
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="column">
+                                <b>Damage:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Save:</b> Willpower, see Efcs.
+                            </div>
+                            <div class="column">
+                                <b>Duration:</b> Instant
+                            </div>
+                        </div>
+                        <b>Area of Effect:</b> Single Spellcasting Target<br>
+                        <b>Notable Effects:</b> If the target's spell costs an amount of Mana
+                         <u>&#60;</u> what you spent on this spell, their casting fails; if the
+                         spell costs more, then the target must make the save, with a bonus to
+                         their save equal to the Mana difference.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="spellcolumnright">
+                    <button type="button" class="grid">Curse</button>
+                    <div class="gridtent">
+                        <div class="row">
+                            <div class="column">
+                                <b>Mana Cost:</b> 3
+                            </div>
+                            <div class="column">
+                                <b>Casting Time:</b> 2 actions
+                            </div>
+                            <div class="column">
+                                <b>Range:</b> 15m
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="column">
+                                <b>Damage:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Save:</b> Willpower
+                            </div>
+                            <div class="column">
+                                <b>Duration:</b> 1 minute
+                            </div>
+                        </div>
+                        <b>Area of Effect:</b> Up to 3 Targets<br>
+                        <b>Notable Effects:</b> At the start of each target's turns for the duration,
+                         they must make the save; on a failure, whatever action they take is done with
+                         disadvantage or, if they move, they move at half speed. A creature who succeeds
+                         on this save a total of 3 times has the effect end early on them.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="spellcolumnleft">
+                    <button type="button" class="grid">Hellfire Rain</button>
+                    <div class="gridtent">
+                        <div class="row">
+                            <div class="column">
+                                <b>Mana Cost:</b> 3
+                            </div>
+                            <div class="column">
+                                <b>Casting Time:</b> 4 actions
+                            </div>
+                            <div class="column">
+                                <b>Range:</b> 100m
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="column">
+                                <b>Damage:</b> 3d8 of any kind except true or fatigue
+                            </div>
+                            <div class="column">
+                                <b>Save:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Duration:</b> Instant
+                            </div>
+                        </div>
+                        <b>Area of Effect:</b> Cube (6m)<br>
+                        <b>Notable Effects:</b> You open a hole in reality at the top of the AoE, out of
+                         which projectiles that deal the damage fire at all creatures inside the AoE, after
+                         which the tear closes.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="spellcolumncenter">
+                    <button type="button" class="grid">Control Weather</button>
+                    <div class="gridtent">
+                        <div class="row">
+                            <div class="column">
+                                <b>Mana Cost:</b> 16
+                            </div>
+                            <div class="column">
+                                <b>Casting Time:</b> 8 actions
+                            </div>
+                            <div class="column">
+                                <b>Range:</b> 1.5km
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="column">
+                                <b>Damage:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Save:</b> --
+                            </div>
+                            <div class="column">
+                                <b>Duration:</b> 8 hours
+                            </div>
+                        </div>
+                        <b>Area of Effect:</b> Sphere (100m)<br>
+                        <b>Notable Effects:</b> You alter the weather in the AoE according
+                         to your desires.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+             
+            <h2>Optional Rule: Spell Misfires</h2>
+            <p>As the GM, if you feel so inclined, you can implement spell misfires, which are 
+             strange and random effects that occur when a casting goes wrong. When, how, or if
+             you implement them is up to you, but here are a few suggestions:</p>
+            <ul>
+                <li>Spells have a percent chance to misfire equal to 5 times their Mana Cost
+                 (good for "corrupted" or otherwise compromised areas/enchanted items);</li>
+                <li>Spells have a percent chance to misfire equal to their Mana Cost;</li>
+                <li>Spells might misfire if their casting is interrupted;</li>
+                <li>A spell might misfire if the caster attempts to cast it without any
+                 remaining spell charges of the spell's level;</li>
+                <li>Spells might misfire if the <i>Counterspell</i> spell is used on them.</li>
+            </ul>
+            <p>If an effect says the caster or the target is affected, there is a 50% chance which it is.
+             Additionally, if an effect says it applies to a target, it applies to all the chosen targets of
+             the spell unless it would not make sense to do so.</p>
+            
+            <div class="row">
+            <table class="tablecolumnleft">
+                <tr>
+                    <th>d100</th>
+                    <th>Misfire Effect</th>
+                </tr>
+                <tr>
+                    <td>1-2</td>
+                    <td>The caster/target immediately goes <a href="../Part6/Chapter3.html">unconscious</a> for the 
+                     next 1d10 minutes and cannot be awoken by any means.</td>
+                </tr>
+                <tr>
+                    <td>3-4</td>
+                    <td>The caster/target becomes <a href="../Part6/Chapter3.html">paralyzed</a> for the next
+                     1d10 rounds.</td>
+                </tr>
+                <tr>
+                    <td>5-6</td>
+                    <td>The caster/target starts glowing with 10 meters of bright light and 5 meters of dim light
+                     beyond that.</td>
+                </tr>
+                <tr>
+                    <td>7-8</td>
+                    <td>The next time the caster/target is reduced to 0 Health within the next 1d6 days, they
+                     immediately explode, killing them instantly and dealing 1d6 physical damage to every
+                     creature within 2 meters of them.</td>
+                </tr>
+                <tr>
+                    <td>9-10</td>
+                    <td>The caster/target is affected by a random 
+                     <a href="../Part7/Chapter4.html">Major Relic Boon</a> for the next 1d6 days.</td>
+                </tr>
+                <tr>
+                    <td>11-12</td>
+                    <td>The caster/target is affected by a random 
+                     <a href="../Part7/Chapter4.html">Major Relic Curse</a> for the next 1d6 days.</td>
+                </tr>
+                <tr>
+                    <td>13-14</td>
+                    <td>The caster/target is replenished to full Health.</td>
+                </tr>
+                <tr>
+                    <td>15-16</td>
+                    <td>1d10 rounds from now, the <i>Phase Shift</i> spell is cast on the caster/target
+                     at the start of their turn.</td>
+                </tr>
+                <tr>
+                    <td>17-18</td>
+                    <td>A frightened and confused dog appears next to the caster/target and then disappears
+                     after 1d10 rounds.</td>
+                </tr>
+                <tr>
+                    <td>19-20</td>
+                    <td>Everyone who knows the caster's/target's name immediately forgets it, including the 
+                     caster/target.</td>
+                </tr>
+                <tr>
+                    <td>21-22</td>
+                    <td>The caster/target does not need to rest for the next 1d6 days, though they still
+                     gain the benefits of doing so.</td>
+                </tr>
+                <tr>
+                    <td>23-24</td>
+                    <td>The caster/target is teleported to the top of the nearest mountain.</td>
+                </tr>
+                <tr>
+                    <td>25-26</td>
+                    <td>The caster/target gains arcane darkvision with a range of 20 meters for the next
+                     1d6 days.</td>
+                </tr>
+                <tr>
+                    <td>27-28</td>
+                    <td>A single ability score of the caster's/target's is raised/lowered by 1d2 for 1d6 days 
+                     (minimum 0, no maximum).</td>
+                </tr>
+                <tr>
+                    <td>29-30</td>
+                    <td>All creatures within 10 meters of the caster/target (not including them) take 1d10
+                     true damage; the caster/target then regains an amount of Health/Mana equal to the sum
+                     total of all damage taken by the creatures around them.</td>
+                </tr>
+                <tr>
+                    <td>31-32</td>
+                    <td>A random spell with a casting time of <u>&#60;</u> 2 actions is cast with the 
+                     caster/target of the original spell acting as the caster of this one.</td>
+                </tr>
+                <tr>
+                    <td>33-34</td>
+                    <td>The next damaging spell the caster/target casts within the next minute deals maximum
+                     damage.</td>
+                </tr>
+                <tr>
+                    <td>35-36</td>
+                    <td>The caster/target has the spell <i>Confuse</i> cast on them.</td>
+                </tr>
+                <tr>
+                    <td>37-38</td>
+                    <td>All creatures within 10 meters of the caster/target immediately fall 
+                     <a href="../Part6/Chapter3.html">prone</a>.</td>
+                </tr>
+                <tr>
+                    <td>39-40</td>
+                    <td>The caster/target gains the ability to cast a single random spell 1d3 times a day for
+                     the next 1d6 days.</td>
+                </tr>
+                <tr>
+                    <td>41-42</td>
+                    <td>1d6 creatures within 30 meters of the caster (possibly but not necessarily including
+                     the caster) are struck by lightning, taking 4d6 electric final damage.</td>
+                </tr>
+                <tr>
+                    <td>43-44</td>
+                    <td>If the caster/target dies within the next minute, they are immediately revived as
+                     though by the <i>True Revive</i> spell.</td>
+                </tr>
+                <tr>
+                    <td>45-46</td>
+                    <td>The caster's/target's DEF score immediately increases/decreases by 1d10 for the next
+                     1d10 rounds.</td>
+                </tr>
+                <tr>
+                    <td>47-48</td>
+                    <td>The caster's/target's skin turns a random color for 1d6 days.</td>
+                </tr>
+                <tr>
+                    <td>49-50</td>
+                    <td>The caster/target gains the ability to breathe underwater and in dangerous vapors
+                     for the next 1d6 days.</td>
+                </tr>
+                </table>
+                
+                <table class="tablecolumnright">
+                <tr>
+                    <th>d100</th>
+                    <th>Misfire Effect</th>
+                </tr>
+                <tr>
+                    <td>51-52</td>
+                    <td>If the caster/target casts a spell within the next minute that forces a save, the target
+                     of that spell automatically fails/succeeds the save.</td>
+                </tr>
+                <tr>
+                    <td>53-54</td>
+                    <td>The caster/target is restored to full Health.</td>
+                </tr>
+                <tr>
+                    <td>55-56</td>
+                    <td>The caster/target becomes completely invulnerable for the next 1d10 rounds.</td>
+                </tr>
+                <tr>
+                    <td>57-58</td>
+                    <td>All of the caster's/target's hair and nails fall out.</td>
+                </tr>
+                <tr>
+                    <td>59-60</td>
+                    <td>The caster/target loses the ability to open their mouth for the next hour.</td>
+                </tr>
+                <tr>
+                    <td>61-62</td>
+                    <td>All of the caster's/target's hair immediately grows 1d100 centimeters.</td>
+                </tr>
+                <tr>
+                    <td>63-64</td>
+                    <td>The caster/target is teleported to a random space 1d10 meters away.</td>
+                </tr>
+                <tr>
+                    <td>65-66</td>
+                    <td>On their next turn, the caster/target gains an additional 2 actions.</td>
+                </tr>
+                <tr>
+                    <td>67-68</td>
+                    <td>The movement of the caster/target is doubled for the next minute.</td>
+                </tr>
+                <tr>
+                    <td>69-70</td>
+                    <td>If the caster/target has any lingering injuries, they are instantly cured; otherwise,
+                     roll again.</td>
+                </tr>
+                <tr>
+                    <td>71-72</td>
+                    <td>The caster/target becomes imperceptible in the infrared spectrum (despite still 
+                     giving off heat) for the next 1d6 days.</td>
+                </tr>
+                <tr>
+                    <td>73-74</td>
+                    <td>The caster/target immediately becomes older/younger by 1d10 years.</td>
+                </tr>
+                <tr>
+                    <td>75-76</td>
+                    <td>If the caster is an Aetherian, a random creature of their element appears for 1d10
+                     rounds 1d10 meters of them; otherwise, a random 
+                     <a href="../../Bestiary/Monstrosities.html">Monstrosity</a> appears under the same 
+                     conditions.</td>
+                </tr>
+                <tr>
+                    <td>77-78</td>
+                    <td>An earthquake rocks the area within a 100 meter radius of the caster.</td>
+                </tr>
+                <tr>
+                    <td>79-80</td>
+                    <td>The caster/target has the spell <i>Illusory Copy</i> cast on them.</td>
+                </tr>
+                <tr>
+                    <td>81-82</td>
+                    <td>The caster/target regains 1d6 Health at the start of each of their turns for the next
+                     1d10 rounds; this effect applies even if they die.</td>
+                </tr>
+                <tr>
+                    <td>83-84</td>
+                    <td>The caster/target becomes <a href="../Part6/Chapter3.html">blinded</a> and/or 
+                     <a href="../Part6/Chapter3.html">deafened</a> for the next minute.</td>
+                </tr>
+                <tr>
+                    <td>85-86</td>
+                    <td>The caster has all of their Mana restored.</td>
+                </tr>
+                <tr>
+                    <td>87-88</td>
+                    <td>The caster/target gains the ability to speak and comprehend all languages for the next 1d6
+                     days.</td>
+                </tr>
+                <tr>
+                    <td>89-90</td>
+                    <td>The caster/target turns into a potted plant/whale for 1d10 rounds.</td>
+                </tr>
+                <tr>
+                    <td>91-92</td>
+                    <td>If the caster/target has any madnesses that can be cured, they are instantly cured;
+                     otherwise, roll again.</td>
+                </tr>
+                <tr>
+                    <td>93-94</td>
+                    <td>The caster/target gains a new <a href="../Part6/Chapter17.html">madness</a> that 
+                     lasts for 1d6 days or until cured.</td>
+                </tr>
+                <tr>
+                    <td>95-96</td>
+                    <td>The caster/target has the spell <i>Dance</i> cast on them, using the Aether Save DR
+                     of the original caster.</td>
+                </tr>
+                <tr>
+                    <td>97-98</td>
+                    <td>The spell <i>Rewind</i> is cast.</td>
+                </tr>
+                <tr>
+                    <td>99-100</td>
+                    <td>2 effects: Roll twice, ignoring this result on subsequent rolls.</td>
+                </tr>
+            </table>
+            </div>
+            
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var gridtent = this.nextElementSibling;
+                    if (gridtent.style.maxHeight) {
+                        gridtent.style.maxHeight = null;
+                    } else {
+                        gridtent.style.maxHeight = gridtent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+</html>

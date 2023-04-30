@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 14: Puzzles</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 6: Adventuring</a>
+            <a href="./Chapter1.html">Chapter 1: Actions</a>
+            <a href="./Chapter2.html">Chapter 2: Damage Types</a>
+            <a href="./Chapter3.html">Chapter 3: Conditions</a>
+            <a href="./Chapter4.html">Chapter 4: Enduring</a>
+            <a href="./Chapter5.html">Chapter 5: Combat</a>
+            <a href="./Chapter6.html">Chapter 6: Brightness</a>
+            <a href="./Chapter7.html">Chapter 7: Weather</a>
+            <a href="./Chapter8.html">Chapter 8: Traveling</a>
+            <a href="./Chapter9.html">Chapter 9: Languages</a>
+            <a href="./Chapter10.html">Chapter 10: Downtime</a>
+            <a href="./Chapter11.html">Chapter 11: Crafting</a>
+            <a href="./Chapter12.html">Chapter 12: Chases</a>
+            <a href="./Chapter13.html">Chapter 13: Traps</a>
+            <a href="./Chapter14.html" class="active">Chapter 14: Puzzles</a>
+            <a href="./Chapter15.html">Chapter 15: Random Encounters</a>
+            <a href="./Chapter16.html">Chapter 16: Lingering Injuries</a>
+            <a href="./Chapter17.html">Chapter 17: Madness</a>
+            <a href="./Chapter18.html">Chapter 18: Adventure Hooks</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Chapter13.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Chapter15.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 6: Adventuring &ensp; &#9776;</span>
+            </div>
+            
+        </div>
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 14: Puzzles</h1></center>
+            <p>Puzzles are an important part of a GM's toolkit. They add variety to gameplay, can help
+             with adventure pacing, and can make for fun and memorable encounters. A good puzzle can even
+             help bring the party closer together via the teamwork required.</p>
+            <p>However, puzzles can also be tricky to get right - they are, ironically, a puzzle unto 
+             themselves. A lot of GMs struggle with certain aspects of designing puzzles for their groups,
+             including but not limited to:</p>
+            <ul>
+                <li>Where should a puzzle be placed?</li>
+                <li>How hard should it be?</li>
+                <li>Why is there a puzzle in the party's way at all?</li>
+                <li>What should the GM do if the players get stuck?</li>
+                <li>And most importantly, how does one even <i>design</i> a puzzle in a way that feels fun
+                 and engaging for the players?</li>
+            </ul>
+            <p>Provided here are some tips and a few example puzzles to help GMs out when thinking about
+             adding a puzzle to their adventures.</p>
+            
+            <h2>General Puzzle Tips</h2>
+            <p>A good place to start, before diving into the actual meat of puzzles, is answering some of the
+             questions "around" puzzles, namely those listed above.</p>
+            <p><b>Where should a puzzle be placed?</b> There are a variety of appopriate places to put a 
+             puzzle in an adventure. A doorway to an ancient ruin sealed with a riddle, a powerful artifact 
+             sealed inside a strange and complicated box, a codex that holds a clue to something the party is
+             looking for but must first be deciphered; the possibilities are endless! Just don't force a
+             puzzle in where one doesn't belong, or make them too commonplace to the point they become a
+             detractor from the group's fun.</p>
+            <p><b>How hard should the puzzle be?</b> This depends on the nature of the puzzle itself, or
+             more specifically, what the puzzle is an obstacle to. If the point of the puzzle was to keep
+             others away from a specific site or object permanently, then the difficulty of the puzzle should
+             match that; alternatively, if the point of the puzzle was to keep someone's diary hidden away,
+             then it probably doesn't need to be <i>too</i> difficult.</p>
+            <p><b>Why is there a puzzle in the party's way at all?</b> For in-universe reasons as to why an
+             ancient ruin or a thieves' guild might have strange mechanisms and doors with riddles on them,
+             that is up to you, the GM. Out-of-universe, as stated previously, puzzles make for great 
+             gameplay variety and can be a fun way to have your party work together to overcome an obstacle.</p>
+            <p><b>What should the GM do if the players get stuck?</b> In the event that the players are
+             unable to solve the puzzle presented to them, the GM is free to give hints - or even answers - 
+             at their discretion. One way to do this might be by asking for Action Skill checks as a way for
+             the characters to find additional hints - maybe there's a piece of paper with a hint on it from 
+             a previous person who attempted the puzzle in the corner or perhaps there's an object that the 
+             party failed to find earlier that makes the puzzle easier. Alternatively, you could call for
+             INT checks from each of the party members and say that after a certain amount of time, they
+             manage to piece the solution together and find their way through.</p>
+            <p><b>How does one design a fun and engaging puzzle?</b> The answer to this question depends
+             entirely on what you and your party find engaging and enjoyable. Although there is no universal
+             solution to this, here are some tips that will hopefully come in handy:</p>
+            <ol>
+                <li>Tie the puzzle into the story of the adventure (if there is one); this will certainly
+                 help with engagement and help make the puzzle feel like it has a legitimate purpose;</li>
+                <li>Make the puzzle a brain teaser but not impossible; this is a fine and tricky line to 
+                 walk, but with some practice and some feedback from your party (as well as a bit of help
+                 from external resources), you should be able to make puzzles that are challenging but
+                 not impossible;</li>
+                <li>Don't abuse them; much like traps or combat, puzzles can be a great way to engage your
+                 players, but using them too frequently (also like traps and combat) can make them boring
+                 and/or predictable. One puzzle every other session or so is entertaining, whereas multiple puzzles
+                 in a single session can quickly become dull.</li>
+                <li>Don't make them just a series of checks; though skill checks can be a part of the
+                 puzzle if they are necessary and can be useful if the players get stuck, simply asking them
+                 to make a series of checks without any thought or process on their part defeats the point
+                 of the puzzle and fails to make it engaging.</li>
+            </ol>
+            
+            <h2>Example Puzzles</h2>
+            <p>Given here are a few example puzzles to give you an idea of what types of puzzles might be good
+             in an adventure<!--, as well as more difficult variations of each-->. If you want, you can use these
+             puzzles exactly as they are, or just use them as inspiration when designing your own.</p>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">The Endless Rooms</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>The Puzzle.</b> The party is making their way through a dungeon, and they enter a
+                         rather plain-looking room with 4 walls and 4 doors (including the one they just came
+                         through); beyond the threshold of these doors is an inky blackness that even arcane
+                         darkvision does not penetrate. Unsure of what to do, the party picks a door at 
+                         random - only to arrive in another plain-looking room with 4 walls and 4 doors
+                         (including the one they just came through). The party repeats this process, 
+                         occasionally arriving at rooms that look slightly different from the others, but at
+                         seemingly random points returning to that first plain room with 4 walls and 4 doors.
+                        <br>
+                        <br>
+                        <b>The Solution.</b> The party must pick the correct sequence of doors to go through
+                         to exit this seemingly infinite miasma of rooms, and picking the wrong one at any 
+                         point in the sequence returns them to the starting room. Subtle and slight variations
+                         in the rooms should clue the party in to which doors show the correct sequence. For an
+                         added challenge, you can have there be some sort of additional consequence for picking
+                         the wrong door, such as monsters waiting to greet them when they return to the starting
+                         room, or being struck with various afflictions for each wrong door picked, or adding a
+                         time limit before catastrophe strikes.
+                        <br>
+                        <br>
+                        <b>Hints.</b> The key to this puzzle lies in how which door is the correct one is
+                         communicated to the party; this ranges from extremely obvious tells to extremely subtle
+                         ones. For an obvious example, perhaps the starting room has a big "0" painted on the
+                         ceiling, the room through the first correct door has a "1", then the next correct room
+                         has a "2", etc.; in this example, the party should quickly and easily be able to figure
+                         out the correct sequence to solve the puzzle. For a less obvious example, say the room
+                         is completely barren except for some rocks, and the only difference betweens the rooms 
+                         is shown in the placement of one particular pebble. In any case, if your party gets stuck
+                         trying to figure this one out, calling for Perception or INT checks in each of the rooms
+                         can help push them in the right direction.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">The False Tiles</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>The Puzzle.</b> The party enters a room where the floor is covered in tiles, each
+                         marked with a particular symbol. The party steps on one only for it to crumble out
+                         from beneath their feet, requiring a Reflex save from faller (or a STR check from
+                         an adjacent party member) to avoid falling to their doom. The party tries another
+                         tile, only to find that that one <i>doesn't</i> fall apart at their touch. The party
+                         must figure out which tiles will break and send them falling to their deaths and which
+                         will bear them safely across.
+                        <br>
+                        <br>
+                        <b>The Solution.</b> The solution, of course, lies in which tiles the builder of the
+                         room designated as safe, and how the party finds out this solution is entirely up to
+                         you; the answer could be found in another room in the dungeon, or scrawled on the wall,
+                         or the party could simply brute force their way through, relying on their quick reflexes
+                         and dumb luck to get them through. One possible way to prevent the party from brute-forcing
+                         the solution is to make it so that whatever trap the incorrect tiles activate triggers
+                         more than once - after all, if the incorrect tiles simply fall apart once and are no
+                         longer an issue thereafter, there is nothing to stop the party from slamming a hammer on each
+                         tile until they find the correct one.
+                        <br>
+                        <br>
+                        <b>Hints.</b> As stated above, the solution to this puzzle should give the party all the 
+                         information they need to get through the puzzle, the only question is how exactly the solution
+                         is found.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">The Frictionless Floor</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>The Puzzle.</b> This puzzle involves a room with a floor that, as the title 
+                         states, is completely frictionless, effectively preventing the party from changing
+                         course once they've set foot on it. The party may need to simply find a way across 
+                         the room, or retrieve something that the nature of the floor prevents them from
+                         reaching (such as an object that they cannot get to by moving in a straight line),
+                         or they may need to avoid making contact with the floor lest they fall into danger -
+                         say, if the part of the floor that had no friction were in the shape of a large bowl.
+                        <br>
+                        <br>
+                        <b>The Solution.</b> The solution to this depends entirely on what the party is trying 
+                         to achieve: perhaps they need to get cross the room, but it is covered in dangerous
+                         pits and traps that would otherwise be trivial to get around if they could just change
+                         direction. Perhaps there is an object they want in the center of the floor, but every 
+                         side of the floor ends in a dropoff to a bottomless pit or some other danger.
+                        <br>
+                        <br>
+                        <b>Hints.</b> Part of the insidious nature of this puzzle is that it may not be entirely
+                         obvious that the floor is frictionless until it is too late. To this end, you can have
+                         the characters make Perception checks to see that the floor is different, and prevent them
+                         from making a costly mistake. If the party seems to be unable to figure out how to cross
+                         the slippery floor in question, a good INT check or two can help point them in the right
+                         direction.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">The Labyrinth</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>The Puzzle.</b> This one is rather straightforward: the party enters a labyrinth,
+                         and must find their way through without getting lost. For added danger, the labyrinth
+                         can also be filled with traps and monsters, and/or can be constantly shifting and
+                         changing shape. If your group uses maps or grids in their play, it is heavily recommended
+                         that you leave them to their own devices in that regard (or restrict the use of maps
+                         entirely) for the purposes of this puzzle, lest it become trivial.
+                        <br>
+                        <br>
+                        <b>The Solution.</b> Again, quite straightforward: the solution is to leave the
+                         labyrinth. If the labyrinth's walls are not floor-to-ceiling or are otherwise 
+                         climbable, clever characters may think to simply climb their way out and bypass
+                         the twists and turns altogether; but then, where would be the fun in that?
+                        <br>
+                        <br>
+                        <b>Hints.</b> One famous solution to mazes is to leave a marker showing where one has
+                         already been and what routes they have already tried; another is to simply pick a wall
+                         and follow it until they reach the exit, or to lay a string behind them so that they
+                         can simply follow it back every time they meet a dead end. If, however, your maze has
+                         a tendency to shift and change its nature, then these markers may very well prove less
+                         useful than the party had hoped...
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">The Mirror Room</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>The Puzzle.</b> The party enters a room wherein one wall is taken up by a single
+                         large mirror - however, on close examination, several differences present themselves
+                         between the room shown in the mirror and the one the characters find themselves in.
+                         If you wish to make this puzzle extra dangerous, perhaps there are monsters or
+                         other dangers that can only be seen in the mirror, but are still plenty capable of
+                         hurting the characters!
+                        <br>
+                        <br>
+                        <b>The Solution.</b> The characters must make the room they are in match the room 
+                         shown in the mirror. While this would be interesting to actually physically do, from
+                         a tabletop perspective it is easy to allow this puzzle to become trivial. To avoid
+                         this, it is recommended to add a more mechanically entertaining element into the mix,
+                         such as a time limit, combat with enemies that can only be seen in the mirror, or
+                         having the characters interact with something whenever they believe they have solved
+                         the puzzle that punishes them if they got it wrong.
+                        <br>
+                        <br>
+                        <b>Hints.</b> When examining the mirror, a high enough Perception check can tell the
+                         party members what differences remain between the two rooms, or repeated Perception
+                         checks can be called for each item that must be altered, though this can quickly
+                         become dull and repetitive.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">The Mixture</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>The Puzzle.</b> This alchemy-themed puzzle sees the party needing to find the
+                         correct composition of ingredients to create something, be it a concoction, a bomb,
+                         an intricate piece of art or metalwork, or whatever else you may think of. If the
+                         party fails to combine the ingredients correctly, exactly what happens is up to 
+                         you: whatever they're making might explode, the concoction could do the opposite
+                         of what's intended, or nothing may happen and the party simply needs to try again.
+                        <br>
+                        <br>
+                        <b>The Solution.</b> Like the consequences for failure, this is largely up to you
+                         and depends on what exactly the party is trying to do. For example, say the party
+                         is trying to brew a brand-new elixir that was discovered by an alchemist who has
+                         long-since died; exactly what ingredients they need, how much of them is needed,
+                         and how to properly combine them could all be written in the alchemist's notes,
+                         which perhaps need to be found or deciphered, or are smudged and otherwise difficult
+                         to read.
+                        <br>
+                        <br>
+                        <b>Hints.</b> Depending on the exact nature of this puzzle, various skill checks
+                         could apply if the party needs a hint. If the party is constructing a bomb, an
+                         Explosives Kits check could help keep them from blowing themselves up; if it's a
+                         tincture of some form, then knowledge in Alchemy Supplies would be most useful. 
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">The Riddle Door</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>The Puzzle.</b> A rather simple puzzle: the party comes across a locked door that
+                         communicates a riddle to them in some way, such as by having it be written upon the
+                         door itself.
+                        <br>
+                        <br>
+                        <b>The Solution.</b> The party must speak the answer to the riddle out loud, and the
+                         door will unlock.
+                        <br>
+                        <br>
+                        <b>Hints.</b> If you feel so inclined, you could have the answer to the riddle
+                         written somewhere nearby, allowing the party to bypass the door without the risk
+                         of becoming stuck. Alternatively, a high enough INT check can be used as an excuse
+                         to simply give away the answer if the party is truly stuck.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">The Unbeatable Foe</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>The Puzzle.</b> Not exactly a puzzle in the typical sense, but a great way to
+                         remind your party that combat isn't always the answer; the party encounters a
+                         foe(s) of some sort that is simply too powerful to defeat in combat given the 
+                         current circumstances. Perhaps an <a href="../../Bestiary/Dragons.html">Elder Fire 
+                         Dragon</a> bars the way through the cavern the party is exploring, or the party
+                         has been captured by some monstrous creature they have no hope to fight. Alternatively,
+                         perhaps the party <i>could</i> fight this enemy and stands a reasonable chance to
+                         succeed at doing so, but are incentivized not to by some other reason of your own
+                         design.
+                        <br>
+                        <br>
+                        <b>The Solution.</b> The solution to this depends entirely on the nature of the foe
+                         in question. Perhaps they can be bribed, or snuck around, or they want something
+                         that the party has (be sure to have a reason for them to not simply kill the party
+                         and take it off them that way).
+                        <br>
+                        <br>
+                        <b>Hints.</b> Giving the players subtle hints regarding the nature of their foe can
+                         be key in figuring this dilemma out in a way that feels fair and satisfying for the
+                         players. Is the Elder Dragon asleep but on the brink of stirring? Does their
+                         jailer have a weakness for drink that can be exploited? Does the powerful aristocrat
+                         have a family that can be threatened in exchange for their silence? How you narrate
+                         things to your players can very well determine what solutions they think of, just
+                         try not to make it too obvious, and perhaps allow them a failure or two before things
+                         really hit the fan.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">The Uneven Levers</button>
+                    <div class="gridtent">
+                    <br>
+                        <b>The Puzzle.</b> The party comes across a series of levers, buttons, switches, or
+                         the like that alters something about the state of the room they are in - perhaps
+                         filling a gauge someway or activating a sequence of lights. The only problem is,
+                         the devices in question don't have consistent effects! For example, say the party
+                         is faced with a row of 6 lights and 3 buttons. Each of the 6 lights must be 
+                         active at once for the party to proceed, but the first button activates only the first
+                         light the first time it's pressed, then the first and third on the second press,
+                         then the first, third, and fifth on the third, then only the first again; the second
+                         button activates the last three lights; and the third button activates the second and 
+                         fourth lights. Any lights that were active when a corresponding button is pressed 
+                         are deactivated, but the reverse is not true. The party must figure out the correct sequence to press the buttons
+                         in order to activate all 6 lights at once and proceed.
+                        <br>
+                        <br>
+                        <b>The Solution.</b> Given that the exact details of this puzzle can vary wildly, so
+                         too do the exact solutions, but in each case the solution should be to find the correct
+                         combination of levers/buttons/switches in order to achieve the desired outcome. The 
+                         solution for the given example is as follows: 1 > 1 > 1 > 3 > 2 > 3 > 3 > 1 > 1 > 1.
+                        <br>
+                        <br>
+                        <b>Hints.</b> As is plain to see, it is easy for this puzzle to quickly become quite
+                         complicated, perhaps too much so for your players. If needed, you can have the 
+                         solution (or at least a hint) be written down in a nearby area somewhere, or if the
+                         players give up entirely, just say that after some amount of time the characters 
+                         manage to figure it out on their own, though this is obviously the least desirable
+                         outcome. In any case, when designing this type of puzzle, make sure it is actually
+                         solvable (typically by figuring it out yourself) before giving it to your players,
+                         and be careful and consistent in how you describe what occurs, lest you accidentally
+                         mislead the players and make the whole thing feel cheap and unfair.
+                    <br>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    
+    <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var gridtent = this.nextElementSibling;
+                    if (gridtent.style.maxHeight) {
+                        gridtent.style.maxHeight = null;
+                    } else {
+                        gridtent.style.maxHeight = gridtent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        
+    </body>
+    
+</html>

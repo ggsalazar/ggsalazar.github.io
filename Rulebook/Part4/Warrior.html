@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Warrior</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+         <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 4: Classes</a>
+            <a href="./Introduction.html">Introduction</a>
+            <a href="./Artificer.html">Artificer</a>
+            <a href="./Mutant.html">Mutant</a>
+            <a href="./Psychokinetic.html">Psychokinetic</a>
+            <a href="./Rogue.html">Rogue</a>
+            <a href="./Warrior.html" class="active">Warrior</a>
+            <a href="./Spellcasting.html">Spellcasting</a>
+            <a href="./Aetherian.html">Aetherian</a>
+            <a href="./ClasslessFeats.html">Classless Feats</a>
+            <a href="./LevelingUp.html">Leveling Up</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Rogue.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Spellcasting.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 4: Classes &ensp; &#9776;</span>
+            </div>
+
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Warrior</h1></center>
+            <h2>Unmatched Martial Capability</h2>
+            <p>Warriors, as their name would imply, are easily the best fighters in all of I&A,
+             gaining far more martial abilities and Weapon Points than any other class. They
+             also have the single largest Health Die of any class, making them ideal for both
+             taking and dishing out large amounts of damage.</p>
+            
+            <h2 style="text-decoration:none;"><b>The Warrior</b></h2>
+            <table  style="margin:0;">
+                <tr>
+                    <th>Level</th>
+                    <th>Weapons<br>Proficiency</th>
+                    <th>Features</th>
+                    <th>Combat<br>Maneuver<br>Uses</th>
+                </tr>
+                <tr>
+                    <td>1st</td>
+                    <td>2</td>
+                    <td>Fighting Style</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>2nd</td>
+                    <td>2</td>
+                    <td>Second Wind (2)</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>3rd</td>
+                    <td>2</td>
+                    <td>Class Feat (Novice),<br>Combat Maneuvers (3)</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>4th</td>
+                    <td>2</td>
+                    <td>Feat and Ability Score Improvement</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>3</td>
+                    <td>--</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>6th</td>
+                    <td>3</td>
+                    <td>Resolve (1)</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>7th</td>
+                    <td>3</td>
+                    <td>Class Feat (Journeyman)</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>8th</td>
+                    <td>3</td>
+                    <td>Feat and Ability Score Improvement</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>4</td>
+                    <td>--</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>4</td>
+                    <td>Combat Maneuvers (6), Resolve (2)</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>11th</td>
+                    <td>4</td>
+                    <td>Second Wind (4)</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>4</td>
+                    <td>Feat and Ability Score Improvement</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>5</td>
+                    <td>Class Feat (Expert)</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>14th</td>
+                    <td>5</td>
+                    <td>Resolve (3)</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>15th</td>
+                    <td>5</td>
+                    <td>Combat Maneuvers (9)</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>16th</td>
+                    <td>5</td>
+                    <td>Feat and Ability Score Improvement</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>6</td>
+                    <td>--</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>18th</td>
+                    <td>6</td>
+                    <td>Class Feat (Master)</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>19th</td>
+                    <td>6</td>
+                    <td>Feat and Ability Score Improvement</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>20th</td>
+                    <td>6</td>
+                    <td>Indomitable</td>
+                    <td>10</td>
+                </tr>
+            </table>
+            
+            <h2>Class Features</h2>
+            <p>As a Warrior you gain the following class features.</p>
+            <h3>Health</h3>
+            <p><b>Health at 1st Level:</b> 10 + your CON score</p>
+            <p><b>Health Beyond 1st Level:</b> 1d10 (or 5.5) + your CON score per
+             Warrior level after 1st</p>
+            <h3>Proficiencies</h3>
+            <p><b>Skills at 1st Level:</b> Select two Weapon Skills to gain proficiency in as you level up.</p>
+            <p><b>Skills Beyond 1st Level:</b> You gain 1 SP every time you level up (except levels 2, 9, and
+             17).</p>
+            
+            <br>
+            
+            <h2>Fighting Style</h2>
+            <p>At 1st level, you have a particular method of dispatching your foes that you
+             prefer. Pick any one of the following options. You cannot take a Fighting Style more 
+             than once, even if you get to pick another later.</p>
+            <p><b>Archery.</b> You gain a bonus to attacks with Archery weapons equal
+             to your Archery proficiency.</p>
+            <p><b>Defender.</b> While using a shield of any size, you gain a +2
+             bonus to your Armor score.</p>
+            <p><b>Martial Arts.</b> You gain a bonus to Unarmed attacks equal to your Unarmed
+             proficiency; additionally, attacks with your bare hands and feet now use 1d4 for 
+             their base damage.</p>
+            <p><b>Riflery.</b> You gain a bonus to attacks with Firearm weapons equal
+             to your Firearm proficiency.</p>
+            <p><b>Single-Weapon Style.</b> While wielding a melee weapon in one or both hands and holding nothing
+             else, you gain a bonus to attacks with that weapon equal to your proficiency with that 
+             weapon’s type.</p>
+            <p><b>Two-Weapon Style.</b> While wielding a melee weapon in each hand, you gain a bonus to attacks 
+             with each weapon equal to your proficiency with that weapon’s type.</p>
+            
+            <h2>Second Wind</h2>
+            <p>Starting at 2nd level, twice between rests, you can use 3 seconds (independent of your DEX) to regain 1d10
+             + your CON score Health. You can do this four times between rests at 11th level.</p>
+            
+            <h2>Class Feats</h2>
+            <p>At 3rd level, you have become practiced enough in the art of combat that you have
+             learned to enhance your talents with special abilities. At the end of the class 
+             description, under “Class Feats”, you may select one Novice class feat.</p>
+            <p>At 7th level, you may select either one Journeyman or two Novice class feats.</p>
+            <p>When you reach 13th level, you may choose either one Expert, one 
+             Journeyman and one Novice, or three Novice class feats.</p>
+            <p>Lastly, at 18th level your battle prowess is demigod-like, and you may
+             now select one Master, one Expert and one Novice, two Journeyman, one Journeyman and two
+             Novice, or four Novice class feats.</p>
+            <p>If a feat has any prerequisites, you must meet those prerequisites 
+             before you can take it. Feats cannot be taken more than once unless they explicitly say 
+             so. Your feat choices are permanent and cannot be changed.</p>
+            
+            <h2>Combat Maneuvers</h2>
+            <p>Additionally at 3rd level, you’ve learned how to give your attacks special 
+             flavors. From the following list, you may select any 3 abilities and use them in 
+             combat, following any restrictions detailed in the ability’s description. You have
+             a number of uses for your maneuvers as shown in the Warrior class table; you regain
+             all of these uses at the end of a night's or day's rest, and regain 1 use at the 
+             end of a quick rest. You can use only one maneuver per attack or reaction. You can
+             select 3 more maneuvers at 10th and 15th level.</p>
+            <p><b>Brutal Strike.</b> When you make an attack, you can roll a single extra damage die.</p>
+            <p><b>Combat Dodge.</b> When you are subjected to a damage-dealing effect, such as an attack,
+             trap, or spell, you can use your reaction to move 2m and double your Dodge score until the 
+             start of your next turn.</p>
+            <p><b>Commander's Strike.</b> You can use 2 seconds to command a single ally within 10m of you
+             that you can see and can see or hear you to use their reaction to make an attack against an
+             enemy of your choice, provided they have a means of attacking them without moving.</p>
+            <p><b>Disarming Blow.</b> When you make an attack, you can also attempt the
+             <a href="../Part6/Chapter1.html">Disarm</a> action as part of your attack.<br>
+            <p><b>Disorienting Blow.</b> When you make an attack, 
+             you can make a DEX check contested by the target's <a href="../Part1/Chapter6.html">Fortitude 
+             save</a>; on a success, the are <a href="../Part6/Chapter3.html">stunned</a>
+             until the end of their next turn.</p>
+            <p><b>Distancing Strike.</b> If you deal final damage with an attack, you can move to up to 1 second's worth of distance 
+             as part of the same action without provoking an Opportunity Attack from the creature that you damaged.</p>
+            <p><b>Distracting Strike.</b> When you deal final damage with an attack, the next attack against
+             your target from a creature other than you has advantage if it occurs within the next minute.</p>
+            <p><b>Lunge.</b> When you make a melee attack, your range extends by 2m for that attack.</p>
+            <p><b>Menacing Blow.</b> When you make an attack, you can make an Intimidation check contested by
+             the target's <a href="../Part1/Chapter6.html">Willpower save</a>; on a success, they are
+             <a href="../Part6/Chapter3.html">frightened</a> of you for the next 10 seconds.</p>
+            <p><b>Parry.</b> When you are subjected to a damage-dealing effect, such as an attack, trap, or
+             spell, you can use your reaction to add your proficiency with one of your equipped weapons to
+             your Armor score until the start of your next turn.</p>
+            <p><b>Pinning Strike.</b> Whenever you make an attack against a creature, you can also attempt
+             the <a href="../Part6/Chapter1.html">Pin</a> action as part of your attack.</p>
+            <p><b>Quickdraw.</b> When the GM calls for initiative, you can increase your initiative count by
+             2 for this combat.</p>
+            <p><b>Redirect.</b> When a creature targets you with a melee attack, you can use
+             your reaction to make the attack target another creature within 2m of you.</p>
+            <p><b>Riposte.</b> When you are subjected to a damage-dealing effect, such as an attack,
+             trap, or spell, you can use your reaction to strike back at the source once.</p>
+            <p><b>Shoving Attack.</b> When you make an attack, you can also attempt the 
+            <a href="../Part6/Chapter1.html">Shove</a> action as part of your attack.</p>
+            <p><b>Sweeping Strike.</b> When you make a melee attack, you can target an
+             additional creature with the same attack so long as the second creature is within 
+             2m of both you and the original target. Roll the damage for the attack only
+             once.</p>
+            <p><b>Trip Attack.</b> When you make an attack, you can also attempt the 
+             <a href="../Part6/Chapter1.html">Trip</a> action as part of your attack.</p>
+            
+            <h2>Feat and Ability Score Improvement</h2>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you
+             can increase one of your ability scores by 1 or two of them by .5, as well as take a
+             <a href="./ClasslessFeats.html">classless feat</a>. You cannot increase an ability
+             score beyond 5 via this feature.</p>
+            
+            <h2>Resolve</h2>
+            <p>When you reach 6th level, your fighting spirit is able to keep you going at even
+             the worst of times. Once between rests, you can choose to reroll a save of any kind and
+             use either result. You can do this twice between rests at 10th level, and thrice at 
+             14th level.</p>
+            
+            <h2>Indomitable</h2>
+            <p>Finally, at 20th level, it is almost impossible to take you down. You can now use
+             your Second Wind feature 6 times between rests, it can be done over only a second, and it
+             restores 2d12 + your CON score Health.</p>
+            
+            <h1>Warrior Class Feats</h1>
+            <p style="margin-top:-20px;">Every Warrior, as they train, reaches a point of proficiency at which they start
+             to learn relatively unique abilities. Some channel their fighting spirit into a sort of
+             rage or focus that enhances their fighting power, while others hold back and observe 
+             their enemies’ weaknesses and plan accordingly, while others learn how to better wield a
+             firearm. In any case, every single Warrior is a powerhouse, a force to be reckoned with,
+             and a deadly and capable combatant.</p>
+            
+            <h2>Novice</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Additional Maneuvers x1</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain a single extra use of your Combat Maneuvers.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Extra Fighting Style</button>
+                    <div class="gridtent">
+                    <br>
+                        You can choose one extra Fighting Style from the Fighting Style list in
+                         the class description.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">First Blood</button>
+                    <div class="gridtent">
+                    <br>
+                        If you are the first creature to attack during combat, your first attack
+                         has advantage.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Frenzy</button>
+                    <div class="gridtent">
+                    <br>
+                        You have learned how to enter an enhanced state of combat focus that boosts your 
+                         resistance to damage and the power of your attacks. Twice between rests, you can 
+                         take 3 seconds (independent of your DEX) to enter a state of frenzy that lasts for one minute. While in this state,
+                         you have resistance to physical damage, and can choose to grant yourself advantage
+                         on as many attacks (not including spells) as you wish; however, if you grant yourself
+                         advantage on <u>></u>1 attack, all attacks against you also gain advantage until the 
+                         start of your next turn.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Martial Artist</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Martial Arts Fighting Style</i>
+                        <br><br>
+                        Attacks with your hands and feet now use 1d6 for their base damage die. Additionally,
+                         your Armor score increases by your Unarmed proficiency while you are able to move
+                         your arms and are not wearing armor that grants disadvantage on DEX checks,
+                         including Medium or Large shields.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Meat Shielding</button>
+                    <div class="gridtent">
+                    <br>
+                        Your bulkiness grants you extra protection, increasing your Armor score by an amount
+                         equal to your STR score.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Mounted Combat</button>
+                    <div class="gridtent">
+                    <br>
+                        You have learned to improve your skills fighting on a mount. You gain 1
+                         proficiency in Beast Handling, up to 5, and have advantage on saves to
+                         resist being knocked off your mount.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Protector</button>
+                    <div class="gridtent">
+                    <br>
+                        When a creature you can see attacks a creature other than you that is 
+                         within range of one of your equipped weapons, you can use your reaction to impose
+                         disadvantage on the attack; if you are using a ranged weapon to do this, it expends
+                         a single piece of ammunition.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Quadruple Frenzy</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Frenzy</i>
+                        <br><br>
+                        You can now enter the Frenzy state 4 times between rests.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Quickshot</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Firearms proficiency <u>></u>2</i>
+                        <br><br>
+                        Your practice with firearms has made you lightning-fast with them. If your first 
+                         attack in combat is made with a Firearm that does not need to reload after every
+                         attack, your next attack with this weapon only takes .5 seconds, and if a round 
+                         must be chambered, doing that also takes you only .5 seconds if it didn't already.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Taunt</button>
+                    <div class="gridtent">
+                    <br>
+                        On your turn, you can take 1 second (independent of your DEX) to attempt to gain the attention of a
+                         single enemy combatant, forcing it to focus on you until the end of its 
+                         next turn. To do this, make an Intimidation check against the Willpower
+                         save of a creature within 15m of you that you can see and that can see and
+                         hear you. If you win the contest, then on its next two turns, it can only move 
+                         towards you and/or take hostile actions against you.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Journeyman</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Additional Maneuvers x2</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain two extra uses of your Combat Maneuvers.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Duelist</button>
+                    <div class="gridtent">
+                    <br>
+                        When you are faced with only one enemy combatant and you are the 
+                         only one fighting them, you gain advantage on all of your attacks.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Extra Maneuver</button>
+                    <div class="gridtent">
+                    <br>
+                        You learn a single additional Combat Maneuver. This feat can be taken multiple times.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">First and Last</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: First Blood</i>
+                        <br><br>
+                        If you are the first creature to attack during combat, all of your attacks on
+                         your first turn have advantage.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Hold the Line</button>
+                    <div class="gridtent">
+                    <br>
+                        Whenever you deal final damage to a creature with an opportunity attack, that 
+                         creature stops moves at half speed for the remainder of their turn.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Octuple Frenzy</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Quadruple Frenzy</i>
+                        <br><br>
+                        You can now enter the Frenzy state 8 times between rests.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Pain Tolerance</button>
+                    <div class="gridtent">
+                    <br>
+                        With this feat, you are able to tolerate the pain of your injuries
+                         better than most, and that tolerance prevents them from hindering
+                         your ability to act somewhat. From now on, you become
+                         <a href="../Part1/Chapter4.html">Injured</a> when you fall beneath
+                         20% of your maximum Health, and you become
+                         <a href="../Part1/Chapter4.html">Bloodied</a> when you fall beneath
+                         10%; you no longer suffer from being on
+                         <a href="../Part1/Chapter4.html">Death's Door</a> at all.
+                    <br><br>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <button type="button" class="grid">Sentinel</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Protector</i>
+                        <br><br>
+                        Whenever you use your Protector feat, you can, as part of the same
+                         reaction, strike back at the attacking creature. If you are using a 
+                         melee weapon to do so, you must be physically able to reach them and 
+                         they must be within 3m of you.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Undying Frenzy</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Frenzy</i>
+                        <br><br>
+                        While in the Frenzy state, if you are reduced to 0 Health, you can make
+                         a <a href="../Part1/Chapter6.html">Fortitude save</a> with a DR equal
+                         to the final damage that you took; on a success, you remain conscious 
+                         with 1 Health. You can do this twice each time you Frenzy; the first 
+                         time you make the save as normal, and the second time with disadvantage.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Unending Frenzy</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Octuple Frenzy</i>
+                        <br><br>
+                        You can now enter the Frenzy state as many times as you wish, or keep
+                         it going indefinitely.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Expert</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Additional Maneuvers x3</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain three extra uses of your Combat Maneuvers.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Ferocity</button>
+                    <div class="gridtent">
+                    <br>
+                        You have finely honed your muscles to respond quickly and efficiently to your every
+                         command, allowing you to perform the following actions
+                         at the cost of .5 less seconds (minimum .5 seconds): Attack, Reload, Pin, Disarm, or
+                         cast a damage-dealing spell.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">High Noon</button>
+                    <div class="gridtent">
+                    <br>
+                        You have mastered the art of clearing your mind to focus on just your 
+                         targets. If you have a revolver on your person, you
+                         can sacrifice your turn to focus on picking out as many targets as
+                         you have bullets left in your gun; these targets can be a single 
+                         person/object or multiple people/objects. At any point within the next
+                         minute, you can use 3.5 seconds to very quickly draw and fire your
+                         weapon once at each target you selected; roll once with advantage and apply that
+                         roll to all of these shots. You can do this twice between night's and day's rests. 
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Immortal Frenzy</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Undying Frenzy</i>
+                        <br><br>
+                        The first time you are brought down to 0 Health while in the Frenzy state, you
+                         automatically stay conscious with 1 Health; the next time, you make the 
+                         <a href="../Part1/Chapter6.html">Fortitude save</a>
+                         against the final damage dealt to you with advantage; the time after that, you make
+                         the save as normal; the fourth and last time, you make it with disadvantage. 
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Martial Arts Master</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Martial Artist</i>
+                        <br><br>
+                        Attacks with your hands and feet now use 1d8 for their base damage die; additionally,
+                         your Dodge increases by your WIS score.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class = "column">
+                    <button type="button" class="grid">Unmatched Vigor</button>
+                    <div class="gridtent">
+                    <br>
+                        Whenever you are reduced to 0 Health, you can make a <a href="../Part1/Chapter6.html">Fortitude save</a>
+                         with a DR equal to the final damage that you took; on a success, you remain 
+                         conscious with 1 Health. You can do this twice between rests.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Master</h2>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="button" class="grid">Additional Maneuvers x4</button>
+                    <div class="gridtent">
+                    <br>
+                        You gain four extra uses of your Combat Maneuvers.
+                    <br><br>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <button type="button" class="grid">Unkillable</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Unmatched Vigor</i>
+                        <br><br>
+                        The first time you are brought down to 0 Health between rests, you automatically
+                         stay conscious with 1 Health; the next time, you make the <a href="../Part1/Chapter6.html">Fortitude save</a>
+                         against the final damage dealt to you with advantage; the third and fourth times, 
+                         you make the save as normal. Every time thereafter, you go down as normal.
+                    <br><br>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <button type="button" class="grid">Unrivaled</button>
+                    <div class="gridtent">
+                    <br>
+                        <i>Prerequisite: Fierce</i>
+                        <br><br>
+                        You have mastered the art of combat, reducing the cost of the following actions by another .5 seconds (minimum .5 seconds): Attack, Reload, Pin, Disarm, or
+                         cast a damage-dealing spell.
+                    <br><br>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("grid");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var gridtent = this.nextElementSibling;
+                    if (gridtent.style.maxHeight) {
+                        gridtent.style.maxHeight = null;
+                    } else {
+                        gridtent.style.maxHeight = gridtent.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </body>
+   
+</html>

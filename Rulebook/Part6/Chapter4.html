@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+      
+        <title>Chapter 4: Enduring</title>
+        
+        <link rel="stylesheet" href="../RulesStyle.css">
+        <script src="../RulesFunc.js"></script>
+    </head>
+    
+    <body>
+        <!--Site Nav-->
+        <!--Sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times; &nbsp; Part 6: Adventuring</a>
+            <a href="./Chapter1.html">Chapter 1: Actions</a>
+            <a href="./Chapter2.html">Chapter 2: Damage Types</a>
+            <a href="./Chapter3.html">Chapter 3: Conditions</a>
+            <a href="./Chapter4.html" class="active">Chapter 4: Enduring</a>
+            <a href="./Chapter5.html">Chapter 5: Combat</a>
+            <a href="./Chapter6.html">Chapter 6: Brightness</a>
+            <a href="./Chapter7.html">Chapter 7: Weather</a>
+            <a href="./Chapter8.html">Chapter 8: Traveling</a>
+            <a href="./Chapter9.html">Chapter 9: Languages</a>
+            <a href="./Chapter10.html">Chapter 10: Downtime</a>
+            <a href="./Chapter11.html">Chapter 11: Crafting</a>
+            <a href="./Chapter12.html">Chapter 12: Chases</a>
+            <a href="./Chapter13.html">Chapter 13: Traps</a>
+            <a href="./Chapter14.html">Chapter 14: Puzzles</a>
+            <a href="./Chapter15.html">Chapter 15: Random Encounters</a>
+            <a href="./Chapter16.html">Chapter 16: Lingering Injuries</a>
+            <a href="./Chapter17.html">Chapter 17: Madness</a>
+            <a href="./Chapter18.html">Chapter 18: Adventure Hooks</a>
+        </div>
+        
+        <!--Top navigation-->
+        <div class="topnav">
+
+            <!--Left-aligned links-->
+            <div class="topnavleft">
+                <a href="../../index.html">
+                    <img src="../../Artwork/Logo/Iron-Aether_transparent.png"
+                     width="100px" height="58px"
+                     alt="Iron & Aether">
+                </a>
+            </div>
+            
+            <!--Centered links-->
+            <div class="topnavcenterleft">
+                <a href="./Chapter3.html">&larr; Prev</a>
+            </div>
+            <div class="topnavcenter">
+                <a href="../Home/RulesHome.html">Table of Contents</a>
+            </div>
+            <div class="topnavcenterright">
+                <a href="./Chapter5.html">Next &rarr;</a>
+            </div>
+            
+            <!--Right-aligned links-->
+            <div class="topnavright">
+                <!--Sidebar, does not push-->
+                <span onclick="openSide()">Part 6: Adventuring &ensp; &#9776;</span>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="rules">
+        
+            <center><h1>Chapter 4: Enduring</h1></center>
+            
+            <h2>Going Unconscious</h2>
+            <p>When a PC's Health reaches 0, they do not immediately die, but instead go 
+             <a href="./Chapter3.html">unconscious</a> and begin the process of Enduring. During this time,
+             on each of their turns, they must make either a <a href="../Part1/Chapter6.html">Fortitude
+             or Willpower save</a>.
+             This save has an initial DR of 5, and every time they succeed on it, the DR increases by 5
+             until it reaches 25, unless they are stabilized, healed for any amount, or they fail twice. A
+             character that succeeds on this save when the DR is <u>></u>25 is stabilized unless they have
+             been hit.</p>
+            <p>If a character begins the process of Enduring outside of combat, or 
+             combat ends while the character is still Enduring, the character must make this save once every
+             real-life minute, though this can be adjusted as the GM sees fit. The DR for this save for a
+             particular character is retained until that character has a night's or day's rest, at
+             which point it resets to 5.</p>
+            
+            <h2>Being Hit While Enduring</h2>
+            <p>The first time a character is hit by anything while they are Enduring, they gain a single
+             failure, the DR for their save jumps to 25 or increases by 5 if it was already at 25, and the 
+             character must immediately succeed on the save at the new DR; additionally, they can no longer 
+             be stabilized without external help. If they
+             are hit after they have failed the save once (including if they had already been hit), they gain
+             a second failure. Lastly, if a single attack would deal enough damage to a character to bring them to 
+             negative half of their maximum Health, then that character dies outright.</p>
+            
+            <h2>Being Stabilized or Healed</h2>
+            <p>When a character is stabilized, they remain <a href="./Chapter3.html">unconscious</a> at 0
+             Health until they receive any amount of healing, or 1 in-game hour passes, at which point they
+             regain 1 Health. They do not need to keep making saves during this time. While a 
+             creature is Enduring, another character can attempt to stabilize them by making a 
+             Medicine Kit check with a DR equal to the current DR of the saves they are making; doing this 
+             expends the medicine kit regardless of success or failure. On a success, the character is 
+             stabilized, and on a failure, the save DR increases by 5. A 
+             character that succeeds on this save while the DR is <u>></u>25 is stabilized unless they
+             have been hit. If at any point during the process of Enduring a character is healed by any 
+             amount, they are restored to consciousness with the amount of Health that they were 
+             healed for.</p>
+            
+            <h2>Failing</h2>
+            <p>Failing the required save twice can mean either one of two things, depending on the 
+             exact situation and the GM’s discretion: the first is that the character goes 
+             completely <a href="./Chapter3.html">unconscious</a> and remains that way for the next 8 hours,
+             at which point they regain 1 Health; the second possibility is that the character dies.</p>
+        
+        </div>
+    </body>
+   
+</html>
