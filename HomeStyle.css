@@ -1,78 +1,60 @@
-a {
-    color: inherit;
+body {
+  background-color: black;
+  color: white;
 }
 
-body {
-    background-color: rgb(15, 15, 15);
-    color: rgb(255, 255, 255);
+figcaption {
+  font-size: 24px;
+}
+
+.games {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: .4em;
 }
 
 h3 {
-    font-weight: lighter;
+  margin-top: 0;
 }
 
-/*Button stuff*/
-.DiscordButton {
-    float: right;
-    position: absolute;
-    font-size: 24px;
-    top: 5%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    background-color: #1985ee;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 14px 16px;
-    overflow: hidden;
+img:hover {
+  border: 3px solid white;
+  border-radius: 3px;
+  margin: -3px;
 }
 
-.DiscordButton:hover, .DiscordButton:active {
-    background-color: #199fff;
+p {
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 
-/*mobile screens*/
-@media screen and (max-height: 500px) {
-    .DiscordButton {
-        font-size: 12px;
-        border-radius: 4px;
-        padding: 10px 12px;
-    }
-}
+/*Blog Stuff*/
 
-.NavButton {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    height: 35px;
-    padding: 12px;
-    text-align: center;
-    display: inline-block;
-    width: max-content;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-.NavButton:hover, .NavButton:active {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-
-
-/*mobile screens*/
-@media screen and (max-height: 500px) {
-    .NavButton {
-        padding: 10px;
-        font-size: 14px;
-    }
-}
-
-.row {
-    margin: 25px 0;
-}
+/*Grid Stuff*/
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+}
+
+.workcolumn {
+  float: left;
+  width: 25%;
+  margin: 1% 4.15%;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  /*background-color: blue;*/
 }
